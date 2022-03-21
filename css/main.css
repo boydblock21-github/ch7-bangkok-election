@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Sukhumvit Set";
+  src: url("https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_tex-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_tex-webfont.woff2") format("woff2"), url("https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_tex-webfont.woff") format("woff"), url("https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_tex-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sukhumvit Set";
+  src: url("https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_bol-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_bol-webfont.woff2") format("woff2"), url("https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_bol-webfont.woff") format("woff"), url("https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_bol-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+*, *:after, *:before {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Sukhumvit Set", "Sukhumvit Set Text", Sukhumvit, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #F6F8F7;
+}
+
+a {
+  color: #0A0A0A;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  word-break: break-word;
+}
+
+a:hover {
+  color: #019960;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #004F37;
+}
+
+a:active {
+  color: #004F37;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,301 @@
+$primary-01 : #019960;
+$primary-02 : #004F37;
+$primary-03 : #B2D650;
+
+$secondary-01 : #FFC50C;
+$secondary-01 : #FBC02D;
+$secondary-01 : #FBB835;
+
+$tertiary-01 : #05396B;
+$tertiary-02 : #001440;
+$tertiary-03 : #42639A;
+
+$gray-01 : #0A0A0A;
+$gray-02 : #262626;
+$gray-03 : #2F2E36;
+$gray-04 : #8C8C8C;
+$gray-05 : #ADADAD;
+$gray-06 : #E8E8E8;
+$gray-07 : #ffffff;
+
+$error      : #DA0101;
+$success    : #029746;
+$info       : #027ABD;
+$warning    : #DF8600;
+
+$light      : #F6F8F7;
+$dark       : #000;
+
+
+
+@mixin gradient($direction, $list) { 
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);  
+}
+
+
+///// Font Imports /////
+@font-face {
+  font-family: "Sukhumvit Set";
+  src:url('https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_tex-webfont.eot'); /* IE9 Compat Modes */
+  src:url('https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_tex-webfont.woff2') format('woff2'),
+      url('https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_tex-webfont.woff') format('woff'),
+      url('https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_tex-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+font-family: "Sukhumvit Set";
+src:url('https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_bol-webfont.eot'); /* IE9 Compat Modes */
+src:url('https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_bol-webfont.woff2') format('woff2'),
+  url('https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_bol-webfont.woff') format('woff'),
+  url('https://static-dev.bugaboo.tv/fonts/tadmai/sukhumvittadmai_bol-webfont.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+// Font stack ------------------
+$brand-font: "Sukhumvit Set", "Sukhumvit Set Text", Sukhumvit,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$body-font: -apple-system, Thonburi, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+@mixin media-breakpoint-up($breakpoint) {
+  // $breakpoint is simply a variable that can have several values
+
+  @if $breakpoint==sm {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 480px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==md {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mdi {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 834px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==lg {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xl {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xxl {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 1440px) {
+      @content;
+    }
+  }
+  @if $breakpoint==xxxl {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 1920px) {
+      @content;
+    }
+  }
+}
+
+@mixin media-breakpoint-only($breakpoint) {
+  // $breakpoint is simply a variable that can have several values
+
+  @if $breakpoint==sm {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 480px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==md {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mdi {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 834px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==lg {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xl {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xxl {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 1440px) {
+      @content;
+    }
+  }
+}
+@mixin media-breakpoint-down($breakpoint) {
+  // $breakpoint is simply a variable that can have several values
+
+  @if $breakpoint==xs {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (max-width: 413.98px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==sm {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (max-width: 575.98px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==md {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (max-width: 767.98px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==lg {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (max-width: 991.98px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xl {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (max-width: 1199.98px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xxl {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (max-width: 1399.98px) {
+      @content;
+    }
+  }
+}
+
+  // Transition
+@mixin transition( $what: all, $time: 0.25s, $how: ease-in-out ) {
+    transition: $what $time $how;
+  }
+
+// Font size px to rem calculator with old browser fallback
+@mixin font-size($fz){
+    font-size: $fz+px;
+    font-size: $fz / 16+rem;
+}
+
+@mixin truncate($line) {
+  overflow: hidden;
+  max-height: 3rem;
+  display: block;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+}
+
+
+*, *:after, *:before {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    @include font-size(16);
+    font-family: $brand-font;
+    background-color: $light;
+}
+
+a{
+    color: $gray-01;
+    text-decoration: none;
+    @include transition;
+    word-break: break-word;
+    &:hover{
+        color: $primary-01;
+        text-decoration: none;
+    }
+    &:focus{
+        color: $primary-02;
+    }
+    &:active{
+        color: $primary-02;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
