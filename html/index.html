@@ -12,6 +12,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css" />
 
+     <!-- Owlcarousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://static.bugaboo.tv/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://static.bugaboo.tv/css/owl.theme.default.min.css">
+
     <title>เลือกตั้งผู้ว่า</title>
   </head>
   <body>
@@ -56,10 +60,10 @@
   <div class="container">
     <div class="row g-3">
       <h2 class="text-center heading-1">
-          <a id="header-news-lasted" class="text-green" href="https://news.ch7.com/news_lasted">ข่าว
-            <small class="invisible">ดูทั้งหมด</small>
+          <a id="header-news-lasted" class="text-green" href="https://news.ch7.com/news_lasted">
+          ข่าว
+            <small class="invisible text-green">ดูทั้งหมด</small>
               <span class="icon-md">
-                <!-- <img class="icon-news" src="https://static.ch7.com/images/theme2019/icon/icon-forward.svg" alt="forward icon"> -->
                   <?xml version="1.0" encoding="UTF-8"?>
                   <svg width="14px" height="16px" viewBox="0 0 14 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <title>ic_forward</title>
@@ -89,7 +93,7 @@
                   </svg>
               </span>
           </a>
-    </h2>
+      </h2>
       <!-- Card main -->
       <div class="col-lg-8">
         <div class="card -radius text-white h-100 border-0 shadow">
@@ -178,26 +182,128 @@
     </div>
   </div>
  </section>
- <script>
-  document.addEventListener("DOMContentLoaded", () => {
-      document.querySelector("#header-news-lasted")
-          .addEventListener("click", () => {
-              dataLayer.push({
-                  'event': "javascript-event",
-                  'gtm.element.dataset.category': 'newsHighlight',
-                  'gtm.element.dataset.action': 'click_text',
-                  'gtm.element.dataset.label': 'header_link'
-              })
-      })
+ <section id="columns" class="bg-green py-5">
+  <div class="container">
+    <div class="row g-3">
+      <h2 class="text-center heading-1">
+          <a id="header-news-lasted" class="text-white" href="https://news.ch7.com/news_lasted">
+          คอลัมน์
+            <small class="invisible text-white">ดูทั้งหมด</small>
+              <span class="icon-md">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg width="14px" height="16px" viewBox="0 0 14 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>ic_forward</title>
+                      <desc>Created with Sketch.</desc>
+                      <defs>
+                      <path d="M3.21895142,12 L12.942809,21.7238576 C13.4635081,22.2445567 13.4635081,23.0887767 12.942809,23.6094757 C12.42211,24.1301748 11.57789,24.1301748 11.057191,23.6094757 L0.390524292,12.942809 C-0.130174764,12.42211 -0.130174764,11.57789 0.390524292,11.057191 L11.057191,0.390524292 C11.57789,-0.130174764 12.42211,-0.130174764 12.942809,0.390524292 C13.4635081,0.911223347 13.4635081,1.75544332 12.942809,2.27614237 L3.21895142,12 Z" id="path-1"></path>
+                      </defs>
+                      <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g transform="translate(-698.000000, -535.000000)" id="icon-/-ic_forward">
+                              <g transform="translate(689.000000, 531.000000)">
+                                  <g id="ic_forward" transform="translate(16.000000, 16.000000) scale(-1, 1) translate(-16.000000, -16.000000) ">
+                                      <g id="ic_back">
+                                          <g id="back" transform="translate(9.333333, 4.000000)">
+                                              <g id="Rectangle">
+                                                  <mask id="mask-2" fill="white">
+                                                      <use xlink:href="#path-1"></use>
+                                                  </mask>
+                                                  <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                                  <rect fill="#ffffff" mask="url(#mask-2)" x="-9.33333333" y="-4" width="32" height="32"></rect>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+              </span>
+          </a>
+      </h2>
+      <div class="owl-carousel owl-theme -owlnav-style">
+        <div class="owl-items">
+          <div class="card -top-radius border-0 shadow">
+            <div class="ratio ratio-16x9 placeholder-img">
+              <img src="https://unsplash.it/640/360?random=6" class="fit-img" alt="...">
+            </div>
+            <div class="card-body -height">
+              <span class="badge bg-warning text-dark lh-base">News</span>
+              <small class="card-text float-end">15/เม.ย./2565</small>
+              <p class="card-text -bottom -ellipsis -two mt-4">
+                This is a wider card with supporting text 
+                below as a natural lead-in to additional content. 
+                This content is a little bit longer.
+              </p>
+            </div>
+          </div> 
+        </div>
+        <div class="owl-items">
+          <div class="card -top-radius border-0 shadow">
+            <div class="ratio ratio-16x9 placeholder-img">
+              <img src="https://unsplash.it/640/360?random=7" class="fit-img" alt="...">
+            </div>
+            <div class="card-body -height">
+              <span class="badge bg-warning text-dark lh-base">News</span>
+              <small class="card-text float-end">15/เม.ย./2565</small>
+              <p class="card-text -bottom -ellipsis -two mt-4">
+                This is a wider card with supporting text 
+                below as a natural lead-in to additional content. 
+                This content is a little bit longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="owl-items">
+          <div class="card -top-radius border-0 shadow">
+            <div class="ratio ratio-16x9 placeholder-img">
+              <img src="https://unsplash.it/640/360?random=8" class="fit-img" alt="...">
+            </div>
+            <div class="card-body -height">
+              <span class="badge bg-warning text-dark lh-base">News</span>
+              <small class="card-text float-end">15/เม.ย./2565</small>
+              <p class="card-text -bottom -ellipsis -two mt-4">
+                This is a wider card with supporting text 
+                below as a natural lead-in to additional content. 
+                This content is a little bit longer.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  </section>
 
-  })
-</script>
     
 
    <!--  Bootstrap JS -->
    <script src="https://static.ch7.com/js/jquery-3.6.0-newstart.min.js" ></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 
-   
+   <script src="https://static.bugaboo.tv/js/owl.carousel.2.3.min.js"></script>
+   <script type="text/javascript">
+    $(document).ready(function() {
+      // Owl Carousel
+      $('.-owlnav-style').owlCarousel({
+		        loop: true,
+            margin: 16,
+            touchDrag: true,
+            dots:false,
+		         navText:['<div class="icon-nav"><img class="img-item" src="https://static.ch7.com/images/newstar/icon/icon-prev.svg" width="36" height="36 alt="prev"></div>',
+            '<div class="icon-nav"><img class="img-item" src="https://static.ch7.com/images/newstar/icon/icon-next.svg" width="36" height="36 alt="next"></div>'],
+             responsive:{
+		        0: {
+		            items: 1.4,
+		        },
+		        768: {
+		            items: 2,
+		        },
+		        1024: {
+                items: 3,
+		        }
+		    }
+		});  
+    }); 
+    </script>
   </body>
 </html>

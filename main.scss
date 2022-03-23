@@ -372,8 +372,11 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
-.text-green {
+.text-green{
     color: $primary-01;
+}
+.bg-green{
+  background-color: $primary-01;
 }
 // heading transitions start
 .heading-1{
@@ -401,7 +404,6 @@ h1,h2,h3,h4,h5,h6{
 small{
   &.invisible{
   font-size: .8rem;
-  color: $primary-01;
   }
 }
 // heading transitions end
@@ -559,4 +561,69 @@ small{
     }
 }
 
-
+.owl-carousel{
+  &.-owlnav-style{ 
+    .owl-nav{
+      &.disabled{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: 0;
+          height: 100%;
+            .owl-prev{ 
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: absolute;
+              transform: translateY(-50%);
+              top: 50%;
+              left: 0;
+              border-radius: 0;
+              width: auto;
+              height: 100%;
+              margin: 0;
+              background-color: transparent;
+              z-index: 2;
+              &:hover{
+                background: transparent
+              }
+              > .icon-nav{
+                .img-item{
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+            }
+            .owl-next{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: absolute;
+              transform: translateY(-50%);
+              top: 50%;
+              right: 0;
+              left: initial;
+              border-radius: 0;
+              width: auto;
+              height: 100%;
+              margin: 0;
+              background-color: transparent;
+              z-index: 2;
+              &:hover{
+                background: transparent
+              }
+              > .icon-nav{
+                .img-item{
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+            }
+            @include media-breakpoint-up(md){
+              display: block;
+            }
+      }
+    }
+  }
+}

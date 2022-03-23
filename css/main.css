@@ -132,6 +132,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #019960;
 }
 
+.bg-green {
+  background-color: #019960;
+}
+
 .heading-1 a {
   font-size: 2rem;
 }
@@ -160,7 +164,6 @@ h1, h2, h3, h4, h5, h6 {
 
 small.invisible {
   font-size: .8rem;
-  color: #019960;
 }
 
 .navbar {
@@ -382,6 +385,72 @@ small.invisible {
   .bg-banner .countdown-container .sub-title {
     font-size: 32px;
     font-size: 2rem;
+  }
+}
+
+.owl-carousel.-owlnav-style .owl-nav.disabled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.owl-carousel.-owlnav-style .owl-nav.disabled .owl-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  border-radius: 0;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.owl-carousel.-owlnav-style .owl-nav.disabled .owl-prev:hover {
+  background: transparent;
+}
+
+.owl-carousel.-owlnav-style .owl-nav.disabled .owl-prev > .icon-nav .img-item {
+  width: 40px;
+  height: 40px;
+}
+
+.owl-carousel.-owlnav-style .owl-nav.disabled .owl-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  left: initial;
+  border-radius: 0;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.owl-carousel.-owlnav-style .owl-nav.disabled .owl-next:hover {
+  background: transparent;
+}
+
+.owl-carousel.-owlnav-style .owl-nav.disabled .owl-next > .icon-nav .img-item {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .owl-carousel.-owlnav-style .owl-nav.disabled {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
