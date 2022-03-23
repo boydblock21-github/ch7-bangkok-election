@@ -16,7 +16,117 @@
   </head>
   <body>
   
+ <section id="news" class="py-5">
+  <div class="container">
+    <div class="row g-3">
+      <h2 class="text-green text-center heading-1">
+          <a id="header-news-lasted" href="https://news.ch7.com/news_lasted">ข่าว
+            <small class="invisible">ดูทั้งหมด</small>
+              <span class="icon-md "><img class="icon-news" src="https://static.ch7.com/images/theme2019/icon/icon-forward.svg" alt="forward icon"></span>
+          </a>
+    </h2>
+      <!-- Card main -->
+      <div class="col-lg-8">
+        <div class="card -radius text-white h-100 border-0 shadow">
+          <div class="ratio ratio-16x9 -custom placeholder-img">
+            <img src="https://unsplash.it/640/360?random=1" class="fit-img" alt="...">
+          </div>
+          <div class="card-img-overlay -background -height text-bottom">
+              <span class="badge bg-warning text-dark lh-base">News</span>
+              <small class="card-text float-end mb-0">15/เม.ย./2565</small>
+              <p class="card-text -ellipsis -two mt-4">
+                This is a wider card with supporting text 
+                below as a natural lead-in to additional content. 
+                This content is a little bit longer.
+                This is a wider card with supporting text below 
+                as a natural lead-in to additional content. 
+                This content is a little bit longer.
+              </p>
+          </div>
+        </div>
+      </div>
+       <!-- Card 1 -->
+       <div class="col-6 col-lg-4">
+        <div class="card -top-radius border-0 shadow">
+          <div class="ratio ratio-16x9 placeholder-img">
+            <img src="https://unsplash.it/640/360?random=2" class="fit-img" alt="...">
+          </div>
+          <div class="card-body -height">
+            <span class="badge bg-warning text-dark lh-base">News</span>
+            <small class="card-text float-end">15/เม.ย./2565</small>
+            <p class="card-text -bottom -ellipsis -three mt-4">
+              This is a wider card with supporting text 
+              below as a natural lead-in to additional content. 
+              This content is a little bit longer.This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+       <!-- Card 2-->
+       <div class="col-6 col-lg-4">
+        <div class="card -top-radius border-0 shadow">
+          <div class="ratio ratio-16x9 placeholder-img">
+            <img src="https://unsplash.it/640/360?random=3" class="fit-img" alt="...">
+          </div>
+          <div class="card-body -height">
+            <span class="badge bg-warning text-dark lh-base">News</span>
+            <small class="card-text float-end">15/เม.ย./2565</small>
+            <p class="card-text -bottom -ellipsis -three mt-4">
+              This is a wider card with supporting text 
+              below as a natural lead-in to additional content. 
+              This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+       <!-- Card 3 -->
+       <div class="col-6 col-lg-4">
+        <div class="card -top-radius border-0 shadow">
+          <div class="ratio ratio-16x9 placeholder-img">
+            <img src="https://unsplash.it/640/360?random=4" class="fit-img" alt="...">
+          </div>
+          <div class="card-body -height">
+            <span class="badge bg-warning text-dark lh-base">News</span>
+            <small class="card-text float-end">15/เม.ย./2565</small>
+            <p class="card-text -bottom -ellipsis -three mt-4">
+              This is a wider card with supporting text 
+            </p>
+          </div>
+        </div>
+      </div>
+       <!-- Card 4 -->
+       <div class="col-6 col-lg-4">
+        <div class="card -top-radius border-0 shadow">
+          <div class="ratio ratio-16x9 placeholder-img">
+            <img src="https://unsplash.it/640/360?random=5" class="fit-img" alt="...">
+          </div>
+          <div class="card-body -height">
+            <span class="badge bg-warning text-dark lh-base">News</span>
+            <small class="card-text float-end">15/เม.ย./2565</small>
+            <p class="card-text -bottom -ellipsis -three mt-4">
+              This is a wider card with supporting text 
+              below as a natural lead-in to additional content. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector("#header-news-lasted")
+          .addEventListener("click", () => {
+              dataLayer.push({
+                  'event': "javascript-event",
+                  'gtm.element.dataset.category': 'newsHighlight',
+                  'gtm.element.dataset.action': 'click_text',
+                  'gtm.element.dataset.label': 'header_link'
+              })
+      })
 
+  })
+</script>
     
 
    <!--  Bootstrap JS -->
