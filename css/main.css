@@ -467,45 +467,66 @@ small.invisible {
 
 .cards.-landscape-collapse {
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .cards.-landscape-collapse .card-number-content {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  align-items: flex-start;
-  margin-top: 1.25rem;
+  text-align: center;
+  margin-top: -1rem;
+  margin-right: -1rem;
+}
+
+.cards.-landscape-collapse .card-number-content .text-title {
+  font-weight: bold;
+  background-color: #CBE6FF;
+  margin-bottom: 0;
+  padding: 0.25rem 0;
+  border-top-right-radius: 0.5rem;
+  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .cards.-landscape-collapse .card-number-content {
-    margin-top: 0.5rem;
+  .cards.-landscape-collapse .card-number-content .text-title {
+    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
 .cards.-landscape-collapse .card-number-content .number-contestant {
-  color: #019960;
-  font-size: 30px;
-  font-size: 1.875rem;
+  color: #ffffff;
+  background-color: #2548A2;
+  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 0;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 @media only screen and (min-width: 768px) {
   .cards.-landscape-collapse .card-number-content .number-contestant {
     font-size: 88px;
     font-size: 5.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .cards.-landscape-collapse .card-number-content .number-contestant {
-    font-size: 120px;
-    font-size: 7.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-landscape-collapse .card-number-content .number-contestant {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 }
 
@@ -513,6 +534,7 @@ small.invisible {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -548,7 +570,7 @@ small.invisible {
 .cards.-landscape-collapse .card-info .contestant-img .thumb-img {
   padding-top: 109%;
   overflow: hidden;
-  background: url(https://static.ch7.com/images/theme2019/ch7_logo-bw.png) #6f7881 center no-repeat;
+  background: url(https://static.ch7.com/images/theme2019/ch7_logo-bw.png) #E8E8E8 center no-repeat;
   background-size: 50%;
   border-radius: 0.5rem;
 }
@@ -588,16 +610,9 @@ small.invisible {
   }
 }
 
-.cards.-landscape-collapse .card-info .contestant-detail {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  width: 50%;
-}
-
 .cards.-landscape-collapse .card-info .contestant-detail .name-contestant {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -654,20 +669,8 @@ small.invisible {
   }
 }
 
-.cards.-landscape-collapse .card-info .vote-contestant {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  align-items: flex-start;
-  margin-top: -1.75rem;
-  margin-left: 5.75rem;
-  margin-right: auto;
-}
-
 @media only screen and (min-width: 768px) {
   .cards.-landscape-collapse .card-info .vote-contestant {
-    align-items: center;
-    margin-top: 2.5rem;
     margin-left: 0;
     margin-right: initial;
   }
@@ -713,12 +716,16 @@ small.invisible {
   }
 }
 
+.main-collapsed {
+  margin: 0 -1rem;
+}
+
 .accordion.-details-manifesto .accordion-item {
   border: none;
 }
 
 .accordion.-details-manifesto .accordion-body {
-  padding: 1rem 0;
+  padding: 0.25rem 0;
 }
 
 .accordion-button:not(.collapsed) {
@@ -741,18 +748,18 @@ small.invisible {
   color: #019960;
   font-weight: bold;
   border: none;
-  padding: 1rem 0 0;
   justify-content: center;
-  border-top: 1px solid #019960;
-  margin-top: 0.5rem;
+  border-top: 1px solid #ADADAD;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 @media only screen and (min-width: 768px) {
   .accordion-button.toggle-collapse-manifesto {
-    padding: 1rem 0;
-    justify-content: flex-start;
-    border-top: none;
-    margin-top: 0;
+    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -768,7 +775,6 @@ small.invisible {
   .accordion-button::after {
     font-size: 25px;
     font-size: 1.5625rem;
-    margin-right: auto;
   }
 }
 
