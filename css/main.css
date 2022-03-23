@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card .card-body.-height {
-  min-height: 155px;
+  min-height: 130px;
 }
 
 .card-img-overlay.text-bottom {
@@ -105,10 +105,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-line-clamp: 2;
 }
 
-.card-text.-ellipsis.-three {
-  -webkit-line-clamp: 3;
-}
-
 .placeholder-img {
   background-image: url(https://static.ch7.com/images/theme2019/ch7_logo-bw.png);
   background-repeat: no-repeat;
@@ -132,21 +128,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.text-green a {
+.text-green {
   color: #019960;
 }
 
-.text-green a:hover {
-  color: #004F37;
-}
-
-a {
-  transition: all 0.2s ease-in-out;
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.heading-1 {
+.heading-1 a {
   font-size: 2rem;
+}
+
+.heading-1 a:hover {
+  visibility: visible !important;
+}
+
+.heading-1 a:hover .invisible {
+  visibility: visible !important;
+}
+
+.heading-1 a:hover .icon-md {
+  margin-left: 0rem;
 }
 
 .heading-1 a .invisible {
@@ -154,32 +153,12 @@ a {
   transition: all, 0.25s, cubic-bezier(0.25, 0.46, 0.45, 0.94), 0.12s;
 }
 
-.heading-1 a:hover .invisible {
-  visibility: visible !important;
-}
-
 .heading-1 a .icon-md {
   transition: all 0.2s ease-in-out;
-  margin-left: -3.5rem;
+  margin-left: -3rem;
 }
 
-.heading-1 a:hover .icon-md {
-  margin-left: -1rem;
-}
-
-.icon-md {
-  display: inline-block;
-  width: 32px;
-  padding: 0 0 0 1rem;
-  line-height: 1;
-}
-
-.icon-news {
-  filter: invert(20%) sepia(16%) saturate(4118%) hue-rotate(204deg) brightness(89%) contrast(101%);
-  height: 16px !important;
-}
-
-small {
+small.invisible {
   font-size: .8rem;
   color: #019960;
 }
