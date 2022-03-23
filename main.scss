@@ -820,19 +820,6 @@ small{
   }
 }
 .accordion-button{
-  &:not(.collapsed){
-    color: $primary-01;
-    border: none;
-    background-color: transparent;
-    box-shadow: none;
-    &::after{
-      margin-left: 0.5rem;
-      background-image: url(../images/icon/icon-down.svg);
-    }
-  }
-  &:focus{
-    box-shadow: none;
-  }
   &.toggle-collapse-manifesto{
     color: $primary-01;
     font-weight: bold;
@@ -845,16 +832,28 @@ small{
     @include media-breakpoint-up(md){
       @include font-size(16);
     }
-  }
-  &::after{
-    margin-right: initial;
-    margin-left: 0.5rem;
-    height: 0.75rem;
-    background-size: 1rem;
-    background-image: url(../images/icon/icon-down.svg);
-    @include media-breakpoint-up(md){
-      @include font-size(25);
-    } 
+    &:not(.collapsed){
+      color: $primary-01;
+      background-color: transparent;
+      box-shadow: none;
+      &::after{
+        margin-left: 0.5rem;
+        background-image: url(../images/icon/icon-down.svg);
+      }
+    }
+    &:focus{
+      box-shadow: none;
+    }
+    &::after{
+      margin-right: initial;
+      margin-left: 0.5rem;
+      height: 0.75rem;
+      background-size: 1rem;
+      background-image: url(../images/icon/icon-down.svg);
+      @include media-breakpoint-up(md){
+        @include font-size(25);
+      } 
+    }
   }
 }
 
