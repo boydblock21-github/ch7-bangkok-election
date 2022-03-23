@@ -98,7 +98,6 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   /* autoprefixer: off */
   -webkit-box-orient: vertical;
-  /* autoprefixer: on */
 }
 
 .card-text.-ellipsis.-two {
@@ -220,6 +219,19 @@ small.invisible {
   .navbar .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
     font-size: 18px;
     font-size: 1.125rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar .navbar-collapse > .navbar-nav > .nav-item {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar .navbar-collapse > .navbar-nav > .nav-item {
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -320,14 +332,12 @@ small.invisible {
 @media only screen and (min-width: 1280px) {
   .bg-banner .img-sub-banner {
     width: 40%;
-    margin-top: -2rem;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .bg-banner .img-sub-banner {
     width: 28%;
-    margin-top: -2rem;
   }
 }
 
@@ -379,6 +389,7 @@ small.invisible {
   color: #ffffff;
   font-weight: bold;
   padding: 1rem 1rem 2rem;
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -452,5 +463,316 @@ small.invisible {
   .owl-carousel.-owlnav-style .owl-nav.disabled {
     display: block;
   }
+}
+
+.cards.-landscape-collapse {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cards.-landscape-collapse .card-number-content {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: flex-start;
+  margin-top: 1.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-number-content {
+    margin-top: 0.5rem;
+  }
+}
+
+.cards.-landscape-collapse .card-number-content .number-contestant {
+  color: #019960;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-number-content .number-contestant {
+    font-size: 88px;
+    font-size: 5.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-landscape-collapse .card-number-content .number-contestant {
+    font-size: 120px;
+    font-size: 7.5rem;
+  }
+}
+
+.cards.-landscape-collapse .card-info {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info {
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+}
+
+.cards.-landscape-collapse .card-info .contestant-img {
+  position: relative;
+  width: 5.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info .contestant-img {
+    width: 7.25rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-landscape-collapse .card-info .contestant-img {
+    width: 9.25rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-landscape-collapse .card-info .contestant-img {
+    width: 11.25rem;
+  }
+}
+
+.cards.-landscape-collapse .card-info .contestant-img .thumb-img {
+  padding-top: 109%;
+  overflow: hidden;
+  background: url(https://static.ch7.com/images/theme2019/ch7_logo-bw.png) #6f7881 center no-repeat;
+  background-size: 50%;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info .contestant-img .thumb-img {
+    padding-top: 100%;
+  }
+}
+
+.cards.-landscape-collapse .card-info .contestant-img .thumb-img .img-item {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5.75rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info .contestant-img .thumb-img .img-item {
+    height: 7.75rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-landscape-collapse .card-info .contestant-img .thumb-img .img-item {
+    height: 9.25rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-landscape-collapse .card-info .contestant-img .thumb-img .img-item {
+    height: 11.25rem;
+  }
+}
+
+.cards.-landscape-collapse .card-info .contestant-detail {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 50%;
+}
+
+.cards.-landscape-collapse .card-info .contestant-detail .name-contestant {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info .contestant-detail .name-contestant {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-landscape-collapse .card-info .contestant-detail .name-contestant {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+
+.cards.-landscape-collapse .card-info .contestant-detail .logo-party {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info .contestant-detail .logo-party {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.cards.-landscape-collapse .card-info .contestant-detail .party-info {
+  display: flex;
+  align-items: center;
+}
+
+.cards.-landscape-collapse .card-info .contestant-detail .party-info .name-party {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info .contestant-detail .party-info .name-party {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-landscape-collapse .card-info .contestant-detail .party-info .name-party {
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+
+.cards.-landscape-collapse .card-info .vote-contestant {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+  margin-top: -1.75rem;
+  margin-left: 5.75rem;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info .vote-contestant {
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-left: 0;
+    margin-right: initial;
+  }
+}
+
+.cards.-landscape-collapse .card-info .vote-contestant .score-voting {
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info .vote-contestant .score-voting {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-landscape-collapse .card-info .vote-contestant .score-voting {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+
+.cards.-landscape-collapse .card-info .vote-contestant .sub-title {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info .vote-contestant .sub-title {
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: normal;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-landscape-collapse .card-info .vote-contestant .sub-title {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
+.accordion.-details-manifesto .accordion-item {
+  border: none;
+}
+
+.accordion.-details-manifesto .accordion-body {
+  padding: 1rem 0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #019960;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  margin-left: 0.5rem;
+  background-image: url(../images/icon/icon-down.svg);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button.toggle-collapse-manifesto {
+  color: #019960;
+  font-weight: bold;
+  border: none;
+  padding: 1rem 0 0;
+  justify-content: center;
+  border-top: 1px solid #019960;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion-button.toggle-collapse-manifesto {
+    padding: 1rem 0;
+    justify-content: flex-start;
+    border-top: none;
+    margin-top: 0;
+  }
+}
+
+.accordion-button::after {
+  margin-right: initial;
+  margin-left: 0.5rem;
+  height: 0.75rem;
+  background-size: 1rem;
+  background-image: url(../images/icon/icon-down.svg);
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion-button::after {
+    font-size: 25px;
+    font-size: 1.5625rem;
+    margin-right: auto;
+  }
+}
+
+.contestant-container {
+  background: linear-gradient(0.07deg, #019960 32.8%, #ACD85F 99.96%);
 }
 /*# sourceMappingURL=main.css.map */
