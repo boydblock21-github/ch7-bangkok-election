@@ -606,6 +606,27 @@ small{
 
 .owl-carousel{
   &.-owlnav-style{ 
+    .owl-stage-outer{
+      height: calc(100% + 40px);
+      margin: -15px;
+      padding: 15px;
+      width: calc(100% + 30px);
+      @include media-breakpoint-down(md){
+        margin: 0;
+        padding: 0;
+        width: auto;
+      }
+      .owl-stage{
+        .owl-item{
+          margin-bottom: 0;
+          -webkit-transform: scale3d(0.98, 0.98, 1);
+          transform: scale3d(0.98, 0.98, 1);
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
     .owl-nav{
       &.disabled{
           position: absolute;
@@ -627,7 +648,7 @@ small{
               height: 100%;
               margin: 0;
               background-color: transparent;
-              z-index: 2;
+              z-index: 10;
               &:hover{
                 background: transparent
               }
@@ -652,7 +673,7 @@ small{
               height: 100%;
               margin: 0;
               background-color: transparent;
-              z-index: 2;
+              z-index: 10;
               &:hover{
                 background: transparent
               }
@@ -927,4 +948,24 @@ small{
       } 
     }
   } 
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 8%;
+  right: 2%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $secondary-01;
+  color: $light;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  border-radius: 3rem;
+
+  &:hover{
+    background-color: darken($color: $secondary-01, $amount: 10%);
+  }
 }

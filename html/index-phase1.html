@@ -19,6 +19,11 @@
     <title>เลือกตั้งผู้ว่า</title>
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </button>
     <nav class="navbar navbar-expand-md -mainnav">
       <div class="container-fluid">
         <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,94 +97,103 @@
           </h2>
           <!-- Card main -->
           <div class="col-lg-8">
-            <div class="card -radius text-white h-100 border-0 shadow">
-              <div class="ratio ratio-16x9 -custom placeholder-img">
-                <img src="https://unsplash.it/640/360?random=1" class="fit-img" alt="...">
+            <a href="#" class="-light">
+              <div class="card -radius h-100 border-0 -shadow">
+                  <div class="ratio ratio-16x9 -custom placeholder-img -all-radius">
+                    <img src="https://unsplash.it/640/360?random=1" class="fit-img" alt="...">
+                  </div>
+                  <div class="card-img-overlay -background -height text-bottom">
+                      <span class="badge bg-warning text-dark lh-base">News</span>
+                      <small class="card-text float-end mb-0 text-light">15/เม.ย./2565</small>
+                      <p class="card-text -ellipsis -two mt-4">
+                        This is a wider card with supporting text 
+                        below as a natural lead-in to additional content. 
+                        This content is a little bit longer.
+                        This is a wider card with supporting text below 
+                        as a natural lead-in to additional content. 
+                        This content is a little bit longer.
+                      </p>
+                  </div>
               </div>
-              <div class="card-img-overlay -background -height text-bottom">
+            </a>
+          </div>
+           <!-- Card 1 -->
+           <div class="col-6 col-lg-4">
+            <a href="#">
+              <div class="card -top-radius border-0 -shadow">
+                  <div class="ratio ratio-16x9 placeholder-img">
+                    <img src="https://unsplash.it/640/360?random=2" class="fit-img" alt="...">
+                  </div>
+                  <div class="card-body -height">
+                    <span class="badge bg-warning text-dark lh-base">News</span>
+                    <small class="card-text float-end text-dark">15/เม.ย./2565</small>
+                    <p class="card-text -bottom -ellipsis -two mt-4">
+                      This is a wider card with supporting text 
+                      below as a natural lead-in to additional content. 
+                      This content is a little bit longer.This content is a little bit longer.
+                    </p>
+                  </div>
+              </div>
+            </a>
+          </div>
+           <!-- Card 2-->
+           <div class="col-6 col-lg-4">
+            <a href="#">
+              <div class="card -top-radius border-0 -shadow">
+                <div class="ratio ratio-16x9 placeholder-img">
+                  <img src="https://unsplash.it/640/360?random=3" class="fit-img" alt="...">
+                </div>
+                <div class="card-body -height">
                   <span class="badge bg-warning text-dark lh-base">News</span>
-                  <small class="card-text float-end mb-0">15/เม.ย./2565</small>
-                  <p class="card-text -ellipsis -two mt-4">
+                  <small class="card-text float-end text-dark">15/เม.ย./2565</small>
+                  <p class="card-text -bottom -ellipsis -two mt-4">
                     This is a wider card with supporting text 
                     below as a natural lead-in to additional content. 
                     This content is a little bit longer.
-                    This is a wider card with supporting text below 
-                    as a natural lead-in to additional content. 
-                    This content is a little bit longer.
                   </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
-          <!-- Card 1 -->
-          <div class="col-6 col-lg-4">
-            <div class="card -top-radius border-0 shadow">
-              <div class="ratio ratio-16x9 placeholder-img">
-                <img src="https://unsplash.it/640/360?random=2" class="fit-img" alt="...">
+           <!-- Card 3 -->
+           <div class="col-6 col-lg-4">
+            <a href="#">
+              <div class="card -top-radius border-0 -shadow">
+                  <div class="ratio ratio-16x9 placeholder-img">
+                    <img src="https://unsplash.it/640/360?random=4" class="fit-img" alt="...">
+                  </div>
+                  <div class="card-body -height">
+                    <span class="badge bg-warning text-dark lh-base">News</span>
+                    <small class="card-text float-end text-dark">15/เม.ย./2565</small>
+                    <p class="card-text -bottom -ellipsis -two mt-4">
+                      This is a wider card with supporting text 
+                    </p>
+                  </div>
               </div>
-              <div class="card-body -height">
-                <span class="badge bg-warning text-dark lh-base">News</span>
-                <small class="card-text float-end">15/เม.ย./2565</small>
-                <p class="card-text -bottom -ellipsis -two mt-4">
-                  This is a wider card with supporting text 
-                  below as a natural lead-in to additional content. 
-                  This content is a little bit longer.This content is a little bit longer.
-                </p>
-              </div>
-            </div>
+            </a>
           </div>
-          <!-- Card 2-->
-          <div class="col-6 col-lg-4">
-            <div class="card -top-radius border-0 shadow">
-              <div class="ratio ratio-16x9 placeholder-img">
-                <img src="https://unsplash.it/640/360?random=3" class="fit-img" alt="...">
+           <!-- Card 4 -->
+           <div class="col-6 col-lg-4">
+            <a href="#">
+              <div class="card -top-radius border-0 -shadow">
+                  <div class="ratio ratio-16x9 placeholder-img">
+                    <img src="https://unsplash.it/640/360?random=5" class="fit-img" alt="...">
+                  </div>
+                  <div class="card-body -height">
+                    <span class="badge bg-warning text-dark lh-base">News</span>
+                    <small class="card-text float-end text-dark">15/เม.ย./2565</small>
+                    <p class="card-text -bottom -ellipsis -two mt-4">
+                      This is a wider card with supporting text 
+                      below as a natural lead-in to additional content. 
+                    </p>
+                  </div>
               </div>
-              <div class="card-body -height">
-                <span class="badge bg-warning text-dark lh-base">News</span>
-                <small class="card-text float-end">15/เม.ย./2565</small>
-                <p class="card-text -bottom -ellipsis -two mt-4">
-                  This is a wider card with supporting text 
-                  below as a natural lead-in to additional content. 
-                  This content is a little bit longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="col-6 col-lg-4">
-            <div class="card -top-radius border-0 shadow">
-              <div class="ratio ratio-16x9 placeholder-img">
-                <img src="https://unsplash.it/640/360?random=4" class="fit-img" alt="...">
-              </div>
-              <div class="card-body -height">
-                <span class="badge bg-warning text-dark lh-base">News</span>
-                <small class="card-text float-end">15/เม.ย./2565</small>
-                <p class="card-text -bottom -ellipsis -two mt-4">
-                  This is a wider card with supporting text 
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="col-6 col-lg-4">
-            <div class="card -top-radius border-0 shadow">
-              <div class="ratio ratio-16x9 placeholder-img">
-                <img src="https://unsplash.it/640/360?random=5" class="fit-img" alt="...">
-              </div>
-              <div class="card-body -height">
-                <span class="badge bg-warning text-dark lh-base">News</span>
-                <small class="card-text float-end">15/เม.ย./2565</small>
-                <p class="card-text -bottom -ellipsis -two mt-4">
-                  This is a wider card with supporting text 
-                  below as a natural lead-in to additional content. 
-                </p>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    
-    <section id="column1-section" class="bg-green py-5">
+     </section>
+     <section id="column1-section" class="bg-green py-5">
       <div class="container">
         <div class="row g-3">
           <h2 class="text-center heading-1">
@@ -217,59 +231,69 @@
                   </span>
               </a>
           </h2>
-          <div class="owl-carousel owl-theme -owlnav-style">
-            <div class="owl-items">
-              <div class="card -top-radius border-0 shadow">
-                <div class="ratio ratio-16x9 placeholder-img">
-                  <img src="https://unsplash.it/640/360?random=6" class="fit-img" alt="...">
+          <div class="owl-carousel owl-theme owl-loaded -owlnav-style">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  <a href="#"> 
+                    <div class="card -top-radius border-0 -shadow">
+                        <div class="ratio ratio-16x9 placeholder-img">
+                          <img src="https://unsplash.it/640/360?random=6" class="fit-img" alt="...">
+                        </div>
+                        <div class="card-body -height">
+                          <span class="badge bg-warning text-dark lh-base">News</span>
+                          <small class="card-text float-end text-dark">15/เม.ย./2565</small>
+                          <p class="card-text -bottom -ellipsis -two mt-4">
+                            This is a wider card with supporting text 
+                            below as a natural lead-in to additional content. 
+                            This content is a little bit longer.
+                          </p>
+                        </div>
+                    </div> 
+                  </a>
                 </div>
-                <div class="card-body -height">
-                  <span class="badge bg-warning text-dark lh-base">News</span>
-                  <small class="card-text float-end">15/เม.ย./2565</small>
-                  <p class="card-text -bottom -ellipsis -two mt-4">
-                    This is a wider card with supporting text 
-                    below as a natural lead-in to additional content. 
-                    This content is a little bit longer.
-                  </p>
+                <div class="owl-item">
+                  <a href="#">
+                    <div class="card -top-radius border-0 -shadow">
+                      <div class="ratio ratio-16x9 placeholder-img">
+                        <img src="https://unsplash.it/640/360?random=7" class="fit-img" alt="...">
+                      </div>
+                      <div class="card-body -height">
+                        <span class="badge bg-warning text-dark lh-base">News</span>
+                        <small class="card-text float-end text-dark">15/เม.ย./2565</small>
+                        <p class="card-text -bottom -ellipsis -two mt-4">
+                          This is a wider card with supporting text 
+                          below as a natural lead-in to additional content. 
+                          This content is a little bit longer.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </div> 
-            </div>
-            <div class="owl-items">
-              <div class="card -top-radius border-0 shadow">
-                <div class="ratio ratio-16x9 placeholder-img">
-                  <img src="https://unsplash.it/640/360?random=7" class="fit-img" alt="...">
-                </div>
-                <div class="card-body -height">
-                  <span class="badge bg-warning text-dark lh-base">News</span>
-                  <small class="card-text float-end">15/เม.ย./2565</small>
-                  <p class="card-text -bottom -ellipsis -two mt-4">
-                    This is a wider card with supporting text 
-                    below as a natural lead-in to additional content. 
-                    This content is a little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="owl-items">
-              <div class="card -top-radius border-0 shadow">
-                <div class="ratio ratio-16x9 placeholder-img">
-                  <img src="https://unsplash.it/640/360?random=8" class="fit-img" alt="...">
-                </div>
-                <div class="card-body -height">
-                  <span class="badge bg-warning text-dark lh-base">News</span>
-                  <small class="card-text float-end">15/เม.ย./2565</small>
-                  <p class="card-text -bottom -ellipsis -two mt-4">
-                    This is a wider card with supporting text 
-                    below as a natural lead-in to additional content. 
-                    This content is a little bit longer.
-                  </p>
+                <div class="owl-item">
+                  <a href="#">
+                    <div class="card -top-radius border-0 -shadow">
+                      <div class="ratio ratio-16x9 placeholder-img">
+                        <img src="https://unsplash.it/640/360?random=8" class="fit-img" alt="...">
+                      </div>
+                      <div class="card-body -height">
+                        <span class="badge bg-warning text-dark lh-base">News</span>
+                        <small class="card-text float-end text-dark">15/เม.ย./2565</small>
+                        <p class="card-text -bottom -ellipsis -two mt-4">
+                          This is a wider card with supporting text 
+                          below as a natural lead-in to additional content. 
+                          This content is a little bit longer.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
         </div>
         </div>
       </div>
-    </section>
+      </section>
 
     <!-- Footer -->
     <footer id="footer" class="main-footer">
@@ -309,7 +333,7 @@
             '<div class="icon-nav"><img class="img-item" src="https://static.ch7.com/images/newstar/icon/icon-next.svg" width="36" height="36 alt="next"></div>'],
              responsive:{
 		        0: {
-		            items: 1.4,
+		            items: 1.2,
 		        },
 		        768: {
 		            items: 2,
@@ -321,5 +345,28 @@
 		});  
     }); 
     </script>
+ 
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        // document.body.scrollTop = 0;
+        // document.documentElement.scrollTop = 0;
+        $('html, body').animate({scrollTop:0}, 'slow');
+      }
+      </script>
   </body>
 </html>

@@ -434,6 +434,27 @@ small.invisible {
   }
 }
 
+.owl-carousel.-owlnav-style .owl-stage-outer {
+  height: calc(100% + 40px);
+  margin: -15px;
+  padding: 15px;
+  width: calc(100% + 30px);
+}
+
+@media only screen and (max-width: 767.98px) {
+  .owl-carousel.-owlnav-style .owl-stage-outer {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.owl-carousel.-owlnav-style .owl-stage-outer .owl-stage .owl-item {
+  margin-bottom: 0;
+  transform: scale3d(0.98, 0.98, 1);
+  transition: all 0.3s ease-in-out;
+}
+
 .owl-carousel.-owlnav-style .owl-nav.disabled {
   position: absolute;
   top: 50%;
@@ -455,7 +476,7 @@ small.invisible {
   height: 100%;
   margin: 0;
   background-color: transparent;
-  z-index: 2;
+  z-index: 10;
 }
 
 .owl-carousel.-owlnav-style .owl-nav.disabled .owl-prev:hover {
@@ -481,7 +502,7 @@ small.invisible {
   height: 100%;
   margin: 0;
   background-color: transparent;
-  z-index: 2;
+  z-index: 10;
 }
 
 .owl-carousel.-owlnav-style .owl-nav.disabled .owl-next:hover {
@@ -861,5 +882,25 @@ small.invisible {
   .main-footer .content-footer-top .social .icon-social {
     margin: 0 0.75rem;
   }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 8%;
+  right: 2%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #FFC50C;
+  color: #F6F8F7;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  border-radius: 3rem;
+}
+
+#myBtn:hover {
+  background-color: #d8a400;
 }
 /*# sourceMappingURL=main.css.map */
