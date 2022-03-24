@@ -50,6 +50,24 @@ a:active {
   color: #004F37;
 }
 
+a.-light {
+  color: #E8E8E8;
+}
+
+a.-light:hover {
+  color: rgba(232, 232, 232, 0.8);
+}
+
+a img.fit-img {
+  object-fit: cover;
+  object-position: top;
+  transition: .3s ease-in-out;
+}
+
+a img.fit-img:hover {
+  transform: scale(1.1);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
@@ -79,6 +97,10 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 130px;
 }
 
+.card.-shadow {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
 .card-img-overlay.text-bottom {
   top: auto;
 }
@@ -98,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   /* autoprefixer: off */
   -webkit-box-orient: vertical;
+  /* autoprefixer: on */
 }
 
 .card-text.-ellipsis.-two {
@@ -110,11 +133,23 @@ h1, h2, h3, h4, h5, h6 {
   background-size: contain;
   background-position: center;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
 }
 
-.fit-img {
-  object-fit: cover;
-  object-position: top;
+.placeholder-img:hover {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.placeholder-img.-all-radius {
+  border-radius: .5rem;
+}
+
+.placeholder-img.-all-radius:hover {
+  border-radius: .5rem;
 }
 
 .ratio-16x9.-custom {
@@ -401,11 +436,10 @@ small.invisible {
 
 .owl-carousel.-owlnav-style .owl-nav.disabled {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   right: 0;
   margin: 0;
-  height: 100%;
 }
 
 .owl-carousel.-owlnav-style .owl-nav.disabled .owl-prev {
