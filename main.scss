@@ -510,7 +510,6 @@ small{
         margin-bottom: 0.25rem;
     }
     &.x{
-      background: transparent;
       border-radius: 3rem;
       padding: 0.85rem 0.5rem 0.6rem;
       .icon-bar{
@@ -536,7 +535,7 @@ small{
         }
       }
       &.collapsed{
-        background: $primary-02;
+        background: transparent;
         .icon-bar{
           &:nth-of-type(1){
             -webkit-transform: rotate(0);
