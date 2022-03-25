@@ -837,6 +837,106 @@ small.invisible {
   }
 }
 
+.cards.-poster {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  z-index: 1;
+  box-shadow: -6px 0px 20px rgba(0, 0, 0, 0.16);
+  margin: 0 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-poster {
+    margin: 0 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-poster {
+    margin: 0 3rem;
+  }
+}
+
+.cards.-poster .cards-img {
+  position: relative;
+  background-image: url(https://static.ch7.com/images/theme2019/ch7_logo-bw.png);
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  background-repeat: no-repeat;
+  background-color: #E8E8E8;
+  background-position: center;
+  padding-top: 130%;
+}
+
+.cards.-poster .container-img {
+  display: block;
+  width: 100%;
+  height: 0;
+}
+
+.cards.-poster .container-img .img-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.cards.-poster .cards-info {
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(179.85deg, rgba(9, 157, 255, 0) 18.31%, rgba(6, 77, 219, 0.71) 52.88%, #00133B 99.95%);
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-poster .cards-info {
+    padding: 1rem;
+  }
+}
+
+.cards.-poster .cards-info .number-contestants {
+  font-size: 32px;
+  font-size: 2rem;
+  color: #F6F8F7;
+  font-weight: bold;
+  padding-top: .4rem;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 3.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-poster .cards-info .number-contestants {
+    bottom: 4rem;
+    font-size: 44px;
+    font-size: 2.75rem;
+  }
+}
+
+.cards.-poster .cards-info .number-contestants > .stretched-link {
+  color: #F6F8F7;
+}
+
+.cards.-poster .cards-info .name-contestants {
+  color: #F6F8F7;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-poster .cards-info .name-contestants {
+    bottom: 1rem;
+  }
+}
+
 .main-collapsed {
   margin: 0 -1rem;
 }
