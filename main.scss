@@ -806,7 +806,6 @@ small{
     }
     .card-info{
       display: flex;
-      gap: 0.5rem;
       flex-wrap: wrap;
       align-items: center;
       @include media-breakpoint-up(md){
@@ -816,6 +815,7 @@ small{
       .contestant-img{
           position: relative;
           width: 5.25rem;
+          margin-right: 0.5rem;
           @include media-breakpoint-up(md){
             width: 7.25rem;
           }
@@ -856,8 +856,12 @@ small{
         }
       }
       .contestant-detail{
+        width: 66%;
+        @include media-breakpoint-up(md){ 
+          width: auto;
+        }
         .name-contestant{
-          @include font-size(18);
+          @include font-size(17.8);
           @include media-breakpoint-up(md){ 
             @include font-size(25);
           }
@@ -950,7 +954,7 @@ small{
       @include font-size(16);
     }
     &:not(.collapsed){
-      color: $primary-01;
+      color: $primary-02;
       background-color: transparent;
       box-shadow: none;
       &::after{

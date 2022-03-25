@@ -293,7 +293,6 @@ small.invisible {
 }
 
 .navbar .navbar-toggler.x {
-  background: transparent;
   border-radius: 3rem;
   padding: 0.85rem 0.5rem 0.6rem;
 }
@@ -314,7 +313,7 @@ small.invisible {
 }
 
 .navbar .navbar-toggler.x.collapsed {
-  background: #064DDB;
+  background: transparent;
 }
 
 .navbar .navbar-toggler.x.collapsed .icon-bar:nth-of-type(1) {
@@ -644,7 +643,6 @@ small.invisible {
 
 .cards.-landscape-collapse .card-info {
   display: flex;
-  gap: 0.5rem;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -659,6 +657,7 @@ small.invisible {
 .cards.-landscape-collapse .card-info .contestant-img {
   position: relative;
   width: 5.25rem;
+  margin-right: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -722,9 +721,19 @@ small.invisible {
   }
 }
 
+.cards.-landscape-collapse .card-info .contestant-detail {
+  width: 66%;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .card-info .contestant-detail {
+    width: auto;
+  }
+}
+
 .cards.-landscape-collapse .card-info .contestant-detail .name-contestant {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 17.8px;
+  font-size: 1.1125rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -860,7 +869,7 @@ small.invisible {
 }
 
 .accordion-button.toggle-collapse-manifesto:not(.collapsed) {
-  color: #03266E;
+  color: #064DDB;
   background-color: transparent;
   box-shadow: none;
 }
