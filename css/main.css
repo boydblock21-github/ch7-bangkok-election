@@ -72,10 +72,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-.text-green {
-  color: #019960;
-}
-
 .card.-radius {
   border-radius: .5rem;
 }
@@ -99,6 +95,39 @@ h1, h2, h3, h4, h5, h6 {
 
 .card.-shadow {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card.-arrow.-shadow {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card.-arrow .flex-row::before {
+  content: "";
+  background-image: url(../images/bxs_left-arrow.svg);
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translate(10%, -50%);
+  width: 24px;
+  height: 24px;
+}
+
+.card.-arrow .flex-row-reverse::after {
+  content: "";
+  background-image: url(../images/bxs_right-arrow.svg);
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translate(10%, -50%);
+  width: 24px;
+  height: 24px;
+}
+
+.card .img-position {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .card-img-overlay.text-bottom {
