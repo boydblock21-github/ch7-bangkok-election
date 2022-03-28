@@ -337,7 +337,13 @@ h1,h2,h3,h4,h5,h6{
     }
   }
   &.-width{
-    width: 60%;
+    width: 100%;
+    @include media-breakpoint-up(md){
+      width: 80%;
+    }
+    @include media-breakpoint-up(lg){
+      width: 60%;
+    }
   }
   &.-top-radius{
     border-radius: .5rem;
@@ -367,13 +373,18 @@ h1,h2,h3,h4,h5,h6{
     &.-height{
       min-height: 130px;
     }
-  }
-  .card-text{
-    &.-size{
-      font-size: 1.5rem;
-    }
-    &.-weight{
-      font-weight: bold;
+    .card-text{
+      &.-size{
+        font-size: 1.5rem;
+      }
+      &.-weight{
+        font-weight: bold;
+      }
+      &.-align{
+        @include media-breakpoint-up(md){
+        text-align: end;
+        }
+      }
     }
   }
   &.-shadow{
@@ -388,41 +399,37 @@ h1,h2,h3,h4,h5,h6{
     }
     &.-disable{
       .flex-row{
-        &::after{
+        &::before{
           content: "";
-          background-image: url(../images/bxs_right-arrow-disable.svg);
+          background-image: url(../images/bxs_left-arrow-disable.svg);
           position: absolute;
           top: 50%;
-          right: -10%;
+          left: -10%;
           transform: translate(10%, -50%);
           width: 24px;
           height: 24px;
-        }
-        @include media-breakpoint-down(lg){
-          &::before{
-          content: "";
-          position: absolute;
-          top: 50%;
-          background-image: url(../images/bxs_left-arrow-disable.svg);
-          left: -4%;
-          transform: translate(4%, -50%);
-          width: 24px;
-          height: 24px;
+          @include media-breakpoint-up(sm){
+            left: -7%;
           }
+        }
+        @include media-breakpoint-up(md){
           &::after{
-            display: none;
-          }
-        }
-        @include media-breakpoint-down(md){
-          &::before{
             content: "";
-            background-image: url(../images/bxs_left-arrow-disable.svg);
+            background-image: url(../images/bxs_right-arrow-disable.svg);
             position: absolute;
             top: 50%;
-            left: -10%;
+            right: -10%;
             transform: translate(10%, -50%);
             width: 24px;
             height: 24px; 
+          }
+          &::before{
+            display: none;
+          }
+        }
+        @include media-breakpoint-up(lg){
+          &::after{
+            right: -7%;
           }
         }
       }
@@ -436,70 +443,51 @@ h1,h2,h3,h4,h5,h6{
           transform: translate(10%, -50%);
           width: 24px;
           height: 24px;
-        }
-        @include media-breakpoint-down(lg){
-          &::after{
-          content: "";
-          position: absolute;
-          top: 50%;
-          background-image: url(../images/bxs_left-arrow-disable.svg);
-          left: -4%;
-          transform: translate(4%, -50%);
-          width: 24px;
-          height: 24px;
+          @include media-breakpoint-up(sm){
+            left: -7%;
           }
-        }
-        @include media-breakpoint-down(md){
-          &::after{
-            content: "";
-            background-image: url(../images/bxs_left-arrow-disable.svg);
-            position: absolute;
-            top: 50%;
+          @include media-breakpoint-up(md){
             left: -10%;
-            transform: translate(10%, -50%);
-            width: 24px;
-            height: 24px; 
+          }
+          @include media-breakpoint-up(lg){
+            left: -7%;
           }
         }
       }
     }
     &.-default{
       .flex-row{
-        &::after{
+        &::before{
           content: "";
-          background-image: url(../images/bxs_right-arrow-default.svg);
+          background-image: url(../images/bxs_left-arrow-default.svg);
           position: absolute;
           top: 50%;
-          right: -10%;
+          left: -10%;
           transform: translate(10%, -50%);
           width: 24px;
           height: 24px;
-        }
-        @include media-breakpoint-down(lg){
-          &::before{
-          content: "";
-          position: absolute;
-          top: 50%;
-          background-image: url(../images/bxs_left-arrow-default.svg);
-          left: -4%;
-          transform: translate(4%, -50%);
-          width: 24px;
-          height: 24px;
+          @include media-breakpoint-up(sm){
+            left: -7%;
           }
+        }
+        @include media-breakpoint-up(md){
           &::after{
-            display: none;
-          }
-        }
-        @include media-breakpoint-down(md){
-          &::before{
             content: "";
-            background-image: url(../images/bxs_left-arrow-default.svg);
+            background-image: url(../images/bxs_right-arrow-default.svg);
             position: absolute;
             top: 50%;
-            left: -10%;
+            right: -10%;
             transform: translate(10%, -50%);
             width: 24px;
             height: 24px; 
+          }
+          &::before{
+            display: none;
+          }
+        }
+        @include media-breakpoint-up(lg){
+          &::after{
+            right: -7%;
           }
         }
       }
@@ -513,70 +501,54 @@ h1,h2,h3,h4,h5,h6{
           transform: translate(10%, -50%);
           width: 24px;
           height: 24px;
-        }
-        @include media-breakpoint-down(lg){
-          &::after{
-          content: "";
-          position: absolute;
-          top: 50%;
-          background-image: url(../images/bxs_left-arrow-default.svg);
-          left: -4%;
-          transform: translate(4%, -50%);
-          width: 24px;
-          height: 24px;
+          @include media-breakpoint-up(sm){
+            left: -7%;
           }
-        }
-        @include media-breakpoint-down(md){
-          &::after{
-            content: "";
-            background-image: url(../images/bxs_left-arrow-default.svg);
-            position: absolute;
-            top: 50%;
+          @include media-breakpoint-up(md){
             left: -10%;
-            transform: translate(10%, -50%);
-            width: 24px;
-            height: 24px; 
+          }
+          @include media-breakpoint-up(lg){
+            left: -7%;
           }
         }
       }
     }
     &.-end{
       .flex-row{
-        &::after{
+        &::before{
           content: "";
-          background-image: url(../images/bxs_right-arrow-end.svg);
+          background-image: url(../images/bxs_left-arrow-end.svg);
           position: absolute;
           top: 50%;
-          right: -10%;
+          left: -10%;
           transform: translate(10%, -50%);
           width: 24px;
           height: 24px;
-        }
-        @include media-breakpoint-down(lg){
-          &::before{
-          content: "";
-          position: absolute;
-          top: 50%;
-          background-image: url(../images/bxs_left-arrow-end.svg);
-          left: -4%;
-          transform: translate(4%, -50%);
-          width: 24px;
-          height: 24px;
+          @include media-breakpoint-up(sm){
+            left: -7%;
           }
+          @include media-breakpoint-up(md){
+            left: -10%;
+          }
+        }
+        @include media-breakpoint-up(md){
           &::after{
-            display: none;
-          }
-        }
-        @include media-breakpoint-down(md){
-          &::before{
             content: "";
-            background-image: url(../images/bxs_left-arrow-end.svg);
+            background-image: url(../images/bxs_right-arrow-end.svg);
             position: absolute;
             top: 50%;
-            left: -10%;
+            right: -10%;
             transform: translate(10%, -50%);
             width: 24px;
             height: 24px; 
+          }
+          &::before{
+            display: none;
+          }
+        }
+        @include media-breakpoint-up(lg){
+          &::after{
+            right: -7%;
           }
         }
       }
@@ -590,29 +562,14 @@ h1,h2,h3,h4,h5,h6{
           transform: translate(10%, -50%);
           width: 24px;
           height: 24px;
-        }
-        @include media-breakpoint-down(lg){
-          &::after{
-          content: "";
-          position: absolute;
-          top: 50%;
-          background-image: url(../images/bxs_left-arrow-end.svg);
-          left: -4%;
-          transform: translate(4%, -50%);
-          width: 24px;
-          height: 24px;
+          @include media-breakpoint-up(sm){
+            left: -7%;
           }
-        }
-        @include media-breakpoint-down(md){
-          &::after{
-            content: "";
-            background-image: url(../images/bxs_left-arrow-end.svg);
-            position: absolute;
-            top: 50%;
+          @include media-breakpoint-up(md){
             left: -10%;
-            transform: translate(10%, -50%);
-            width: 24px;
-            height: 24px; 
+          }
+          @include media-breakpoint-up(lg){
+            left: -7%;
           }
         }
       }
@@ -649,7 +606,8 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     margin-top: -2rem;
     padding: 1rem;
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(lg){
+      margin-top: -1rem;
          padding: .5rem;
     }
   }
@@ -1410,12 +1368,12 @@ small{
   top: 0;
   left: 12%;
   height: 100%;
-  width: 4px;
+  width: 10px;
   background: $tertiary-05;
+  // @include media-breakpoint-up(md){
+  //   left: 8%;
+  //   }
   @include media-breakpoint-up(md){
-    left: 8%;
-    }
-  @include media-breakpoint-up(lg){
           left: 50%;
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
