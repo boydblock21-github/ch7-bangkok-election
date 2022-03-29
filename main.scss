@@ -518,6 +518,9 @@ h1,h2,h3,h4,h5,h6{
       }
     }
     &.-end{
+      img{
+        filter: hue-rotate(140deg);
+      }
       .flex-row{
         &::before{
           content: "";

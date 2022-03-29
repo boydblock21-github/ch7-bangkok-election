@@ -302,6 +302,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.card.-arrow.-end img {
+  filter: hue-rotate(140deg);
+}
+
 .card.-arrow.-end .flex-row::before {
   content: "";
   background-image: url(../images/bxs_left-arrow-end.svg);
