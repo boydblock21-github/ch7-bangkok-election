@@ -601,7 +601,6 @@ h1,h2,h3,h4,h5,h6{
       display: -webkit-box;
       /* autoprefixer: off */
       -webkit-box-orient: vertical;
-      /* autoprefixer: on */
       &.-two{
         -webkit-line-clamp: 2;
       }
@@ -1033,8 +1032,8 @@ small{
         padding-bottom: 1.75rem;
         @include media-breakpoint-up(md){
           @include font-size(88);    
-          padding-top: 0.5rem;
-          padding-bottom: 0.5rem;
+          padding-top: 2.05rem;
+          padding-bottom: 2.05rem;
         }
         @include media-breakpoint-up(lg){
           padding-top: 1.25rem;
@@ -1059,7 +1058,7 @@ small{
           width: 5.25rem;
           margin-right: 0.5rem;
           @include media-breakpoint-up(md){
-            width: 7.25rem;
+            width: 10.25rem;
           }
           @include media-breakpoint-up(lg){
             width: 9.25rem;
@@ -1086,7 +1085,7 @@ small{
             object-fit: cover;
             border-radius: 0.5rem;
             @include media-breakpoint-up(md){
-              height: 7.75rem;
+              height: 10.75rem;
             }
             @include media-breakpoint-up(lg){
               height: 9.25rem;
@@ -1311,3 +1310,65 @@ small{
     }
   }
 }
+
+.poll-container-related{
+  box-shadow: 0px 4px 4px rgba($dark, 0.05);
+  background-color: $gray-07;
+  border-radius: 0.5rem;
+  ul{
+    padding: 0;
+    margin-bottom: 0; 
+    .list-poll-content{
+      list-style: none;
+      border-bottom: 1px solid $gray-05;
+      padding: 1rem;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  .link-poll-content{
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+  .poll-content{
+    display: flex;
+    gap: 1rem;
+    .placeholder-img{
+      border-radius: 0.5rem;
+      width: 100%;
+      @include media-breakpoint-up(md){
+        width: 75%;
+      }
+      @include media-breakpoint-up(lg){
+        width: 100%;
+      }
+      img{
+        object-fit: cover;
+        transition: .3s ease-in-out;
+      }
+    }
+    .info-poll-content{
+      width: 100%;
+        p{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          /* autoprefixer: off */
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          @include media-breakpoint-up(md){
+            -webkit-line-clamp: initial;
+          }
+          @include media-breakpoint-up(lg){
+            -webkit-line-clamp: 3;
+          } 
+      }
+    }
+  }
+}
+
+
