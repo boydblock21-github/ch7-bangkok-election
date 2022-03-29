@@ -398,6 +398,10 @@ h1,h2,h3,h4,h5,h6{
       min-height: 85px;
     }
     &.-disable{
+      img{
+        filter:grayscale(1);
+        opacity: .6;
+      }
       .flex-row{
         &::before{
           content: "";
