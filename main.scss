@@ -639,12 +639,13 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 }
-
-.ratio-16x9{
-  &.-custom{
-    --bs-aspect-ratio: calc(9 / 16 * 60%);
-    @include media-breakpoint-down(lg){
-      --bs-aspect-ratio: calc(9 / 16 * 100%);
+.ratio{
+  &.ratio-16x9{
+    &.-custom{
+      --bs-aspect-ratio: calc(9 / 16 * 60%);
+      @include media-breakpoint-down(lg){
+        --bs-aspect-ratio: calc(9 / 16 * 100%);
+      }
     }
   }
 }

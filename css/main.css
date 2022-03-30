@@ -443,12 +443,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .5rem;
 }
 
-.ratio-16x9.-custom {
+.ratio.ratio-16x9.-custom {
   --bs-aspect-ratio: calc(9 / 16 * 60%);
 }
 
 @media only screen and (max-width: 991.98px) {
-  .ratio-16x9.-custom {
+  .ratio.ratio-16x9.-custom {
     --bs-aspect-ratio: calc(9 / 16 * 100%);
   }
 }
