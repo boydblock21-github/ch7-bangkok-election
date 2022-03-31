@@ -1,5 +1,4 @@
 const chartPoll = document.getElementById('myChart');
-Chart.defaults.global.defaultFontFamily = "Sukhumvit Set";
 const myChart = new Chart(chartPoll, {
     type: 'bar',
     data: {
@@ -54,7 +53,6 @@ const myChart = new Chart(chartPoll, {
                 display: false
             },
         },
-        defaultFontFamily: Chart.defaults.global.defaultFontFamily = "'Sukhumvit Set'",
         aspectRatio: 1.75
     }
 });
