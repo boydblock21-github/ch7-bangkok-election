@@ -35,9 +35,9 @@
           <ul class="navbar-nav -list-menu mx-auto">
             <li class="nav-item"><a class="nav-link" href="#mainNav">หน้าแรก</a></li>
             <li class="nav-item"><a class="nav-link" href="#poll-section">Poll</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contestant-section">ผู้สมัคร</a></li>
             <li class="nav-item"><a class="nav-link" href="#news-section">ข่าว</a></li>
             <li class="nav-item"><a class="nav-link" href="#column1-section">คอลัมน์</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contestant-section">ผู้สมัคร</a></li>
             <li class="nav-item"><a class="nav-link" href="#timeline-section">Time line</a></li>
             <li class="nav-item">
               <a class="btn btn-tertiary-01" href="election-pattaya.html" role="button">เลือกตั้งพัทยา</a>
@@ -58,10 +58,24 @@
       </div>
     </section>
 
-    <section id="poll-section" class="py-4">
+    <section id="poll-section" class="pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-8"></div>
+          <div class="col-12 col-lg-8">
+            <div class="row">
+              <h2 class="text-center text-green mb-4">ผลสำรวจจากประชาชน</h2>
+              <h4 class="text-center mb-2">ผู้สมัครที่ประชาชนอยากจะเลือกให้มาเป็นผู้ว่ากรุงเทพ ครั้งที่ 14</h4>
+              <p class="text-danger text-center">**อัพเดทคะแนนแบบเรียลไทม์</p>
+            </div>
+            <div id="chart-poll" class="row mx-auto">
+              <div class="container-chart-poll">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+            <div class="row mt-4 mx-auto mb-4 mb-lg-0">
+              <a class="btn btn-primary-01 btn-xl" href="#" role="button">VOTE</a>
+            </div>
+          </div>
           <div class="col-12 col-lg-4">
             <div class="poll-container-related">
               <ul>
@@ -162,184 +176,6 @@
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contestant-section" class="">
-    </section>
-      
-    <section id="contestant-section" class="contestant-container pt-5">
-      <div class="container">
-        <div class="row">
-          <h2 class="text-center">ผู้สมัครรับเลือกตั้งผู้ว่าราชการกรุงเทพมหานครฯ</h2>
-        </div>
-        <div class="row">
-          <div class="card-container my-4">
-            <div class="cards -landscape-collapse">
-              <div class="row main-info">
-                <div class="col-10 pe-0 pe-md-3">
-                  <div class="card-info">
-                    <div class="contestant-img">
-                      <div class="thumb-img">
-                        <img class="img-item" src="../images//img-contestant2.png" alt="">
-                      </div>
-                    </div>
-                    <div class="contestant-detail">
-                      <h3 class="name-contestant">รศ.ดร.ชัชชาติ สิทธิพันธุ์</h3>
-                      <div class="party-info">
-                        <img  class="logo-party" src="../images/logo-party2.svg" alt="พรรคเพื่อไทย">
-                        <p class="name-party">พรรคเพื่อไทย</p>
-                      </div>
-                      <!-- <div class="vote-contestant">
-                        <p class="score-voting">1,234,456 <span class="sub-title"></span>คะแนน</p>
-                      </div> -->
-                    </div>
-                   
-                  </div>
-                </div>
-                <div class="col-2 ps-0">
-                  <div class="card-number-content">
-                    <p class="text-title">หมายเลข</p>
-                    <h2 class="number-contestant">1</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="row main-collapsed">
-                <a class="toggle-collapse-manifesto accordion-button collapsed" 
-                data-bs-toggle="collapse" data-bs-target="#collapseManifestoNo1" aria-expanded="true" aria-controls="collapseManifestoNo1" href="#1">
-                  ดูนโยบายเพิ่มเติม
-                </a>
-                <div class="col-12 col-md-10 col-lg-8 mx-auto">
-                  <div class="accordion -details-manifesto" id="manifesto01">
-                    <div class="accordion-item">
-                      <div id="collapseManifestoNo1" class="accordion-collapse collapse" aria-labelledby="infoManifesto01" data-bs-parent="#manifesto01">
-                        <div class="accordion-body">
-                          <h3>นโนบาย</h3>
-                          <ul>
-                            <li>people เรื่องคน เน้นระบบเส้นเลือดฝอยและคุณภาพชีวิต</li>
-                            <li>digital เรื่องเทคโนโลยีดิจิทัล ต้องนำเทคโนโลยีมาช่วยบริหารงานให้มีประสิทธิภาพมากขึ้นเพื่อลดขั้นตอน</li>
-                            <li>green เรื่องสิ่งแวดล้อม เน้นเรื่องการรักษาสิ่งแวดล้อม ขยะ ควันพิษ ฝุ่น</li>
-                            <li>economy เรื่องเศรษฐกิจ เพราะเมืองอยู่ได้ด้วยเศรษฐกิจ ตอนนี้เศรษฐกิจมีปัญหาเมืองต้องมาช่วยดูแลเรื่องเศรษฐกิจของคนให้มากขึ้น พยายามสร้างโอกาสคน ลดขั้นตอน หนุนให้เศรษฐกิจฟื้นคืนมา</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="cards -landscape-collapse">
-                <div class="row main-info">
-                  <div class="col-10 pe-0 pe-md-3">
-                    <div class="card-info">
-                      <div class="contestant-img">
-                        <div class="thumb-img">
-                          <img class="img-item" src="../images//img-contestant2.png" alt="">
-                        </div>
-                      </div>
-                      <div class="contestant-detail">
-                        <h3 class="name-contestant">รศ.ดร.ชัชชาติ สิทธิพันธุ์</h3>
-                        <div class="party-info">
-                          <img  class="logo-party" src="../images/logo-party2.svg" alt="พรรคเพื่อไทย">
-                          <p class="name-party">พรรคเพื่อไทย</p>
-                        </div>
-                        <!-- <div class="vote-contestant">
-                          <p class="score-voting">1,234,456 <span class="sub-title"></span>คะแนน</p>
-                        </div> -->
-                      </div>
-                     
-                    </div>
-                  </div>
-                  <div class="col-2 ps-0">
-                    <div class="card-number-content">
-                      <p class="text-title">หมายเลข</p>
-                      <h2 class="number-contestant">2</h2>
-                    </div>
-                  </div>
-                </div>
-                <div class="row main-collapsed">
-                  <a class="toggle-collapse-manifesto accordion-button collapsed" 
-                  data-bs-toggle="collapse" data-bs-target="#collapseManifestoNo2" aria-expanded="true" aria-controls="collapseManifestoNo2" href="#1">
-                    ดูนโยบายเพิ่มเติม
-                  </a>
-                  <div class="col-12 col-md-10 col-lg-8 mx-auto">
-                    <div class="accordion -details-manifesto" id="manifesto02">
-                      <div class="accordion-item">
-                        <div id="collapseManifestoNo2" class="accordion-collapse collapse" aria-labelledby="infoManifesto02" data-bs-parent="#manifesto02">
-                          <div class="accordion-body">
-                            <h3>นโนบาย</h3>
-                            <ul>
-                              <li>people เรื่องคน เน้นระบบเส้นเลือดฝอยและคุณภาพชีวิต</li>
-                              <li>digital เรื่องเทคโนโลยีดิจิทัล ต้องนำเทคโนโลยีมาช่วยบริหารงานให้มีประสิทธิภาพมากขึ้นเพื่อลดขั้นตอน</li>
-                              <li>green เรื่องสิ่งแวดล้อม เน้นเรื่องการรักษาสิ่งแวดล้อม ขยะ ควันพิษ ฝุ่น</li>
-                              <li>economy เรื่องเศรษฐกิจ เพราะเมืองอยู่ได้ด้วยเศรษฐกิจ ตอนนี้เศรษฐกิจมีปัญหาเมืองต้องมาช่วยดูแลเรื่องเศรษฐกิจของคนให้มากขึ้น พยายามสร้างโอกาสคน ลดขั้นตอน หนุนให้เศรษฐกิจฟื้นคืนมา</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cards -landscape-collapse">
-                <div class="row main-info">
-                  <div class="col-10 pe-0 pe-md-3">
-                    <div class="card-info">
-                      <div class="contestant-img">
-                        <div class="thumb-img">
-                          <img class="img-item" src="../images//img-contestant2.png" alt="">
-                        </div>
-                      </div>
-                      <div class="contestant-detail">
-                        <h3 class="name-contestant">รศ.ดร.ชัชชาติ สิทธิพันธุ์</h3>
-                        <div class="party-info">
-                          <img  class="logo-party" src="../images/logo-party2.svg" alt="พรรคเพื่อไทย">
-                          <p class="name-party">พรรคเพื่อไทย</p>
-                        </div>
-                        <!-- <div class="vote-contestant">
-                          <p class="score-voting">1,234,456 <span class="sub-title"></span>คะแนน</p>
-                        </div> -->
-                      </div>
-                     
-                    </div>
-                  </div>
-                  <div class="col-2 ps-0">
-                    <div class="card-number-content">
-                      <p class="text-title">หมายเลข</p>
-                      <h2 class="number-contestant">3</h2>
-                    </div>
-                  </div>
-                </div>
-                <div class="row main-collapsed">
-                  <a class="toggle-collapse-manifesto accordion-button collapsed" 
-                  data-bs-toggle="collapse" data-bs-target="#collapseManifestoNo3" aria-expanded="true" aria-controls="collapseManifestoNo3" href="#1">
-                    ดูนโยบายเพิ่มเติม
-                  </a>
-                  <div class="col-12 col-md-10 col-lg-8 mx-auto">
-                    <div class="accordion -details-manifesto" id="manifesto03">
-                      <div class="accordion-item">
-                        <div id="collapseManifestoNo3" class="accordion-collapse collapse" aria-labelledby="infoManifesto03" data-bs-parent="#manifesto03">
-                          <div class="accordion-body">
-                            <h3>นโนบาย</h3>
-                            <ul>
-                              <li>people เรื่องคน เน้นระบบเส้นเลือดฝอยและคุณภาพชีวิต</li>
-                              <li>digital เรื่องเทคโนโลยีดิจิทัล ต้องนำเทคโนโลยีมาช่วยบริหารงานให้มีประสิทธิภาพมากขึ้นเพื่อลดขั้นตอน</li>
-                              <li>green เรื่องสิ่งแวดล้อม เน้นเรื่องการรักษาสิ่งแวดล้อม ขยะ ควันพิษ ฝุ่น</li>
-                              <li>economy เรื่องเศรษฐกิจ เพราะเมืองอยู่ได้ด้วยเศรษฐกิจ ตอนนี้เศรษฐกิจมีปัญหาเมืองต้องมาช่วยดูแลเรื่องเศรษฐกิจของคนให้มากขึ้น พยายามสร้างโอกาสคน ลดขั้นตอน หนุนให้เศรษฐกิจฟื้นคืนมา</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-           
-          </div>        
         </div>
       </div>
     </section>
@@ -599,6 +435,119 @@
       </div>
     </section>
 
+    <section id="contestant-section" class="contestant-container pt-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center">ผู้สมัครรับเลือกตั้งผู้ว่าราชการกรุงเทพมหานครฯ</h2>
+        </div>
+        <div class="row">
+          <div class="card-container my-4">
+            <div class="cards -landscape-collapse">
+              <div class="row main-info">
+                <div class="col-10 pe-0 pe-md-3">
+                  <div class="card-info">
+                    <div class="contestant-img">
+                      <div class="thumb-img">
+                        <img class="img-item" src="../images//img-contestant2.png" alt="">
+                      </div>
+                    </div>
+                    <div class="contestant-detail">
+                      <h3 class="name-contestant">รศ.ดร.ชัชชาติ สิทธิพันธุ์</h3>
+                      <div class="party-info">
+                        <img  class="logo-party" src="../images/logo-party2.svg" alt="พรรคเพื่อไทย">
+                        <p class="name-party">พรรคเพื่อไทย</p>
+                      </div>
+                      <!-- <div class="vote-contestant">
+                        <p class="score-voting">1,234,456 <span class="sub-title"></span>คะแนน</p>
+                      </div> -->
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class="col-2 ps-0">
+                  <div class="card-number-content">
+                    <p class="text-title">หมายเลข</p>
+                    <h2 class="number-contestant">1</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <a class="link-manifesto" href="#1">ดูนโยบายเพิ่มเติม ></a>
+              </div>
+            </div>
+
+            <div class="cards -landscape-collapse">
+                <div class="row main-info">
+                  <div class="col-10 pe-0 pe-md-3">
+                    <div class="card-info">
+                      <div class="contestant-img">
+                        <div class="thumb-img">
+                          <img class="img-item" src="../images//img-contestant2.png" alt="">
+                        </div>
+                      </div>
+                      <div class="contestant-detail">
+                        <h3 class="name-contestant">รศ.ดร.ชัชชาติ สิทธิพันธุ์</h3>
+                        <div class="party-info">
+                          <img  class="logo-party" src="../images/logo-party2.svg" alt="พรรคเพื่อไทย">
+                          <p class="name-party">พรรคเพื่อไทย</p>
+                        </div>
+                        <!-- <div class="vote-contestant">
+                          <p class="score-voting">1,234,456 <span class="sub-title"></span>คะแนน</p>
+                        </div> -->
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="col-2 ps-0">
+                    <div class="card-number-content">
+                      <p class="text-title">หมายเลข</p>
+                      <h2 class="number-contestant">2</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <a class="link-manifesto" href="#2">ดูนโยบายเพิ่มเติม ></a>
+                </div>
+              </div>
+
+              <div class="cards -landscape-collapse">
+                <div class="row main-info">
+                  <div class="col-10 pe-0 pe-md-3">
+                    <div class="card-info">
+                      <div class="contestant-img">
+                        <div class="thumb-img">
+                          <img class="img-item" src="../images//img-contestant2.png" alt="">
+                        </div>
+                      </div>
+                      <div class="contestant-detail">
+                        <h3 class="name-contestant">รศ.ดร.ชัชชาติ สิทธิพันธุ์</h3>
+                        <div class="party-info">
+                          <img  class="logo-party" src="../images/logo-party2.svg" alt="พรรคเพื่อไทย">
+                          <p class="name-party">พรรคเพื่อไทย</p>
+                        </div>
+                        <!-- <div class="vote-contestant">
+                          <p class="score-voting">1,234,456 <span class="sub-title"></span>คะแนน</p>
+                        </div> -->
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="col-2 ps-0">
+                    <div class="card-number-content">
+                      <p class="text-title">หมายเลข</p>
+                      <h2 class="number-contestant">3</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <a class="link-manifesto" href="#3">ดูนโยบายเพิ่มเติม ></a>
+                </div>
+              </div>
+          </div>        
+        </div>
+      </div>
+    </section>
+
     <section id="timeline-section" class="py-5">
       <div class="container">
         <h2 class="text-center text-green mb-4">ปฏิทินการเลือกตั้ง</h2>
@@ -813,24 +762,23 @@
         </div>   
       </div>
     </section>
-
     <!-- Footer -->
     <footer id="footer" class="main-footer">
-        <div class="container">
+      <div class="container">
         <div class="content-footer-top">
-            <div class="info">
+          <div class="info">
             <small class="text-light">Copyright © 2021 Bangkok Broadcasting &amp; T.V. Co.,Ltd. <span class="d-block d-md-inline">All rights reserved</span></small>
-            </div>  
-            <div class="footer-right">
+          </div>  
+          <div class="footer-right">
             <div class="social">
                 <a href="https://www.facebook.com/Ch7HD" target="_blank"><img class="icon-social" src="https://static.ch7.com/images/newstar/icon/icon-footer-facebook.svg" alt="facebook"></a>
                 <a href="https://twitter.com/ch7hd" target="_blank"><img class="icon-social" src="https://static.ch7.com/images/newstar/icon/icon-footer-twitter.svg" alt="twitter"></a>
                 <a href="https://www.instagram.com/ch7hd" target="_blank"><img class="icon-social" src="https://static.ch7.com/images/newstar/icon/icon-footer-instagram.svg" alt="instagram"></a>
                 <a href="https://www.youtube.com/ch7hd" target="_blank"><img class="icon-social" src="https://static.ch7.com/images/newstar/icon/icon-footer-youtube.svg" alt="youtube"></a>
             </div>
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </footer>
 
     
@@ -839,11 +787,22 @@
    <script src="https://static.ch7.com/js/jquery-3.6.0-newstart.min.js" ></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 
+   <!--  Bootstrap JS -->
    <script src="https://static.bugaboo.tv/js/owl.carousel.2.3.min.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="../js/chart-poll.js"></script>
 
   <!-- Navbar Toggle JS-->
   <script src="../js/navbar-toggle.js"></script>
 
+  <script>
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+  </script>
+   
    <script type="text/javascript">
     $(document).ready(function() {
       // Owl Carousel
@@ -856,7 +815,7 @@
             '<div class="icon-nav"><img class="img-item" src="https://static.ch7.com/images/newstar/icon/icon-next.svg" width="36" height="36 alt="next"></div>'],
              responsive:{
 		        0: {
-		            items: 1.4,
+		            items: 1.2,
 		        },
 		        768: {
 		            items: 2,
@@ -868,7 +827,7 @@
 		});  
     }); 
     </script>
-
+ 
     <script>
       //Get the button
       var mybutton = document.getElementById("myBtn");
@@ -890,6 +849,6 @@
         // document.documentElement.scrollTop = 0;
         $('html, body').animate({scrollTop:0}, 'slow');
       }
-    </script>
+      </script>
   </body>
 </html>
