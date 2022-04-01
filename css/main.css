@@ -633,6 +633,37 @@ small.invisible {
   transform: rotate(0);
 }
 
+.btn-primary-01 {
+  color: #ffffff;
+  background-color: #03266E;
+  border-color: #03266E;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+.btn-primary-01:hover {
+  color: #F6F8F7;
+  background-color: #00133B;
+  border-color: #00133B;
+}
+
+.btn-primary-01:focus {
+  color: #F6F8F7;
+  box-shadow: 0 0 0 0.2rem rgba(0, 19, 59, 0.5);
+}
+
+.btn-primary-01.btn-xl {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-primary-01.btn-xl {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+
 .btn-tertiary-01 {
   color: #ffffff;
   background-color: #099DFF;
@@ -1153,52 +1184,21 @@ small.invisible {
   padding: 0.25rem 0;
 }
 
-.accordion-button.toggle-collapse-manifesto {
+.link-manifesto {
   color: #064DDB;
   font-weight: bold;
   border: none;
-  justify-content: center;
   border-top: 1px solid #ADADAD;
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
   font-size: 14px;
   font-size: 0.875rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .accordion-button.toggle-collapse-manifesto {
+  .link-manifesto {
     font-size: 16px;
     font-size: 1rem;
-  }
-}
-
-.accordion-button.toggle-collapse-manifesto:not(.collapsed) {
-  color: #064DDB;
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.accordion-button.toggle-collapse-manifesto:not(.collapsed)::after {
-  margin-left: 0.5rem;
-  background-image: url(../images/icon/icon-down.svg);
-}
-
-.accordion-button.toggle-collapse-manifesto:focus {
-  box-shadow: none;
-}
-
-.accordion-button.toggle-collapse-manifesto::after {
-  margin-right: initial;
-  margin-left: 0.5rem;
-  height: 0.75rem;
-  background-size: 1rem;
-  background-image: url(../images/icon/icon-down.svg);
-}
-
-@media only screen and (min-width: 768px) {
-  .accordion-button.toggle-collapse-manifesto::after {
-    font-size: 25px;
-    font-size: 1.5625rem;
   }
 }
 
@@ -1378,6 +1378,25 @@ small.invisible {
 @media only screen and (min-width: 1024px) {
   .poll-container-related .poll-content .info-poll-content p {
     -webkit-line-clamp: 3;
+  }
+}
+
+.container-chart-poll {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container-chart-poll {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container-chart-poll {
+    margin-bottom: 0.8rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

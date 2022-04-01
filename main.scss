@@ -815,6 +815,30 @@ small{
   }
 }
 
+.btn-primary-01{
+  color: $gray-07;
+  background-color: $primary-01;
+  border-color: $primary-01;
+  line-height: 1.7;
+  font-weight: bold;
+  &:hover{
+    color: $light;
+    background-color: $primary-05;
+    border-color: $primary-05;
+  }
+  &:focus{
+    color: $light;
+    box-shadow: 0 0 0 0.2rem rgba($primary-05, 0.5);
+  }
+  &.btn-xl{
+    @include font-size(24);
+    @include media-breakpoint-up(md){  
+      @include font-size(32);
+    }
+
+  }
+}
+
 .btn-tertiary-01{
   color: $gray-07;
   background-color: $tertiary-01;
@@ -1196,41 +1220,16 @@ small{
     }
   }
 }
-.accordion-button{
-  &.toggle-collapse-manifesto{
-    color: $primary-02;
-    font-weight: bold;
-    border: none;
-    justify-content: center;
-    border-top: 1px solid $gray-05;
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    @include font-size(14);
-    @include media-breakpoint-up(md){
-      @include font-size(16);
-    }
-    &:not(.collapsed){
-      color: $primary-02;
-      background-color: transparent;
-      box-shadow: none;
-      &::after{
-        margin-left: 0.5rem;
-        background-image: url(../images/icon/icon-down.svg);
-      }
-    }
-    &:focus{
-      box-shadow: none;
-    }
-    &::after{
-      margin-right: initial;
-      margin-left: 0.5rem;
-      height: 0.75rem;
-      background-size: 1rem;
-      background-image: url(../images/icon/icon-down.svg);
-      @include media-breakpoint-up(md){
-        @include font-size(25);
-      } 
-    }
+.link-manifesto{
+  color: $primary-02;
+  font-weight: bold;
+  border: none;
+  border-top: 1px solid $gray-05;
+  text-align: center;
+  padding: 1rem;
+  @include font-size(14);
+  @include media-breakpoint-up(md){
+    @include font-size(16);
   }
 }
 
@@ -1383,6 +1382,19 @@ small{
           } 
       }
     }
+  }
+}
+
+.container-chart-poll{
+  background-color: $gray-07;
+  padding: 0.5rem;
+  box-shadow: 0px 4px 4px rgba($dark, 0.05);
+  border-radius: 0.5rem;
+  @include media-breakpoint-up(lg){
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-up(xl){
+    margin-bottom: 0.8rem;
   }
 }
 
