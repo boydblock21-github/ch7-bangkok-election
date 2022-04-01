@@ -405,7 +405,7 @@ h1,h2,h3,h4,h5,h6{
       .flex-row{
         &::before{
           content: "";
-          background-image: url(../images/bxs_left-arrow-disable.svg);
+          background-image: url(https://static.ch7.com/images/elected_governor/bxs_left-arrow-disable.svg);
           position: absolute;
           top: 50%;
           left: -10%;
@@ -419,7 +419,7 @@ h1,h2,h3,h4,h5,h6{
         @include media-breakpoint-up(md){
           &::after{
             content: "";
-            background-image: url(../images/bxs_right-arrow-disable.svg);
+            background-image: url(https://static.ch7.com/images/elected_governor/bxs_right-arrow-disable.svg);
             position: absolute;
             top: 50%;
             right: -10%;
@@ -440,7 +440,7 @@ h1,h2,h3,h4,h5,h6{
       .flex-row-reverse{
         &::before{
           content: "";
-          background-image: url(../images/bxs_left-arrow-disable.svg);
+          background-image: url(https://static.ch7.com/images/elected_governor/bxs_left-arrow-disable.svg);
           position: absolute;
           top: 50%;
           left: -10%;
@@ -463,7 +463,7 @@ h1,h2,h3,h4,h5,h6{
       .flex-row{
         &::before{
           content: "";
-          background-image: url(../images/bxs_left-arrow-default.svg);
+          background-image: url(https://static.ch7.com/images/elected_governor/bxs_left-arrow-default.svg);
           position: absolute;
           top: 50%;
           left: -10%;
@@ -477,7 +477,7 @@ h1,h2,h3,h4,h5,h6{
         @include media-breakpoint-up(md){
           &::after{
             content: "";
-            background-image: url(../images/bxs_right-arrow-default.svg);
+            background-image: url(https://static.ch7.com/images/elected_governor/bxs_right-arrow-default.svg);
             position: absolute;
             top: 50%;
             right: -10%;
@@ -498,7 +498,7 @@ h1,h2,h3,h4,h5,h6{
       .flex-row-reverse{
         &::before{
           content: "";
-          background-image: url(../images/bxs_left-arrow-default.svg);
+          background-image: url(https://static.ch7.com/images/elected_governor/bxs_left-arrow-default.svg);
           position: absolute;
           top: 50%;
           left: -10%;
@@ -524,7 +524,7 @@ h1,h2,h3,h4,h5,h6{
       .flex-row{
         &::before{
           content: "";
-          background-image: url(../images/bxs_left-arrow-end.svg);
+          background-image: url(https://static.ch7.com/images/elected_governor/bxs_left-arrow-end.svg);
           position: absolute;
           top: 50%;
           left: -10%;
@@ -541,7 +541,7 @@ h1,h2,h3,h4,h5,h6{
         @include media-breakpoint-up(md){
           &::after{
             content: "";
-            background-image: url(../images/bxs_right-arrow-end.svg);
+            background-image: url(https://static.ch7.com/images/elected_governor/bxs_right-arrow-end.svg);
             position: absolute;
             top: 50%;
             right: -10%;
@@ -562,7 +562,7 @@ h1,h2,h3,h4,h5,h6{
       .flex-row-reverse{
         &::before{
           content: "";
-          background-image: url(../images/bxs_left-arrow-end.svg);
+          background-image: url(https://static.ch7.com/images/elected_governor/bxs_left-arrow-end.svg);
           position: absolute;
           top: 50%;
           left: -10%;
@@ -863,7 +863,7 @@ small{
 }
 
 .bg-banner{
-    background-image: url(../images/bg-banner.png);
+    background-image: url(https://static.ch7.com/images/elected_governor/bg-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center,top;
