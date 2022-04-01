@@ -659,28 +659,42 @@ h1,h2,h3,h4,h5,h6{
   a{
     font-size: 2rem;
     &:hover{
-      visibility: visible !important;
       .invisible{
         visibility: visible !important;
       }
       .icon-md{
-        margin-left: 0rem;
+        margin-left: -1rem;
       }
     }
     .invisible{
       vertical-align: middle;
+      -webkit-transition: all, 0.25s, cubic-bezier(0.25, 0.46, 0.45, 0.94), 0.12s;
       transition: all, 0.25s, cubic-bezier(0.25, 0.46, 0.45, 0.94), 0.12s;
     }
     .icon-md{
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
-      margin-left: -3rem;
+      margin-left: -4rem;
+      @include media-breakpoint-down(sm){
+        -webkit-transition: all 0s ease-in-out;
+        transition: all 0s ease-in-out;
+      }
     }
   }
 }
 small{
   &.invisible{
-  font-size: .8rem;
+  font-size: .7rem;
   }
+}
+.icon-md{
+    display: inline-block;
+    width: 32px;
+    padding: 0 0 0 1rem;
+    line-height: 1;
+}
+.invisible{
+  visibility: hidden !important;
 }
 // heading transitions end
 

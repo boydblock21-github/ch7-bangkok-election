@@ -461,16 +461,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
 }
 
-.heading-1 a:hover {
-  visibility: visible !important;
-}
-
 .heading-1 a:hover .invisible {
   visibility: visible !important;
 }
 
 .heading-1 a:hover .icon-md {
-  margin-left: 0rem;
+  margin-left: -1rem;
 }
 
 .heading-1 a .invisible {
@@ -480,11 +476,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading-1 a .icon-md {
   transition: all 0.2s ease-in-out;
-  margin-left: -3rem;
+  margin-left: -4rem;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .heading-1 a .icon-md {
+    transition: all 0s ease-in-out;
+  }
 }
 
 small.invisible {
-  font-size: .8rem;
+  font-size: .7rem;
+}
+
+.icon-md {
+  display: inline-block;
+  width: 32px;
+  padding: 0 0 0 1rem;
+  line-height: 1;
+}
+
+.invisible {
+  visibility: hidden !important;
 }
 
 .navbar.-mainnav {
