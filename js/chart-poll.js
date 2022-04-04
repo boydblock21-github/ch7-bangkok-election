@@ -28,7 +28,8 @@ const myChart = new Chart(chartPoll, {
                 'rgba(153, 102, 255, 0.8)',
                 'rgba(75, 192, 192, 0.8)',
                 'rgba(54, 162, 235, 0.8)',
-                'rgba(85, 85, 85, 0.8)'
+                'rgba(85, 85, 85, 0.8)',
+                'rgba(223, 143, 0, 0.8)'
             ],
             borderColor: [
                 'rgba(0, 105, 255, 1)',
@@ -36,7 +37,8 @@ const myChart = new Chart(chartPoll, {
                 'rgba(153, 102, 255, 1)',
                 'rgba(75, 192, 192, 1)',
                 'rgba(54, 162, 235, 1)',
-                'rgba(85, 85, 85, 1)'
+                'rgba(85, 85, 85, 1)',
+                'rgba(223, 143, 0, 1)'
             ],
             borderWidth: 1
         }]
