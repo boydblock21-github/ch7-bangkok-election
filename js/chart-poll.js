@@ -1,16 +1,16 @@
 const chartPoll = document.getElementById('myChart');
+Chart.defaults.font.size = 14;
 const myChart = new Chart(chartPoll, {
     type: 'bar',
     data: {
         labels: 
-        [
-            'ไข่ไก่ราคาแพง', 
-            'น้ำท่วมขัง', 
-            'ร้านค้าริมถนน', 
-            'อัตราค่าโดยสารรถไฟฟ้า', 
-            'ด้านการศึกษา', 
-            'ขยะมูลฝอย',
-            'กฎหมายการจราจร'
+        [[ 'ไข่ไก่','ราคาแพง' ],
+         [ 'น้ำท่วมขัง'],
+         [ 'ร้านค้า','ริมถนน' ],
+         [ 'อัตรา','ค่าโดยสาร'],
+         [ 'ด้านการศึกษา'],
+         [ 'ขยะมูลฝอย'],
+         [ 'กฎหมาย','การจราจร']
         ],
         datasets: [{
             data: [
@@ -45,9 +45,20 @@ const myChart = new Chart(chartPoll, {
     },
     options: {
         indexAxis: 'y',
+        maintainAspectRatio: false,
         scales: {
+            x: {
+                ticks: {
+                    color: '#000',
+                }
+            },
             y: {
-                beginAtZero: true
+                ticks: {
+                    color: '#000',
+                    scaleSize: 200,
+                    beginAtZero: true,
+                    grace: '10%'
+                },
             }
         },
         plugins: {
@@ -58,5 +69,8 @@ const myChart = new Chart(chartPoll, {
         aspectRatio: 1.75
     }
 });
+
+
+
 
 

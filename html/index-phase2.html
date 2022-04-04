@@ -69,7 +69,7 @@
             </div>
             <div id="chart-poll" class="row mx-auto">
               <div class="container-chart-poll">
-                <canvas id="myChart"></canvas>
+                <canvas id="myChart" class="chart-content"></canvas>
               </div>
             </div>
             <div class="row mt-4 mx-auto mb-4 mb-lg-0">
@@ -790,18 +790,12 @@
    <!--  Bootstrap JS -->
    <script src="https://static.bugaboo.tv/js/owl.carousel.2.3.min.js"></script>
 
+   <!--  Chart JS -->
    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
    <script src="../js/chart-poll.js"></script>
 
   <!-- Navbar Toggle JS-->
   <script src="../js/navbar-toggle.js"></script>
-
-  <script>
-    const myChart = new Chart(
-      document.getElementById('myChart'),
-      config
-    );
-  </script>
    
    <script type="text/javascript">
     $(document).ready(function() {
@@ -849,6 +843,7 @@
         // document.documentElement.scrollTop = 0;
         $('html, body').animate({scrollTop:0}, 'slow');
       }
-      </script>
+    </script>
+
   </body>
 </html>
