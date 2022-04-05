@@ -862,6 +862,29 @@ small{
   }
 }
 
+.btn-light-01{
+  color: $primary-01;
+  background-color: $gray-07;
+  border-color: $gray-07;
+  padding: 0.25rem 1rem;
+  line-height: 1.7;
+  border-radius: 6rem;
+  font-weight: bold;
+  @include font-size(24);
+  @include media-breakpoint-up(md){  
+    @include font-size(18);
+  }
+  &:hover{
+    color: $primary-01;
+    background-color: $gray-06;
+    border-color: $gray-06;
+  }
+  &:focus{
+    color: $primary-01;
+    box-shadow: 0 0 0 0.2rem rgba($gray-06, 0.5);
+  }
+}
+
 .bg-banner{
     background-image: url(https://static.ch7.com/images/elected_governor/bg-banner.png);
     background-repeat: no-repeat;
@@ -1046,6 +1069,7 @@ small{
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0px 8px 20px rgba($dark, .25);
+    overflow: hidden;
     .card-number-content{
       text-align: center;
       margin-top: -1rem;
@@ -1108,7 +1132,7 @@ small{
          .thumb-img{
           padding-top: 109%;
           overflow: hidden;
-          background: url(https://static.ch7.com/images/theme2019/ch7_logo-bw.png) $gray-06 center no-repeat;
+          // background: url(https://static.ch7.com/images/theme2019/ch7_logo-bw.png) $gray-06 center no-repeat;
           background-size: 50%;
           border-radius: 0.5rem;
           @include media-breakpoint-up(md){
@@ -1121,7 +1145,7 @@ small{
             top: 0;
             left: 0;
             height: 5.75rem;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 0.5rem;
             @include media-breakpoint-up(md){
               height: 10.75rem;
@@ -1234,7 +1258,7 @@ small{
 }
 
 .contestant-container{
-  background: linear-gradient(331.09deg, $primary-01 46.39%, $primary-02 81.59%);
+  background: linear-gradient(321.09deg, $primary-01 46.39%, $primary-02 81.59%);
   .container{
     .row{
       .text-center{

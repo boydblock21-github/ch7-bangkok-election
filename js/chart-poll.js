@@ -49,7 +49,7 @@ const myChart = new Chart(chartPoll, {
         scales: {
             x: {
                 ticks: {
-                    color: '#000',
+                    color: '#000'
                 }
             },
             y: {
