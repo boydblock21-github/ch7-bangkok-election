@@ -23,6 +23,18 @@ $gray-05 : #ADADAD;
 $gray-06 : #E8E8E8;
 $gray-07 : #ffffff;
 
+$ranking-etc : #777777;
+$ranking-01 : #F49184;
+$ranking-03 : #5189F8;
+$ranking-04 : #77B4EA;
+$ranking-06 : #F2E997;
+$ranking-08 : #89CBCC;
+$ranking-11 : #A68AF8;
+$ranking-hover : #FF5858;
+
+
+
+
 $error      : #DA0101;
 $success    : #029746;
 $info       : #027ABD;
@@ -1423,6 +1435,12 @@ small{
       height: 1500px;
     }
   }
+  &.-poll-02{
+    height: 400px;
+    @include media-breakpoint-up(xl){
+      height: 450px;
+    }
+  }
   @include media-breakpoint-up(lg){
     margin-bottom: 0;
   }
@@ -1438,11 +1456,42 @@ small{
     z-index: 1;
     transition: all 200ms ease-out;
     &:hover{
-      // transform: scaleX(1) scaleY(1) scaleZ(1) 
-      // rotateX(10deg) rotateY(357deg) rotateZ(2deg) 
-      // translateX(-3px) translateY(-6px) translateZ(-5px) 
-      // skewX(0deg) skewY(359deg);
-      filter: drop-shadow(2px 8px 1px rgba($primary-05, 1));
+      filter: drop-shadow(-2px 6px 0px $primary-05);
+      transform: scaleY(1.01);
+      stroke: $gray-07;
+      stroke-width: 2px;
+      stroke-linejoin: round;
+    }
+    &.active{
+      filter: drop-shadow(2px 6px 0px $primary-05);
+      transform: scaleY(1.01);
+      stroke: $gray-07;
+      stroke-width: 2px;
+      stroke-linejoin: round;
+    }
+    &.-number-01{
+      fill: $ranking-01;
+    }
+    &.-number-03{
+      fill: $ranking-03;
+    }
+    &.-number-04{
+      fill: $ranking-04;
+    }
+    &.-number-06{
+      fill: $ranking-06;
+    }
+    &.-number-08{
+      fill: $ranking-08;
+    }
+    &.-number-11{
+      fill: $ranking-11;
+    }
+    &.-number-etc{
+      fill: $ranking-etc;
+    }
+    &.-default{
+      fill: $gray-04;
     }
     &::before{
       top: 0;
@@ -1453,5 +1502,28 @@ small{
    
   }
 }
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+  .container-map-area{
+    .map-item{
+      transition: all 100ms ease-out;
+      &:hover{
+        transform: initial;
+        stroke: none;
+        stroke-width: initial;
+        stroke-linejoin: initial;
+        fill: $ranking-hover;
+      }
+      &.active{
+        transform: initial;
+        stroke: none;
+        stroke-width: initial;
+        stroke-linejoin: initial;
+        fill: $ranking-hover;
+      }
+    }
+  }
+}}
 
 
