@@ -3,6 +3,7 @@ $primary-02 : #064DDB;
 $primary-03 : #4C86FA;
 $primary-04 : #AFC9ED;
 $primary-05 : #00133B;
+$primary-06 : #E8EDF8;
 
 $secondary-01 : #FFC50C;
 $secondary-02 : #FBC02D;
@@ -13,7 +14,8 @@ $tertiary-02 : #006fcb;
 $tertiary-03 : #006EB8;
 $tertiary-04 : #00568F;
 $tertiary-05 : #9BB8F1;
-
+$tertiary-06 : #F4F5FA;
+$tertiary-07 : #13599C;
 
 $gray-01 : #0A0A0A;
 $gray-02 : #262626;
@@ -22,6 +24,7 @@ $gray-04 : #8C8C8C;
 $gray-05 : #ADADAD;
 $gray-06 : #E8E8E8;
 $gray-07 : #ffffff;
+
 
 $ranking-etc : #777777;
 $ranking-01 : #F49184;
@@ -32,7 +35,10 @@ $ranking-08 : #89CBCC;
 $ranking-11 : #A68AF8;
 $ranking-hover : #FF5858;
 
-
+$map-01 : #FF1E1E;
+$map-02 : #FF5C5C;
+$map-03 : #C95959;
+$map-04 : #1985A1;
 
 
 $error      : #DA0101;
@@ -897,6 +903,23 @@ small{
   }
 }
 
+.btn-outline-primary-02 {
+  color: $gray-01;
+  background-color: $primary-06;
+  border-color: $primary-02;
+  &:hover{
+    color: $light;
+    background-color: $primary-02;
+    border-color: $primary-02;
+  }
+  &:focus{
+    color: $primary-02;
+    background-color: transparent;
+    border-color: $primary-02;
+    box-shadow: 0 0 0 0.2rem rgba($primary-02, 0.5);
+  }
+}
+
 .bg-banner{
     background-image: url(https://static.ch7.com/images/elected_governor/bg-banner.png);
     background-repeat: no-repeat;
@@ -1450,6 +1473,194 @@ small{
  
   
 }
+.map-area{
+  background-color: $tertiary-06;
+  .title-map-container{
+    text-align: center;
+    @include media-breakpoint-up(lg){
+      text-align: left;
+    }
+    .title-map-content{
+      @include media-breakpoint-up(lg){
+        display: flex;
+        align-items: center;
+      }
+      .form-input-district{
+        margin: 1rem 0;
+        &.input-group{
+          width: 100%;
+          padding: 0;
+          flex-wrap: nowrap;
+          margin-left: auto;
+          margin-right: auto;
+          @include media-breakpoint-up(md){
+            width: 19rem;
+            padding: 0
+          }
+          
+          .form-control{
+            &.-filter-district{
+              @include font-size(20);
+              font-weight: bold;
+              color: $primary-01;
+              border-radius: 2rem;
+              border: 1px solid $tertiary-07;
+              padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+              z-index: 3;
+              @include media-breakpoint-up(md){
+                @include font-size(24);
+                width: 100%;
+              }
+            }
+          }
+          .dropdown-toggle{
+            margin-left: -3rem !important;
+            padding-right: 1.5rem;
+            z-index: 4;
+            border: none;
+            @include media-breakpoint-up(md){
+              padding-right: 2rem;
+            }
+            &::after{
+              content: url(../images/icon/icon-dropdown.svg);
+              border: none;
+            }
+            &:hover{
+              background-color: transparent;
+            }
+            &:active{
+              background-color: transparent;
+            }
+            &:focus{
+              box-shadow: none;
+            }
+            &.show{
+              background-color: transparent;
+            }
+          }
+          .dropdown-menu{
+            &.-select-district{
+              width: 100%;
+              max-height: 50vh;
+              overflow: scroll;
+              @include media-breakpoint-up(md){
+                min-width: 19.5rem;
+              }
+            }
+          }
+          @include media-breakpoint-up(lg){
+            margin: 0;
+            margin-left: 0;
+            margin-right: initial;
+          }
+        }
+      }
+    }
+    .time-update{
+      color: $map-01;
+      @include font-size(18);
+    }
+  }
+}
+
+.progress-content{
+  margin: 1.5rem 0 2.5rem;
+  .progress-summary-content{
+      margin-bottom: 0.85rem;
+    }
+  .progress-eligible-voter{
+      margin-bottom: 0.85rem;
+      @include media-breakpoint-up(lg){
+        display: flex;
+        justify-content: space-between;
+      }
+      .eligible-voter-content{
+        margin-bottom: 0.85rem;
+        @include media-breakpoint-up(lg){
+          margin-bottom: 0;
+          width: 49%;
+        }
+      }
+      .ballot-content{
+        @include media-breakpoint-up(lg){
+          width: 49%;
+        }
+      }
+  }
+  .progress{
+    background-color: $gray-06;
+    &.-summary-vote{
+      height: 2.25rem;
+      border-radius: 2rem;
+      @include media-breakpoint-up(lg){
+        height: 2.5rem;
+      }
+      .progress-bar{
+        background-color: $primary-01;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        @include font-size(18);
+        font-weight: bold;
+      }
+    }
+    &.-summary-eligible-voter{
+      height: 1.25rem;
+      border-radius: 2rem;
+      .progress-bar{
+        background-color: $map-04;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        font-weight: bold;
+      }
+    }
+    .text-differential{
+      display: flex;
+      margin-left: auto;
+      margin-right: 1.75rem;
+      align-items: center;
+      font-weight: bold;
+    }
+    &.-summary-ballot{
+      height: 1.25rem;
+      border-radius: 2rem;
+      .progress-bar{
+        &:last-child{
+          border-top-right-radius: 2rem;
+          border-bottom-right-radius: 2rem;
+        }
+        font-weight: bold;
+        &.-good-ballot{
+          background-color: $map-04;
+        }
+        &.-bad-ballot{
+          background-color: $map-02;
+        }
+        &.-ignore-ballot{
+          background-color: $gray-05;
+        }
+      }
+
+    }
+  }
+  .sub-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    &.-inline{
+      justify-content: flex-start;
+    }
+    .bg-good-ballot{
+        background-color: $map-04;
+    }
+    .bg-bad-ballot{
+      background-color: $map-02;
+    }
+    .bg-ignore-ballot{
+      background-color: $gray-05;
+    }
+  }
+}
 
 .container-map-area{
   .map-item{
@@ -1503,27 +1714,40 @@ small{
   }
 }
 
+// State Map For Safari Only //
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {
-  .container-map-area{
-    .map-item{
-      transition: all 100ms ease-out;
-      &:hover{
-        transform: initial;
-        stroke: none;
-        stroke-width: initial;
-        stroke-linejoin: initial;
-        fill: $ranking-hover;
-      }
-      &.active{
-        transform: initial;
-        stroke: none;
-        stroke-width: initial;
-        stroke-linejoin: initial;
-        fill: $ranking-hover;
+    .container-map-area{
+      .map-item{
+        transition: all 100ms ease-out;
+        &:hover{
+          transform: initial;
+          stroke: none;
+          stroke-width: initial;
+          stroke-linejoin: initial;
+          fill: $ranking-hover;
+        }
+        &.active{
+          transform: initial;
+          stroke: none;
+          stroke-width: initial;
+          stroke-linejoin: initial;
+          fill: $ranking-hover;
+        }
       }
     }
+  } 
+}
+
+.tags-container{
+  margin-top: 2rem;
+  .btn{
+    &.-tags-district{
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
   }
-}}
+  
+}
 
 

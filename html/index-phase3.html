@@ -60,6 +60,76 @@
 
     <section class="map-area py-5">
       <div class="container">
+        <div class="title-map-container">
+          <div class="title-map-content">
+            <h2 class="mb-0 me-3">ผลการนับคะแนนเลือกตั้งผู้ว่าฯ กรุงเทพมหานคร</h2>
+            <div class="form-input-district input-group">
+              <input type="text" class="form-control -filter-district" aria-label="filter-district"  value="เขตป้อมปราบศัตรูพ่าย" placeholder="เลือกเขต">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+              <ul class="dropdown-menu dropdown-menu-end -select-district">
+                <li><a class="dropdown-item" data-value="option1" tabIndex="-1">ทุกเขต</a></li>
+                <li><a class="dropdown-item" data-value="option2" tabIndex="-1">เขตคลองเตย</a></li>
+                <li><a class="dropdown-item" data-value="option3" tabIndex="-1">เขตคลองสาน</a></li>
+                <li><a class="dropdown-item" data-value="option4" tabIndex="-1">เขตคลองสามวา</a></li>
+                <li><a class="dropdown-item" data-value="option5" tabIndex="-1">เขตคันนายาว</a></li>
+                <li><a class="dropdown-item" data-value="option6" tabIndex="-1">เขตจตุจักร</a></li>
+                <li><a class="dropdown-item" data-value="option7" tabIndex="-1">เขตจอมทอง</a></li>
+                <li><a class="dropdown-item" data-value="option8" tabIndex="-1">เขตดอนเมือง</a></li>
+                <li><a class="dropdown-item" data-value="option9" tabIndex="-1">เขตดินแดง</a></li>
+                <li><a class="dropdown-item" data-value="option10" tabIndex="-1">เขตดุสิต</a></li>
+                <li><a class="dropdown-item" data-value="option11" tabIndex="-1">เขตตลิ่งชัน</a></li>
+                <li><a class="dropdown-item" data-value="option12" tabIndex="-1">เขตทวีวัฒนา</a></li>
+                <li><a class="dropdown-item" data-value="option13" tabIndex="-1">เขตทุ่งครุ</a></li>
+                <li><a class="dropdown-item" data-value="option14" tabIndex="-1">เขตธนบุรี</a></li>
+                <li><a class="dropdown-item" data-value="option15" tabIndex="-1">เขตบางเขน</a></li>
+              </ul>
+            </div>
+          </div>
+          
+         
+          
+          <p>ข้อมูลอย่างไม่เป็นทางการ <span class="d-block d-md-inline">อัพเดท ณ เวลา <strong class="time-update">18:25:02</strong> น.</span></p>
+        </div>
+        <div class="progress-content">
+          <div class="progress-summary-content">
+            <div class="progress -summary-vote">
+              <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+            </div>
+            <div class="sub-title">
+              <p class="text-start m-0">นับคะแนนไปแล้ว</p> 
+              <p class="text-end m-0">70,000/2,000,000</p> 
+            </div>
+          </div>
+          <div class="progress-eligible-voter">
+            <div class="eligible-voter-content">
+              <div class="progress -summary-eligible-voter">
+                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">2,000,000</div>
+                <span class="text-differential">5,000,000 </span>
+              </div>
+              <div class="sub-title">
+                <p class="text-start m-0">ผู้มาใช้สิทธิ</p> 
+                <p class="text-end m-0">ผู้มีสิทธิเลือกตั้ง</p> 
+              </div>
+            </div>
+
+            <div class="ballot-content">
+              <div class="progress -summary-ballot">
+                <div class="progress-bar -good-ballot" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">20,000</div>
+                <div class="progress-bar -bad-ballot" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">4,000</div>
+                <div class="progress-bar -ignore-ballot" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">2,000</div>
+              </div>
+              <div class="sub-title -inline">
+                <span class="p-2 bg-good-ballot rounded-circle me-2"></span>
+                <p class="text-start m-0">บัตรดี</p> 
+                <span class="p-2 bg-bad-ballot rounded-circle me-2 ms-4"></span>
+                <p class="text-end m-0">บัตรเสีย</p> 
+                <span class="p-2 bg-ignore-ballot rounded-circle me-2 ms-4"></span>
+                <p class="text-end m-0">บัตรเสีย</p> 
+              </div>
+
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-12 col-md-12 col-lg-7">
             <div class="container-map-area">
@@ -117,15 +187,30 @@
                 
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-5">
 
           </div>
         </div>
+        <div class="tags-container">
+          <h3 class="my-3">แขวง</h3>
+          <div class="tags-content">
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">ชนะสงคราม</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">ตลาดยอด</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">บวรนิเวศ</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">บางขุนพรหม</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">บ้านพานถม</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">พระบรมมหาราชวัง</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">วังบูรพาภิรมย์</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">วัดราชบพิธ</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">วัดสามพระยา</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">ศาลเจ้าพ่อเสือ</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">สำราญราษฎร์</button>
+            <button type="button" class="btn btn-outline-primary-02 -tags-district rounded-pill">เสาชิงช้า</button>
+          </div>
+        </div>
       </div>
-      
     </section>
-    
-
+  
     <section id="contestant-section" class="contestant-container pt-5">
       <div class="container">
         <div class="row">
