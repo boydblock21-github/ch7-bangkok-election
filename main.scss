@@ -34,6 +34,9 @@ $ranking-06 : #F2E997;
 $ranking-08 : #89CBCC;
 $ranking-11 : #A68AF8;
 $ranking-hover : #FF5858;
+$leader : #71C0C1;
+$place-2nd : #6DAFE8;
+$place-3rd : #F49184;
 
 $map-01 : #FF1E1E;
 $map-02 : #FF5C5C;
@@ -346,6 +349,7 @@ h1,h2,h3,h4,h5,h6{
 .text-green{
   color: $primary-02;
 }
+
 
 .card{
   &.-radius{
@@ -1262,6 +1266,94 @@ small{
         }
       }
     }
+    .bg-red{
+      background-color: $map-02;
+    }
+    .img-item{
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      object-position: center;
+      z-index: 1;
+    }
+  }
+  &.-leader{
+    .ranking{
+      position: relative;
+      overflow: hidden;
+      .width{
+        max-width: 110px;
+        @include media-breakpoint-up(md){
+          max-width: 100%;
+        }
+      }
+      &::before{
+          content: " ";
+          position: absolute;
+          top: -10%;
+          left: -5%;
+          width: 72px;
+          height: 124px;
+          transform: rotate(10.55deg);
+          overflow: hidden;
+          background-color: $leader;
+      }
+    }
+  }
+  &.-place-2nd{
+    .ranking{
+      position: relative;
+      overflow: hidden;
+      .width{
+        max-width: 110px;
+        @include media-breakpoint-up(md){
+          max-width: 100%;
+        }
+      }
+      &::before{
+          content: " ";
+          position: absolute;
+          top: -10%;
+          left: -5%;
+          width: 72px;
+          height: 124px;
+          transform: rotate(10.55deg);
+          overflow: hidden;
+          background-color: $place-2nd;
+      }
+    }
+  }
+  &.-place-3rd{
+    .ranking{
+      position: relative;
+      overflow: hidden;
+      .width{
+        max-width: 110px;
+        @include media-breakpoint-up(md){
+          max-width: 100%;
+        }
+        @include media-breakpoint-up(lg){
+          max-width: 165px;
+        }
+      }
+      &::before{
+          content: " ";
+          position: absolute;
+          top: -10%;
+          left: -5%;
+          width: 72px;
+          height: 124px;
+          transform: rotate(10.55deg);
+          overflow: hidden;
+          background-color: $place-3rd;
+      }
+    }
+  }
+  .text-small{
+      @include font-size(14);
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 0;
   }
 }
 
@@ -1747,7 +1839,13 @@ small{
       margin-bottom: 0.5rem;
     }
   }
-  
 }
 
 
+a{
+  p{
+    &.-text-link{
+      color: $primary-02;
+    }
+  }
+}
