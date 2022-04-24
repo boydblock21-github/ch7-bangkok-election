@@ -1603,11 +1603,11 @@ small.invisible {
   }
 }
 
-.map-area .title-map-container .title-map-content .form-input-district {
+.map-area .title-map-container .title-map-content .form-input-county {
   margin: 1rem 0;
 }
 
-.map-area .title-map-container .title-map-content .form-input-district.input-group {
+.map-area .title-map-container .title-map-content .form-input-county.input-group {
   width: 100%;
   padding: 0;
   flex-wrap: nowrap;
@@ -1616,82 +1616,70 @@ small.invisible {
 }
 
 @media only screen and (min-width: 768px) {
-  .map-area .title-map-container .title-map-content .form-input-district.input-group {
+  .map-area .title-map-container .title-map-content .form-input-county.input-group {
     width: 19rem;
     padding: 0;
   }
 }
 
-.map-area .title-map-container .title-map-content .form-input-district.input-group .form-control.-filter-district {
-  font-size: 20px;
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #03266E;
-  border-radius: 2rem;
-  border: 1px solid #13599C;
-  padding: 0.5rem 2.5rem 0.5rem 1.5rem;
-  z-index: 3;
-}
-
-@media only screen and (min-width: 768px) {
-  .map-area .title-map-container .title-map-content .form-input-district.input-group .form-control.-filter-district {
-    font-size: 24px;
-    font-size: 1.5rem;
-    width: 100%;
-  }
-}
-
-.map-area .title-map-container .title-map-content .form-input-district.input-group .dropdown-toggle {
-  margin-left: -3rem !important;
-  padding-right: 1.5rem;
-  z-index: 4;
-  border: none;
-}
-
-@media only screen and (min-width: 768px) {
-  .map-area .title-map-container .title-map-content .form-input-district.input-group .dropdown-toggle {
-    padding-right: 2rem;
-  }
-}
-
-.map-area .title-map-container .title-map-content .form-input-district.input-group .dropdown-toggle::after {
-  content: url(../images/icon/icon-dropdown.svg);
-  border: none;
-}
-
-.map-area .title-map-container .title-map-content .form-input-district.input-group .dropdown-toggle:hover {
-  background-color: transparent;
-}
-
-.map-area .title-map-container .title-map-content .form-input-district.input-group .dropdown-toggle:active {
-  background-color: transparent;
-}
-
-.map-area .title-map-container .title-map-content .form-input-district.input-group .dropdown-toggle:focus {
-  box-shadow: none;
-}
-
-.map-area .title-map-container .title-map-content .form-input-district.input-group .dropdown-toggle.show {
-  background-color: transparent;
-}
-
-.map-area .title-map-container .title-map-content .form-input-district.input-group .dropdown-menu.-select-district {
-  width: 100%;
-  max-height: 50vh;
-  overflow: scroll;
-}
-
-@media only screen and (min-width: 768px) {
-  .map-area .title-map-container .title-map-content .form-input-district.input-group .dropdown-menu.-select-district {
-    min-width: 19.5rem;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
-  .map-area .title-map-container .title-map-content .form-input-district.input-group {
+  .map-area .title-map-container .title-map-content .form-input-county.input-group {
     margin: 0;
     margin-left: 0;
     margin-right: initial;
+  }
+}
+
+.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget {
+  border-radius: 2rem;
+}
+
+.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control {
+  width: 100%;
+}
+
+.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  border: 1px solid #13599C;
+  color: #03266E;
+  font-family: "Sukhumvit Set" !important;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
+.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
+  border: none;
+  margin-left: -35px;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
+    margin-left: -50px;
+  }
+}
+
+.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
+  content: url(../images/icon/icon-dropdown.svg);
+  background-image: none;
+  left: 25%;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
+    left: 50%;
   }
 }
 
@@ -1699,6 +1687,19 @@ small.invisible {
   color: #FF1E1E;
   font-size: 18px;
   font-size: 1.125rem;
+}
+
+.ui-widget-content.ui-autocomplete .ui-menu-item {
+  font-family: "Sukhumvit Set" !important;
+  padding: 0;
+}
+
+.ui-widget-content.ui-autocomplete .ui-menu-item .ui-menu-item-wrapper {
+  padding: 0.5rem 1rem;
+}
+
+.ui-widget-content.ui-autocomplete .ui-menu-item .ui-menu-item-wrapper:hover {
+  border: none;
 }
 
 .progress-content {

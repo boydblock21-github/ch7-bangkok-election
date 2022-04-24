@@ -1577,7 +1577,7 @@ small{
         display: flex;
         align-items: center;
       }
-      .form-input-district{
+      .form-input-county{
         margin: 1rem 0;
         &.input-group{
           width: 100%;
@@ -1589,68 +1589,71 @@ small{
             width: 19rem;
             padding: 0
           }
-          
-          .form-control{
-            &.-filter-district{
-              @include font-size(20);
-              font-weight: bold;
-              color: $primary-01;
-              border-radius: 2rem;
-              border: 1px solid $tertiary-07;
-              padding: 0.5rem 2.5rem 0.5rem 1.5rem;
-              z-index: 3;
-              @include media-breakpoint-up(md){
-                @include font-size(24);
-                width: 100%;
-              }
-            }
-          }
-          .dropdown-toggle{
-            margin-left: -3rem !important;
-            padding-right: 1.5rem;
-            z-index: 4;
-            border: none;
-            @include media-breakpoint-up(md){
-              padding-right: 2rem;
-            }
-            &::after{
-              content: url(../images/icon/icon-dropdown.svg);
-              border: none;
-            }
-            &:hover{
-              background-color: transparent;
-            }
-            &:active{
-              background-color: transparent;
-            }
-            &:focus{
-              box-shadow: none;
-            }
-            &.show{
-              background-color: transparent;
-            }
-          }
-          .dropdown-menu{
-            &.-select-district{
-              width: 100%;
-              max-height: 50vh;
-              overflow: scroll;
-              @include media-breakpoint-up(md){
-                min-width: 19.5rem;
-              }
-            }
-          }
           @include media-breakpoint-up(lg){
             margin: 0;
             margin-left: 0;
             margin-right: initial;
           }
+          .ui-widget{
+            border-radius: 2rem;
+            &.-form-control{
+              width: 100%;
+              .custom-combobox{
+                .custom-combobox-input{
+                  width: 100%;
+                  padding: 0.5rem 1.5rem;
+                  @include font-size(20);
+                  border: 1px solid $tertiary-07;
+                  color: $primary-01;
+                  font-family: "Sukhumvit Set" !important;
+                  font-weight: bold;
+                  background-color: $gray-07;
+                  @include media-breakpoint-up(md){
+                    @include font-size(24);
+                  }
+                }
+                .ui-button{
+                  border: none;
+                  margin-left: -35px;
+                  background-color: transparent;
+                  @include media-breakpoint-up(md){
+                    margin-left: -50px;
+                  }
+                  .ui-button-icon{
+                    content: url(../images/icon/icon-dropdown.svg);
+                    background-image: none;
+                    left: 25%;
+                    margin-top: -10px;
+                    margin-left: -10px;
+                    @include media-breakpoint-up(md){
+                      left: 50%;
+                    }
+                  }
+                }
+              } 
+            }
+          }
         }
       }
+      
     }
     .time-update{
       color: $map-01;
       @include font-size(18);
+    }
+  }
+}
+.ui-widget-content{
+  &.ui-autocomplete{
+    .ui-menu-item{
+      font-family: "Sukhumvit Set" !important;
+      padding: 0;
+      .ui-menu-item-wrapper{
+        padding: 0.5rem 1rem; 
+        &:hover{
+          border: none;
+        }
+      }
     }
   }
 }
