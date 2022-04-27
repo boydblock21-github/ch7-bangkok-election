@@ -1739,13 +1739,17 @@ small.invisible {
 }
 
 .all-contestant-area .title-map-container {
-  text-align: inherit;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1024px) {
   .all-contestant-area .title-map-container {
     text-align: left;
   }
+}
+
+.all-contestant-area .title-map-container.-center {
+  text-align: inherit;
 }
 
 @media only screen and (min-width: 1024px) {

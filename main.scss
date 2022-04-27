@@ -1672,9 +1672,12 @@ small{
 .all-contestant-area{
   background: linear-gradient(270.92deg, $primary-01 1.16%, $primary-02 99.59%);
   .title-map-container{
-    text-align: inherit;
+    text-align: center;
     @include media-breakpoint-up(lg){
       text-align: left;
+    }
+    &.-center{
+      text-align: inherit;
     }
     .title-map-content{
       @include media-breakpoint-up(lg){
