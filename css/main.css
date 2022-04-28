@@ -1233,6 +1233,22 @@ small.invisible {
   z-index: 1;
 }
 
+.cards.-landscape-collapse .width {
+  max-width: 110px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-landscape-collapse .width {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-landscape-collapse .width {
+    max-width: 100%;
+  }
+}
+
 .cards.-leader .ranking {
   position: relative;
   overflow: hidden;
@@ -1320,12 +1336,41 @@ small.invisible {
   background-color: #F49184;
 }
 
-.cards .text-small {
+.cards .contestant .title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards .contestant .title {
+    font-size: 21px;
+    font-size: 1.3125rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards .contestant .title {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
+.cards .contestant .sub-title {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards .contestant .sub-title {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
 
 .main-collapsed {
@@ -1688,6 +1733,135 @@ small.invisible {
 }
 
 .map-area .title-map-container .sub-details-map .time-update {
+  color: #FF1E1E;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+.all-contestant-area {
+  background: linear-gradient(270.92deg, #03266E 1.16%, #064DDB 99.59%);
+}
+
+.all-contestant-area .title-map-container {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .all-contestant-area .title-map-container {
+    text-align: left;
+  }
+}
+
+.all-contestant-area .title-map-container.-center {
+  text-align: inherit;
+}
+
+@media only screen and (min-width: 1024px) {
+  .all-contestant-area .title-map-container .title-map-content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.all-contestant-area .title-map-container .title-map-content .form-input-county {
+  margin: 1rem 0;
+}
+
+.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group {
+  width: 100%;
+  padding: 0;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group {
+    width: 19rem;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group {
+    margin: 0;
+    margin-left: 0;
+    margin-right: initial;
+  }
+}
+
+.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group.-multi-widget {
+  width: 100%;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group.-multi-widget {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group.-multi-widget {
+    width: 40%;
+  }
+}
+
+.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget {
+  border-radius: 2rem;
+}
+
+.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control {
+  width: 100%;
+}
+
+.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  border: 1px solid #13599C;
+  color: #03266E;
+  font-family: "Sukhumvit Set" !important;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
+.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
+  border: none;
+  margin-left: -35px;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
+    margin-left: -50px;
+  }
+}
+
+.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
+  content: url(../images/icon/icon-dropdown.svg);
+  background-image: none;
+  left: 25%;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
+    left: 50%;
+  }
+}
+
+.all-contestant-area .title-map-container .time-update {
   color: #FF1E1E;
   font-size: 18px;
   font-size: 1.125rem;

@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css" />
+
+     <!-- Owlcarousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://static.bugaboo.tv/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://static.bugaboo.tv/css/owl.theme.default.min.css">
+
+    <!-- Dropdown County-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/></style>
+ 
+
+    <title>เลือกตั้งผู้ว่า</title>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </button>
+    <nav class="navbar navbar-expand-lg -mainnav" id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-toggler x collapsed" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav -list-menu mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#mainNav">หน้าแรก</a></li>
+            <li class="nav-item"><a class="nav-link" href="#poll-section">Poll</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contestant-section">ผู้สมัคร</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news-section">ข่าว</a></li>
+            <li class="nav-item"><a class="nav-link" href="#column1-section">คอลัมน์</a></li>
+            <li class="nav-item"><a class="nav-link" href="#timeline-section">Time line</a></li>
+            <li class="nav-item">
+              <a class="btn btn-tertiary-01" href="election-pattaya.html" role="button">เลือกตั้งพัทยา</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="all-contestant-area py-5">
+      <div class="container">
+        <div class="title-map-container -center">
+          <div class="title-map-content">
+            <h2 class="mb-0 me-0 me-lg-3 text-white text-center text-lg-start">ผลการนับคะแนนเลือกตั้งผู้ว่าฯ กรุงเทพมหานคร <span class="d-none d-lg-inline">/</span> </h2>
+            <div class="form-input-county input-group">
+              <div class="ui-widget -form-control">
+                <select id="js__apply_now" class="form-filter-county">
+                  <option value="">ทุกเขต</option>
+                  <option value="1">เขตคลองเตย</option>
+                  <option value="2">เขตคลองสาน</option>
+                  <option value="3">เขตคลองสามวา</option>
+                  <option value="4">เขตคันนายาว</option>
+                  <option value="5">เขตจตุจักร</option>
+                  <option value="6">เขตจอมทอง</option>
+                  <option value="7">เขตดอนเมือง</option>
+                  <option value="8">เขตดินแดง</option>
+                  <option value="9">เขตดุสิต</option>
+                  <option value="10">เขตตลิ่งชัน</option>
+                  <option value="11">เขตทวีวัฒนา</option>
+                  <option value="12">เขตทุ่งครุ</option>
+                  <option value="13">เขตธนบุรี</option>
+                  <option value="เขตบางเขน">เขตบางเขน</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <p class="text-white text-center text-lg-start">ข้อมูลอย่างไม่เป็นทางการ <span class="d-block d-md-inline">อัพเดท ณ เวลา <strong class="time-update">18:25:02</strong> น.</span></p>
+        </div>
+        <div class="row">
+            <div class="my-4">
+              <!-- contestant 1 -->
+              <div class="cards -landscape-collapse p-0">
+                <div class="row m-0 p-2 p-md-3 contestant">
+                  <div class="col-2 col-md-1 d-flex justify-content-center align-items-center flex-column ps-md-0">
+                      <p class="sub-title fw-bold mb-0">หมายเลข</p>
+                      <h2 class="display-5 fw-bold lh-1 m-0 m-auto">1</h2>
+                  </div>
+                  <div class="col-10 col-md-11 d-flex justify-content-between p-0">
+                    <div class="row w-100 m-0">  
+                      <div class="col-9 col-md-8 d-flex align-items-center ps-1 ps-md-2">
+                        <img class="img-item" src="../images/number8.png" alt="">
+                        <div class="d-flex justify-content-center flex-column ms-2 ms-lg-4 width">
+                          <h3 class="title fw-bold text-truncate">นายวิโรจน์ ลักขณาอดิศร</h3>
+                          <h3 class="sub-title">พรรคก้าวไกล</h3>
+                        </div>
+                      </div>
+                      <div class="col-3 col-md-4 d-flex justify-content-end align-items-center px-0"> 
+                        <p class="title fw-bold lh-sm text-end mb-0">
+                          1,234,456 
+                          <small class="d-block sub-title fw-normal">คะแนน</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!-- contestant 2 -->
+              <div class="cards -landscape-collapse p-0">
+                <div class="row m-0 p-2 p-md-3 contestant">
+                  <div class="col-2 col-md-1 d-flex justify-content-center align-items-center flex-column ps-md-0">
+                      <p class="sub-title fw-bold mb-0">หมายเลข</p>
+                      <h2 class="display-5 fw-bold lh-1 m-0 m-auto">2</h2>
+                  </div>
+                  <div class="col-10 col-md-11 d-flex justify-content-between p-0">
+                    <div class="row w-100 m-0">  
+                      <div class="col-9 col-md-8 d-flex align-items-center ps-1 ps-md-2">
+                        <img class="img-item" src="../images/number8.png" alt="">
+                        <div class="d-flex justify-content-center flex-column ms-2 ms-lg-4 width">
+                          <h3 class="title fw-bold text-truncate">พันโทหญิงฐิฏา รังสิตพล มานิตกุล</h3>
+                          <h3 class="sub-title">อิสระ</h3>
+                        </div>
+                      </div>
+                      <div class="col-3 col-md-4 d-flex justify-content-end align-items-center px-0"> 
+                        <p class="title fw-bold lh-sm text-end mb-0">
+                          1,234,456 
+                          <small class="d-block sub-title fw-normal">คะแนน</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- contestant 3 -->
+              <div class="cards -landscape-collapse p-0">
+                <div class="row m-0 p-2 p-md-3 contestant">
+                  <div class="col-2 col-md-1 d-flex justify-content-center align-items-center flex-column ps-md-0">
+                      <p class="sub-title fw-bold mb-0">หมายเลข</p>
+                      <h2 class="display-5 fw-bold lh-1 m-0 m-auto">3</h2>
+                  </div>
+                  <div class="col-10 col-md-11 d-flex justify-content-between p-0">
+                    <div class="row w-100 m-0">  
+                      <div class="col-9 col-md-8 d-flex align-items-center ps-1 ps-md-2">
+                        <img class="img-item" src="../images/number8.png" alt="">
+                        <div class="d-flex justify-content-center flex-column ms-2 ms-lg-4 width">
+                          <h3 class="title fw-bold text-truncate">นายสกลธี ภัททิยกุล</h3>
+                          <h3 class="sub-title">อิสระ</h3>
+                        </div>
+                      </div>
+                      <div class="col-3 col-md-4 d-flex justify-content-end align-items-center px-0"> 
+                        <p class="title fw-bold lh-sm text-end mb-0">
+                          1,234,456 
+                          <small class="d-block sub-title fw-normal">คะแนน</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!-- contestant 4 -->
+              <div class="cards -landscape-collapse p-0">
+                <div class="row m-0 p-2 p-md-3 contestant">
+                  <div class="col-2 col-md-1 d-flex justify-content-center align-items-center flex-column ps-md-0">
+                      <p class="sub-title fw-bold mb-0">หมายเลข</p>
+                      <h2 class="display-5 fw-bold lh-1 m-0 m-auto">4</h2>
+                  </div>
+                  <div class="col-10 col-md-11 d-flex justify-content-between p-0">
+                    <div class="row w-100 m-0">  
+                      <div class="col-9 col-md-8 d-flex align-items-center ps-1 ps-md-2">
+                        <img class="img-item" src="../images/number8.png" alt="">
+                        <div class="d-flex justify-content-center flex-column ms-2 ms-lg-4 width">
+                          <h3 class="title fw-bold text-truncate">ศ.ดร.สุชัชวีร์ สุวรรณสวัสดิ์</h3>
+                          <h3 class="sub-title">พรรคประชาธิปัตย์</h3>
+                        </div>
+                      </div>
+                      <div class="col-3 col-md-4 d-flex justify-content-end align-items-center px-0"> 
+                        <p class="title fw-bold lh-sm text-end mb-0">
+                          1,234,456 
+                          <small class="d-block sub-title fw-normal">คะแนน</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!-- contestant 5 -->
+               <div class="cards -landscape-collapse p-0">
+                <div class="row m-0 p-2 p-md-3 contestant">
+                  <div class="col-2 col-md-1 d-flex justify-content-center align-items-center flex-column ps-md-0">
+                      <p class="sub-title fw-bold mb-0">หมายเลข</p>
+                      <h2 class="display-5 fw-bold lh-1 m-0 m-auto">5</h2>
+                  </div>
+                  <div class="col-10 col-md-11 d-flex justify-content-between p-0">
+                    <div class="row w-100 m-0">  
+                      <div class="col-9 col-md-8 d-flex align-items-center ps-1 ps-md-2">
+                        <img class="img-item" src="../images/number8.png" alt="">
+                        <div class="d-flex justify-content-center flex-column ms-2 ms-lg-4 width">
+                          <h3 class="title fw-bold text-truncate">นายวีรชัย เหล่าเรืองวัฒนา</h3>
+                          <h3 class="sub-title">อิสระ</h3>
+                        </div>
+                      </div>
+                      <div class="col-3 col-md-4 d-flex justify-content-end align-items-center px-0"> 
+                        <p class="title fw-bold lh-sm text-end mb-0">
+                          1,234,456 
+                          <small class="d-block sub-title fw-normal">คะแนน</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+        </div>
+      </div>
+    </section>
+  
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="main-footer">
+        <div class="container">
+        <div class="content-footer-top">
+            <div class="info">
+            <small class="text-light">Copyright © 2021 Bangkok Broadcasting &amp; T.V. Co.,Ltd. <span class="d-block d-md-inline">All rights reserved</span></small>
+            </div>  
+            <div class="footer-right">
+            <div class="social">
+                <a href="https://www.facebook.com/Ch7HD" target="_blank"><img class="icon-social" src="https://static.ch7.com/images/newstar/icon/icon-footer-facebook.svg" alt="facebook"></a>
+                <a href="https://twitter.com/ch7hd" target="_blank"><img class="icon-social" src="https://static.ch7.com/images/newstar/icon/icon-footer-twitter.svg" alt="twitter"></a>
+                <a href="https://www.instagram.com/ch7hd" target="_blank"><img class="icon-social" src="https://static.ch7.com/images/newstar/icon/icon-footer-instagram.svg" alt="instagram"></a>
+                <a href="https://www.youtube.com/ch7hd" target="_blank"><img class="icon-social" src="https://static.ch7.com/images/newstar/icon/icon-footer-youtube.svg" alt="youtube"></a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    
+  <!--  Bootstrap JS -->
+  <script src="https://static.ch7.com/js/jquery-3.6.0-newstart.min.js"></script>
+
+   <!-- for dropdown -->
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src=" https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="https://static.bugaboo.tv/js/owl.carousel.2.3.min.js"></script>
+
+  <!-- Navbar Toggle JS-->
+  <script src="../js/navbar-toggle.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // Owl Carousel
+      $(".-owlnav-style").owlCarousel({
+        loop: true,
+        margin: 16,
+        touchDrag: true,
+        dots: false,
+        navText: [
+          '<div class="icon-nav"><img class="img-item" src="https://static.ch7.com/images/newstar/icon/icon-prev.svg" width="36" height="36 alt="prev"></div>',
+          '<div class="icon-nav"><img class="img-item" src="https://static.ch7.com/images/newstar/icon/icon-next.svg" width="36" height="36 alt="next"></div>',
+        ],
+        responsive: {
+          0: {
+            items: 1.4,
+          },
+          768: {
+            items: 2,
+          },
+          1024: {
+            items: 3,
+          },
+        },
+      });
+    });
+
+    // for dropdown
+    $(function () {
+      $.widget("custom.combobox", {
+        _create: function () {
+          this.wrapper = $("<span>")
+            .addClass("custom-combobox")
+            .insertAfter(this.element);
+          this.element.hide();
+          this._createAutocomplete();
+          this._createShowAllButton();
+        },
+
+        _createAutocomplete: function () {
+          var selected = this.element.children(":selected"),
+            value = selected.val() ? selected.text() : "";
+
+          this.input = $("<input>")
+            .appendTo(this.wrapper)
+            .val(value)
+            .attr("title", "")
+            .attr("placeholder", "เลือกเขต")
+            .addClass(
+              "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left"
+            )
+            .autocomplete({
+              delay: 0,
+              minLength: 0,
+              source: $.proxy(this, "_source"),
+            })
+            .tooltip({
+              classes: {
+                "ui-tooltip": "ui-state-highlight",
+              },
+            });
+
+          this._on(this.input, {
+            autocompleteselect: function (event, ui) {
+              ui.item.option.selected = true;
+              this._trigger("select", event, {
+                item: ui.item.option,
+              });
+            },
+
+            autocompletechange: "_removeIfInvalid",
+          });
+        },
+
+        _createShowAllButton: function () {
+          var input = this.input,
+            wasOpen = false;
+
+          $("<a>")
+            .attr("tabIndex", -1)
+            .attr("title", "Show All Items")
+            .tooltip()
+            .appendTo(this.wrapper)
+            .button({
+              icons: {
+                primary: "ui-icon-triangle-1-s",
+              },
+              text: false,
+            })
+            .removeClass("ui-corner-all")
+            .addClass("custom-combobox-toggle ui-corner-right")
+            .on("mousedown", function () {
+              wasOpen = input.autocomplete("widget").is(":visible");
+            })
+            .on("click", function () {
+              input.trigger("focus");
+
+              // Close if already visible
+              if (wasOpen) {
+                return;
+              }
+
+              // Pass empty string as value to search for, displaying all results
+              input.autocomplete("search", "");
+            });
+        },
+
+        _source: function (request, response) {
+          var matcher = new RegExp(
+            $.ui.autocomplete.escapeRegex(request.term),
+            "i"
+          );
+          response(
+            this.element.children("option").map(function () {
+              var text = $(this).text();
+              if (this.value && (!request.term || matcher.test(text)))
+                return {
+                  label: text,
+                  value: text,
+                  option: this,
+                };
+            })
+          );
+        },
+
+        _removeIfInvalid: function (event, ui) {
+          // Selected an item, nothing to do
+          if (ui.item) {
+            return;
+          }
+
+          // Search for a match (case-insensitive)
+          var value = this.input.val(),
+            valueLowerCase = value.toLowerCase(),
+            valid = false;
+          this.element.children("option").each(function () {
+            if ($(this).text().toLowerCase() === valueLowerCase) {
+              this.selected = valid = true;
+              return false;
+            }
+          });
+
+          // Found a match, nothing to do
+          if (valid) {
+            return;
+          }
+
+          // Remove invalid value
+          this.input
+            .val("")
+            .attr("title", value + " didn't match any item")
+            .tooltip("open");
+          this.element.val("");
+          this._delay(function () {
+            this.input.tooltip("close").attr("title", "");
+          }, 2500);
+          this.input.autocomplete("instance").term = "";
+        },
+
+        _destroy: function () {
+          this.wrapper.remove();
+          this.element.show();
+        },
+      });
+
+      $("#js__apply_now").combobox();
+    });
+  </script>
+  </body>
+</html>

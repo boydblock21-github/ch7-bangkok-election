@@ -1276,6 +1276,15 @@ small{
       object-position: center;
       z-index: 1;
     }
+    .width{
+      max-width: 110px;
+      @include media-breakpoint-up(md){
+        max-width: 300px;
+      }
+      @include media-breakpoint-up(lg){
+        max-width: 100%;
+      }
+    }
   }
   &.-leader{
     .ranking{
@@ -1349,11 +1358,28 @@ small{
       }
     }
   }
-  .text-small{
+  .contestant{
+    .title{
+      @include font-size(18);
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 0;
+      @include media-breakpoint-up(md){
+        @include font-size(21);
+      }
+      @include media-breakpoint-up(lg){
+        @include font-size(24);
+      }
+    }
+    .sub-title{
       @include font-size(14);
       font-weight: 300;
       line-height: 1.6;
       margin-bottom: 0;
+      @include media-breakpoint-up(md){
+        @include font-size(16);
+      }
+    }
   }
 }
 
@@ -1646,6 +1672,97 @@ small{
         color: $map-01;
         @include font-size(18);
       }
+    }
+  }
+}
+.all-contestant-area{
+  background: linear-gradient(270.92deg, $primary-01 1.16%, $primary-02 99.59%);
+  .title-map-container{
+    text-align: center;
+    @include media-breakpoint-up(lg){
+      text-align: left;
+    }
+    &.-center{
+      text-align: inherit;
+    }
+    .title-map-content{
+      @include media-breakpoint-up(lg){
+        display: flex;
+        align-items: center;
+      }
+      .form-input-county{
+        margin: 1rem 0;
+        &.input-group{
+          width: 100%;
+          padding: 0;
+          flex-wrap: nowrap;
+          margin-left: auto;
+          margin-right: auto;
+          @include media-breakpoint-up(md){
+            width: 19rem;
+            padding: 0
+          }
+          @include media-breakpoint-up(lg){
+            margin: 0;
+            margin-left: 0;
+            margin-right: initial;
+          }
+          &.-multi-widget{
+            width: 100%;
+            flex-direction: column;
+            @include media-breakpoint-up(md){
+              flex-direction: row;
+              padding: 0;
+            }
+            @include media-breakpoint-up(lg){
+              width: 40%;
+            }
+          }
+          .ui-widget{
+            border-radius: 2rem;
+            &.-form-control{
+              width: 100%;
+              .custom-combobox{
+                .custom-combobox-input{
+                  width: 100%;
+                  padding: 0.5rem 1.5rem;
+                  @include font-size(20);
+                  border: 1px solid $tertiary-07;
+                  color: $primary-01;
+                  font-family: "Sukhumvit Set" !important;
+                  font-weight: bold;
+                  background-color: $gray-07;
+                  @include media-breakpoint-up(md){
+                    @include font-size(24);
+                  }
+                }
+                .ui-button{
+                  border: none;
+                  margin-left: -35px;
+                  background-color: transparent;
+                  @include media-breakpoint-up(md){
+                    margin-left: -50px;
+                  }
+                  .ui-button-icon{
+                    content: url(../images/icon/icon-dropdown.svg);
+                    background-image: none;
+                    left: 25%;
+                    margin-top: -10px;
+                    margin-left: -10px;
+                    @include media-breakpoint-up(md){
+                      left: 50%;
+                    }
+                  }
+                }
+              } 
+            }
+          }
+        }
+      }
+    }
+    .time-update{
+      color: $map-01;
+      @include font-size(18);
     }
   }
 }
