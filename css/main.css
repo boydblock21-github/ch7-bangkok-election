@@ -1629,6 +1629,13 @@ small.invisible {
 
 .map-area {
   background-color: #F4F5FA;
+  padding-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .map-area {
+    padding-top: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

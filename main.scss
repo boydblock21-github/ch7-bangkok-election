@@ -1593,6 +1593,10 @@ small{
 }
 .map-area{
   background-color: $tertiary-06;
+  padding-top: 2rem;
+  @include media-breakpoint-up(md){
+    padding-top: 2.5rem;
+  }
   .title-map-container{
     .title-map-content{
       @include media-breakpoint-up(lg){
