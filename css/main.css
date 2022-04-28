@@ -1586,16 +1586,6 @@ small.invisible {
   background-color: #F4F5FA;
 }
 
-.map-area .title-map-container {
-  text-align: center;
-}
-
-@media only screen and (min-width: 1024px) {
-  .map-area .title-map-container {
-    text-align: left;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
   .map-area .title-map-container .title-map-content {
     display: flex;
@@ -1613,12 +1603,14 @@ small.invisible {
   flex-wrap: nowrap;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .map-area .title-map-container .title-map-content .form-input-county.input-group {
     width: 19rem;
     padding: 0;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -1683,7 +1675,19 @@ small.invisible {
   }
 }
 
-.map-area .title-map-container .time-update {
+.map-area .title-map-container .sub-details-map {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+  .map-area .title-map-container .sub-details-map {
+    flex-direction: row;
+  }
+}
+
+.map-area .title-map-container .sub-details-map .time-update {
   color: #FF1E1E;
   font-size: 18px;
   font-size: 1.125rem;
@@ -1774,6 +1778,15 @@ small.invisible {
   font-weight: bold;
 }
 
+.progress-content .progress.-hover-map {
+  height: 1.25rem;
+}
+
+.progress-content .progress.-hover-map .progress-bar {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
 .progress-content .progress .text-differential {
   display: flex;
   margin-left: auto;
@@ -1831,6 +1844,10 @@ small.invisible {
   background-color: #ADADAD;
 }
 
+.container-map-area {
+  position: relative;
+}
+
 .container-map-area .map-item {
   z-index: 1;
   transition: all 200ms ease-out;
@@ -1884,11 +1901,94 @@ small.invisible {
   fill: #8C8C8C;
 }
 
-.container-map-area .map-item::before {
-  top: 0;
-  left: 0;
+.seemore-county-container {
+  box-shadow: 0px 0px 8px rgba(10, 10, 10, 0.15);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  position: absolute;
+  display: none;
+  z-index: 3;
   width: 100%;
-  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .seemore-county-container {
+    width: 30rem;
+  }
+}
+
+.seemore-county-container::after {
+  content: '';
+  position: absolute;
+  left: 20%;
+  top: 100%;
+  width: 0;
+  height: 0;
+}
+
+.seemore-county-container .contestant-detail-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .seemore-county-container .contestant-detail-container {
+    flex-direction: row;
+  }
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content {
+  display: flex;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 0.5rem;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content {
+  display: flex;
+  align-items: center;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-01 {
+  background-color: #F49184;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-02 {
+  background-color: #00568F;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-03 {
+  background-color: #5189F8;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-04 {
+  background-color: #77B4EA;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-06 {
+  background-color: #F2E997;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-08 {
+  background-color: #89CBCC;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-11 {
+  background-color: #A68AF8;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-vote-detail .score-vote {
+  color: #03266E;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1920,6 +2020,19 @@ small.invisible {
 .tags-container .btn.-tags-district {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.ads-container {
+  overflow: hidden;
+}
+
+.ads-container .title {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.ads-container img {
+  width: 375px;
 }
 
 a p.-text-link {
