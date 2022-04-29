@@ -2298,7 +2298,7 @@ a p.-text-link {
 
 @media only screen and (min-width: 1024px) {
   .modal .modal-dialog.-width {
-    max-width: calc(100% - 20vw);
+    max-width: calc(100% - 40vw);
   }
 }
 /*# sourceMappingURL=main.css.map */
