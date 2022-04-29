@@ -68,6 +68,12 @@ a img.fit-img:hover {
   transform: scale(1.1);
 }
 
+a img.only-fit-img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
@@ -131,6 +137,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .card .card-body.-height {
   min-height: 130px;
+}
+
+.card .card-body.-bg-color {
+  background-color: rgba(232, 232, 232, 0.2);
 }
 
 .card .card-body .card-text.-size {
@@ -453,6 +463,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.ratio.ratio-16x9.-bg-color {
+  background-color: #0A0A0A;
+}
+
+.ratio.ratio-16x9 .width {
+  width: calc(1vw + 88px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ratio.ratio-16x9 .width:hover {
+  opacity: .8;
+}
+
 .bg-green {
   background: linear-gradient(331.09deg, #03266E 46.39%, #064DDB 81.59%);
 }
@@ -748,6 +774,7 @@ small.invisible {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center,top;
+  z-index: 1;
 }
 
 .bg-banner .info-page {
@@ -782,6 +809,35 @@ small.invisible {
   .bg-banner .info-page .sub-title {
     font-size: 260px;
     font-size: 16.25rem;
+  }
+}
+
+.bg-banner .info-page .text-live {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-banner .info-page .text-live {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .bg-banner .info-page .text-live {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+
+.bg-banner .info-page .img-width {
+  width: 60%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .bg-banner .info-page .img-width {
+    width: 90%;
   }
 }
 
@@ -872,6 +928,16 @@ small.invisible {
     font-size: 32px;
     font-size: 2rem;
   }
+}
+
+.overlay {
+  background-color: rgba(232, 237, 248, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .owl-carousel.-owlnav-style .owl-stage-outer {
@@ -2098,5 +2164,21 @@ small.invisible {
 
 a p.-text-link {
   color: #064DDB;
+}
+
+.modal .modal-dialog.-width {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal .modal-dialog.-width {
+    max-width: calc(100% - 8vw);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .modal .modal-dialog.-width {
+    max-width: calc(100% - 20vw);
+  }
 }
 /*# sourceMappingURL=main.css.map */

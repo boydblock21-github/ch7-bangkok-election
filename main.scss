@@ -338,6 +338,11 @@ a{
           transform: scale(1.1);
         }
       }
+      &.only-fit-img{
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+      }
     }
 }
 
@@ -394,6 +399,9 @@ h1,h2,h3,h4,h5,h6{
   .card-body{
     &.-height{
       min-height: 130px;
+    }
+    &.-bg-color{
+      background-color: rgba($gray-06, 0.2);
     }
     .card-text{
       &.-size{
@@ -669,6 +677,19 @@ h1,h2,h3,h4,h5,h6{
         --bs-aspect-ratio: calc(9 / 16 * 100%);
       }
     }
+    &.-bg-color{
+      background-color: $gray-01;
+    }
+    .width{
+      width: calc(1vw + 88px);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      &:hover{
+        opacity: .8;
+      }
+    }
   }
 }
 
@@ -929,6 +950,7 @@ small{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center,top;
+    z-index: 1;
     .info-page{
       text-align: center;
       .title{
@@ -948,6 +970,21 @@ small{
         text-shadow: 0px 6px 8px rgba($dark, .24);
         @include media-breakpoint-up(md){
           @include font-size(260);
+        }
+      }
+      .text-live{
+        @include font-size(28);
+        @include media-breakpoint-up(md){
+          @include font-size(18);
+        }
+        @include media-breakpoint-up(lg){
+          @include font-size(32);
+        }
+      }
+      .img-width{
+        width: 60%;
+        @include media-breakpoint-up(lg){  
+          width: 90%;
         }
       }
     }
@@ -1007,6 +1044,15 @@ small{
         }
       }
     }
+}
+.overlay{
+  background-color: rgba($primary-06, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .owl-carousel{
@@ -1966,6 +2012,20 @@ a{
   p{
     &.-text-link{
       color: $primary-02;
+    }
+  }
+}
+
+.modal{
+  .modal-dialog{
+    &.-width{
+      max-width: 100%;
+      @include media-breakpoint-up(md){
+        max-width: calc(100% - 8vw);
+        }
+      @include media-breakpoint-up(lg){
+      max-width: calc(100% - 20vw);
+      }
     }
   }
 }
