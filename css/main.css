@@ -769,6 +769,18 @@ small.invisible {
   box-shadow: 0 0 0 0.2rem rgba(6, 77, 219, 0.5);
 }
 
+.btn-outline-primary-02.btn-live {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .btn-outline-primary-02.btn-live {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+
 .bg-banner {
   background-image: url(https://static.ch7.com/images/elected_governor/bg-banner.png);
   background-repeat: no-repeat;

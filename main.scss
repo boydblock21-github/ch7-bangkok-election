@@ -943,6 +943,12 @@ small{
     border-color: $primary-02;
     box-shadow: 0 0 0 0.2rem rgba($primary-02, 0.5);
   }
+  &.btn-live{
+    @include font-size(16);
+    @include media-breakpoint-up(lg){
+      @include font-size(20);
+    }
+  }
 }
 
 .bg-banner{
