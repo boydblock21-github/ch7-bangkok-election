@@ -938,10 +938,16 @@ small{
     border-color: $primary-02;
   }
   &:focus{
-    color: $primary-02;
-    background-color: transparent;
+    color: $light;
+    background-color: $primary-02;
     border-color: $primary-02;
     box-shadow: 0 0 0 0.2rem rgba($primary-02, 0.5);
+  }
+  &.btn-live{
+    @include font-size(16);
+    @include media-breakpoint-up(lg){
+      @include font-size(20);
+    }
   }
 }
 
@@ -1709,7 +1715,7 @@ small{
                     margin-left: -50px;
                   }
                   .ui-button-icon{
-                    content: url(../images/icon/icon-dropdown.svg);
+                    content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
                     background-image: none;
                     left: 25%;
                     margin-top: -10px;
@@ -1755,6 +1761,13 @@ small{
         display: flex;
         align-items: center;
       }
+      &.-select-area{
+        display: block;
+        @include media-breakpoint-up(xl){
+          display: flex;
+          align-items: center;
+        }
+      }
       .form-input-county{
         margin: 1rem 0;
         &.input-group{
@@ -1777,10 +1790,11 @@ small{
             flex-direction: column;
             @include media-breakpoint-up(md){
               flex-direction: row;
-              padding: 0;
+              padding: 1rem;
             }
-            @include media-breakpoint-up(lg){
+            @include media-breakpoint-up(xl){
               width: 40%;
+              padding: 0;
             }
           }
           .ui-widget{
@@ -1809,7 +1823,7 @@ small{
                     margin-left: -50px;
                   }
                   .ui-button-icon{
-                    content: url(../images/icon/icon-dropdown.svg);
+                    content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
                     background-image: none;
                     left: 25%;
                     margin-top: -10px;
@@ -1832,6 +1846,8 @@ small{
   }
 }
 .ui-widget-content{
+  max-height: 500px;
+  overflow: scroll;
   &.ui-autocomplete{
     .ui-menu-item{
       font-family: "Sukhumvit Set" !important;
@@ -1953,6 +1969,12 @@ small{
 
 .container-map-area{
   position: relative;
+  text-align: center;
+  .img-map{
+    @include media-breakpoint-up(xl){
+      width: 80%;
+    }  
+  }
   .map-item{
     z-index: 1;
     transition: all 200ms ease-out;
@@ -1992,7 +2014,7 @@ small{
       fill: $ranking-etc;
     }
     &.-default{
-      fill: $gray-04;
+      fill: $gray-05;
     }
    
   }
@@ -2067,6 +2089,10 @@ small{
       }
     }
     .contestant-vote-detail{
+      text-align: left;
+      @include media-breakpoint-up(md){
+        text-align: right;
+      }
       .score-vote {
         color: $primary-01;
         @include font-size(24);

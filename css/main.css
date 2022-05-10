@@ -763,10 +763,22 @@ small.invisible {
 }
 
 .btn-outline-primary-02:focus {
-  color: #064DDB;
-  background-color: transparent;
+  color: #F6F8F7;
+  background-color: #064DDB;
   border-color: #064DDB;
   box-shadow: 0 0 0 0.2rem rgba(6, 77, 219, 0.5);
+}
+
+.btn-outline-primary-02.btn-live {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .btn-outline-primary-02.btn-live {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
 }
 
 .bg-banner {
@@ -1810,7 +1822,7 @@ small.invisible {
 }
 
 .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
-  content: url(../images/icon/icon-dropdown.svg);
+  content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
   background-image: none;
   left: 25%;
   margin-top: -10px;
@@ -1866,6 +1878,17 @@ small.invisible {
   }
 }
 
+.all-contestant-area .title-map-container .title-map-content.-select-area {
+  display: block;
+}
+
+@media only screen and (min-width: 1280px) {
+  .all-contestant-area .title-map-container .title-map-content.-select-area {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .all-contestant-area .title-map-container .title-map-content .form-input-county {
   margin: 1rem 0;
 }
@@ -1901,13 +1924,14 @@ small.invisible {
 @media only screen and (min-width: 768px) {
   .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group.-multi-widget {
     flex-direction: row;
-    padding: 0;
+    padding: 1rem;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group.-multi-widget {
     width: 40%;
+    padding: 0;
   }
 }
 
@@ -1951,7 +1975,7 @@ small.invisible {
 }
 
 .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
-  content: url(../images/icon/icon-dropdown.svg);
+  content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
   background-image: none;
   left: 25%;
   margin-top: -10px;
@@ -1968,6 +1992,11 @@ small.invisible {
   color: #FF1E1E;
   font-size: 18px;
   font-size: 1.125rem;
+}
+
+.ui-widget-content {
+  max-height: 500px;
+  overflow: scroll;
 }
 
 .ui-widget-content.ui-autocomplete .ui-menu-item {
@@ -2123,6 +2152,13 @@ small.invisible {
 
 .container-map-area {
   position: relative;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container-map-area .img-map {
+    width: 80%;
+  }
 }
 
 .container-map-area .map-item {
@@ -2175,7 +2211,7 @@ small.invisible {
 }
 
 .container-map-area .map-item.-default {
-  fill: #8C8C8C;
+  fill: #ADADAD;
 }
 
 .seemore-county-container {
@@ -2259,6 +2295,16 @@ small.invisible {
 
 .seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-11 {
   background-color: #A68AF8;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-vote-detail {
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .seemore-county-container .contestant-detail-container .contestant-vote-detail {
+    text-align: right;
+  }
 }
 
 .seemore-county-container .contestant-detail-container .contestant-vote-detail .score-vote {
