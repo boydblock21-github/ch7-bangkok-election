@@ -1342,6 +1342,18 @@ small.invisible {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .cards.-leader .ranking .width {
+    max-width: 110px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-leader .ranking .width {
+    max-width: 165px;
+  }
+}
+
 .cards.-leader .ranking::before {
   content: " ";
   position: absolute;
@@ -1366,6 +1378,18 @@ small.invisible {
 @media only screen and (min-width: 768px) {
   .cards.-place-2nd .ranking .width {
     max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-place-2nd .ranking .width {
+    max-width: 110px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-2nd .ranking .width {
+    max-width: 165px;
   }
 }
 
@@ -1397,6 +1421,12 @@ small.invisible {
 }
 
 @media only screen and (min-width: 1024px) {
+  .cards.-place-3rd .ranking .width {
+    max-width: 110px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
   .cards.-place-3rd .ranking .width {
     max-width: 165px;
   }

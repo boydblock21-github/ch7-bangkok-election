@@ -1347,6 +1347,12 @@ small{
         @include media-breakpoint-up(md){
           max-width: 100%;
         }
+        @include media-breakpoint-up(lg){
+          max-width: 110px;
+        }
+        @include media-breakpoint-up(xl){
+          max-width: 165px;
+        }
       }
       &::before{
           content: " ";
@@ -1369,6 +1375,12 @@ small{
         max-width: 110px;
         @include media-breakpoint-up(md){
           max-width: 100%;
+        }
+        @include media-breakpoint-up(lg){
+          max-width: 110px;
+        }
+        @include media-breakpoint-up(xl){
+          max-width: 165px;
         }
       }
       &::before{
@@ -1394,6 +1406,9 @@ small{
           max-width: 100%;
         }
         @include media-breakpoint-up(lg){
+          max-width: 110px;
+        }
+        @include media-breakpoint-up(xl){
           max-width: 165px;
         }
       }
