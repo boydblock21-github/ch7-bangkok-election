@@ -2017,6 +2017,15 @@ small{
   @include media-breakpoint-up(md){
     width: 30rem
   }
+  .title{
+    display: flex;
+    align-items: center;
+    .text-link{
+      &.-title-county{
+        color: $primary-02;
+      }
+    }
+  }
   &::after{
     content: '';
     position: absolute;
@@ -2024,10 +2033,19 @@ small{
     top: 100%;
     width: 0;
     height: 0;
-    // margin-left: -50px;
-    // border-left: 10px solid transparent;
-    // border-right: 10px solid transparent;
-    // border-top: 10px solid $gray-07;
+    margin-left: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $gray-07;
+    @include media-breakpoint-up(md){
+      margin-left: -3.25rem;
+    }
+    @include media-breakpoint-up(lg){
+      margin-left: -3.35rem;
+    }
+    @include media-breakpoint-up(xl){
+      margin-left: 1.5rem;
+    }
   }
   .contestant-detail-container{
     display: flex;

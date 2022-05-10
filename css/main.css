@@ -2201,6 +2201,15 @@ small.invisible {
   }
 }
 
+.seemore-county-container .title {
+  display: flex;
+  align-items: center;
+}
+
+.seemore-county-container .title .text-link.-title-county {
+  color: #064DDB;
+}
+
 .seemore-county-container::after {
   content: '';
   position: absolute;
@@ -2208,6 +2217,28 @@ small.invisible {
   top: 100%;
   width: 0;
   height: 0;
+  margin-left: 20px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .seemore-county-container::after {
+    margin-left: -3.25rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .seemore-county-container::after {
+    margin-left: -3.35rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .seemore-county-container::after {
+    margin-left: 1.5rem;
+  }
 }
 
 .seemore-county-container .contestant-detail-container {
