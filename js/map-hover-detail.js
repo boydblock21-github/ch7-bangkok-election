@@ -3,10 +3,14 @@
 $(".map-item").hover(function(e) {
     $(".seemore-county-container").css("display", "block");
 });
-
-$(".map-item").mouseleave(function(e) {
-    $(".seemore-county-container").css("display", "none");
+$("#mod-test").click(function(e) {
+    // $(".seemore-county-container").css("display", "none");
+    alert('mmm');
 });
+
+// $(".map-item").mouseleave(function(e) {
+//     $(".seemore-county-container").css("display", "none");
+// });
 
 
 $(document)

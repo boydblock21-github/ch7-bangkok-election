@@ -2221,7 +2221,7 @@ small.invisible {
   background-color: #ffffff;
   position: absolute;
   display: none;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
 }
 
@@ -2234,6 +2234,10 @@ small.invisible {
 .seemore-county-container .title {
   display: flex;
   align-items: center;
+}
+
+.seemore-county-container .title .text-link {
+  z-index: 10;
 }
 
 .seemore-county-container .title .text-link.-title-county {

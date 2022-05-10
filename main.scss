@@ -2027,7 +2027,7 @@ small{
   background-color: $gray-07;
   position: absolute;
   display: none;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
   @include media-breakpoint-up(md){
     width: 30rem
@@ -2036,6 +2036,7 @@ small{
     display: flex;
     align-items: center;
     .text-link{
+      z-index: 10;
       &.-title-county{
         color: $primary-02;
       }
