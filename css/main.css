@@ -1790,9 +1790,15 @@ small.invisible {
   width: 100%;
 }
 
+.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox {
+  display: flex;
+}
+
 .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
   width: 100%;
+  height: 3.25rem;
   padding: 0.5rem 1.5rem;
+  -webkit-appearance: none;
   font-size: 20px;
   font-size: 1.25rem;
   border: 1px solid #13599C;
@@ -1825,7 +1831,7 @@ small.invisible {
   content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
   background-image: none;
   left: 25%;
-  margin-top: -10px;
+  margin-top: -8px;
   margin-left: -10px;
 }
 
@@ -1943,9 +1949,14 @@ small.invisible {
   width: 100%;
 }
 
+.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox {
+  display: flex;
+}
+
 .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
   width: 100%;
   padding: 0.5rem 1.5rem;
+  height: 3.25rem;
   font-size: 20px;
   font-size: 1.25rem;
   border: 1px solid #13599C;
@@ -1978,7 +1989,6 @@ small.invisible {
   content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
   background-image: none;
   left: 25%;
-  margin-top: -10px;
   margin-left: -10px;
 }
 
@@ -2231,19 +2241,6 @@ small.invisible {
   }
 }
 
-.seemore-county-container .title {
-  display: flex;
-  align-items: center;
-}
-
-.seemore-county-container .title .text-link {
-  z-index: 10;
-}
-
-.seemore-county-container .title .text-link.-title-county {
-  color: #064DDB;
-}
-
 .seemore-county-container::after {
   content: '';
   position: absolute;
@@ -2273,6 +2270,10 @@ small.invisible {
   .seemore-county-container::after {
     margin-left: 1.5rem;
   }
+}
+
+.seemore-county-container.-hidden {
+  display: none !important;
 }
 
 .seemore-county-container .contestant-detail-container {
