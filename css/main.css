@@ -690,6 +690,29 @@ small.invisible {
   }
 }
 
+.btn-primary-02 {
+  color: #ffffff;
+  background-color: #064DDB;
+  border-color: #064DDB;
+  line-height: 1.7;
+  font-weight: bold;
+  border-radius: 6rem;
+  display: flex;
+  align-items: flex-start;
+  padding: 0.45rem 1rem;
+}
+
+.btn-primary-02:hover {
+  color: #F6F8F7;
+  background-color: #006fcb;
+  border-color: #006fcb;
+}
+
+.btn-primary-02:focus {
+  color: #F6F8F7;
+  box-shadow: 0 0 0 0.2rem rgba(0, 111, 203, 0.5);
+}
+
 .btn-tertiary-01 {
   color: #ffffff;
   background-color: #099DFF;
@@ -1770,7 +1793,6 @@ small.invisible {
   .map-area .title-map-container .title-map-content .form-input-county.input-group {
     width: 19rem;
     padding: 0;
-    padding-bottom: 0.5rem;
   }
 }
 
@@ -2091,6 +2113,16 @@ small.invisible {
   text-align: center;
 }
 
+.container-map-area .img-map {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container-map-area .img-map {
+    margin-bottom: 0;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .container-map-area .img-map {
     width: 80%;
@@ -2148,6 +2180,11 @@ small.invisible {
 
 .container-map-area .map-item.-default {
   fill: #ADADAD;
+}
+
+.watermark-content {
+  text-align: center;
+  opacity: 0.35;
 }
 
 .seemore-county-container {
