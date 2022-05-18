@@ -690,6 +690,29 @@ small.invisible {
   }
 }
 
+.btn-primary-02 {
+  color: #ffffff;
+  background-color: #064DDB;
+  border-color: #064DDB;
+  line-height: 1.7;
+  font-weight: bold;
+  border-radius: 6rem;
+  display: flex;
+  align-items: flex-start;
+  padding: 0.45rem 1rem;
+}
+
+.btn-primary-02:hover {
+  color: #F6F8F7;
+  background-color: #006fcb;
+  border-color: #006fcb;
+}
+
+.btn-primary-02:focus {
+  color: #F6F8F7;
+  box-shadow: 0 0 0 0.2rem rgba(0, 111, 203, 0.5);
+}
+
 .btn-tertiary-01 {
   color: #ffffff;
   background-color: #099DFF;
@@ -1968,7 +1991,6 @@ small.invisible {
   .map-area .title-map-container .title-map-content .form-input-county.input-group {
     width: 19rem;
     padding: 0;
-    padding-bottom: 0.5rem;
   }
 }
 
@@ -1980,57 +2002,25 @@ small.invisible {
   }
 }
 
-.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget {
-  border-radius: 2rem;
-}
-
 .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control {
   width: 100%;
 }
 
-.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
+.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .form-filter-county {
   width: 100%;
-  padding: 0.5rem 1.5rem;
-  font-size: 20px;
-  font-size: 1.25rem;
   border: 1px solid #13599C;
-  color: #03266E;
-  font-family: "Sukhumvit Set" !important;
+  padding: 0.5rem 1.5rem;
   font-weight: bold;
-  background-color: #ffffff;
-}
-
-@media only screen and (min-width: 768px) {
-  .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}
-
-.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
-  border: none;
-  margin-left: -35px;
-  background-color: transparent;
-}
-
-@media only screen and (min-width: 768px) {
-  .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
-    margin-left: -50px;
-  }
-}
-
-.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
-  content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
-  background-image: none;
-  left: 25%;
-  margin-top: -10px;
-  margin-left: -10px;
-}
-
-@media only screen and (min-width: 768px) {
-  .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
-    left: 50%;
-  }
+  font-size: 22px;
+  font-size: 1.375rem;
+  border-radius: 2rem;
+  font-family: "Sukhumvit Set" !important;
+  -webkit-appearance: none;
+  background-image: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  color: #03266E;
+  background-color: #F6F8F7;
 }
 
 .map-area .title-map-container .sub-details-map {
@@ -2141,49 +2131,21 @@ small.invisible {
   width: 100%;
 }
 
-.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
+.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .form-filter-county {
   width: 100%;
-  padding: 0.5rem 1.5rem;
-  font-size: 20px;
-  font-size: 1.25rem;
   border: 1px solid #13599C;
-  color: #03266E;
-  font-family: "Sukhumvit Set" !important;
+  padding: 0.5rem 1.5rem;
   font-weight: bold;
-  background-color: #ffffff;
-}
-
-@media only screen and (min-width: 768px) {
-  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}
-
-.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
-  border: none;
-  margin-left: -35px;
-  background-color: transparent;
-}
-
-@media only screen and (min-width: 768px) {
-  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
-    margin-left: -50px;
-  }
-}
-
-.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
-  content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
-  background-image: none;
-  left: 25%;
-  margin-top: -10px;
-  margin-left: -10px;
-}
-
-@media only screen and (min-width: 768px) {
-  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
-    left: 50%;
-  }
+  font-size: 22px;
+  font-size: 1.375rem;
+  border-radius: 2rem;
+  font-family: "Sukhumvit Set" !important;
+  -webkit-appearance: none;
+  background-image: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-color: #F6F8F7;
+  color: #03266E;
 }
 
 .all-contestant-area .title-map-container .time-update {
@@ -2353,6 +2315,16 @@ small.invisible {
   text-align: center;
 }
 
+.container-map-area .img-map {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container-map-area .img-map {
+    margin-bottom: 0;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .container-map-area .img-map {
     width: 80%;
@@ -2412,6 +2384,11 @@ small.invisible {
   fill: #ADADAD;
 }
 
+.watermark-content {
+  text-align: center;
+  opacity: 0.35;
+}
+
 .seemore-county-container {
   box-shadow: 0px 0px 8px rgba(10, 10, 10, 0.15);
   padding: 1rem;
@@ -2419,7 +2396,7 @@ small.invisible {
   background-color: #ffffff;
   position: absolute;
   display: none;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
 }
 
@@ -2436,6 +2413,32 @@ small.invisible {
   top: 100%;
   width: 0;
   height: 0;
+  margin-left: 20px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .seemore-county-container::after {
+    margin-left: -3.25rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .seemore-county-container::after {
+    margin-left: -3.35rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .seemore-county-container::after {
+    margin-left: 1.5rem;
+  }
+}
+
+.seemore-county-container.-hidden {
+  display: none !important;
 }
 
 .seemore-county-container .contestant-detail-container {

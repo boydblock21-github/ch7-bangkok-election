@@ -882,6 +882,27 @@ small{
   }
 }
 
+.btn-primary-02{
+  color: $gray-07;
+  background-color: $primary-02;
+  border-color: $primary-02;
+  line-height: 1.7;
+  font-weight: bold;
+  border-radius: 6rem;
+  display: flex;
+  align-items: flex-start;
+  padding: 0.45rem 1rem;
+  &:hover{
+    color: $light;
+    background-color: $tertiary-02;
+    border-color: $tertiary-02;
+  }
+  &:focus{
+    color: $light;
+    box-shadow: 0 0 0 0.2rem rgba($tertiary-02, 0.5);
+  }
+}
+
 .btn-tertiary-01{
   color: $gray-07;
   background-color: $tertiary-01;
@@ -1819,7 +1840,6 @@ small{
           @include media-breakpoint-up(md){
             width: 19rem;
             padding: 0;
-            padding-bottom: 0.5rem;
           }
           @include media-breakpoint-up(lg){
             margin: 0;
@@ -1827,42 +1847,23 @@ small{
             margin-right: initial;
           }
           .ui-widget{
-            border-radius: 2rem;
             &.-form-control{
               width: 100%;
-              .custom-combobox{
-                .custom-combobox-input{
-                  width: 100%;
-                  padding: 0.5rem 1.5rem;
-                  @include font-size(20);
-                  border: 1px solid $tertiary-07;
-                  color: $primary-01;
-                  font-family: "Sukhumvit Set" !important;
-                  font-weight: bold;
-                  background-color: $gray-07;
-                  @include media-breakpoint-up(md){
-                    @include font-size(24);
-                  }
-                }
-                .ui-button{
-                  border: none;
-                  margin-left: -35px;
-                  background-color: transparent;
-                  @include media-breakpoint-up(md){
-                    margin-left: -50px;
-                  }
-                  .ui-button-icon{
-                    content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
-                    background-image: none;
-                    left: 25%;
-                    margin-top: -10px;
-                    margin-left: -10px;
-                    @include media-breakpoint-up(md){
-                      left: 50%;
-                    }
-                  }
-                }
-              } 
+              .form-filter-county{
+                width: 100%;
+                border: 1px solid $tertiary-07;
+                padding: 0.5rem 1.5rem;
+                font-weight: bold;
+                @include font-size(22);
+                border-radius: 2rem;
+                font-family: "Sukhumvit Set" !important;
+                -webkit-appearance: none;
+                background-image: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
+                background-repeat: no-repeat;
+                background-position: right 0.75rem center;
+                color: $primary-01;
+                background-color: $light;
+              }
             }
           }
         }
@@ -1938,38 +1939,20 @@ small{
             border-radius: 2rem;
             &.-form-control{
               width: 100%;
-              .custom-combobox{
-                .custom-combobox-input{
-                  width: 100%;
-                  padding: 0.5rem 1.5rem;
-                  @include font-size(20);
-                  border: 1px solid $tertiary-07;
-                  color: $primary-01;
-                  font-family: "Sukhumvit Set" !important;
-                  font-weight: bold;
-                  background-color: $gray-07;
-                  @include media-breakpoint-up(md){
-                    @include font-size(24);
-                  }
-                }
-                .ui-button{
-                  border: none;
-                  margin-left: -35px;
-                  background-color: transparent;
-                  @include media-breakpoint-up(md){
-                    margin-left: -50px;
-                  }
-                  .ui-button-icon{
-                    content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
-                    background-image: none;
-                    left: 25%;
-                    margin-top: -10px;
-                    margin-left: -10px;
-                    @include media-breakpoint-up(md){
-                      left: 50%;
-                    }
-                  }
-                }
+              .form-filter-county{
+                width: 100%;
+                border: 1px solid $tertiary-07;
+                padding: 0.5rem 1.5rem;
+                font-weight: bold;
+                @include font-size(22);
+                border-radius: 2rem;
+                font-family: "Sukhumvit Set" !important;
+                -webkit-appearance: none;
+                background-image: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
+                background-repeat: no-repeat;
+                background-position: right 0.75rem center;
+                background-color: $light;
+                color: $primary-01;
               } 
             }
           }
@@ -2108,6 +2091,10 @@ small{
   position: relative;
   text-align: center;
   .img-map{
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(lg){
+      margin-bottom: 0;
+    }
     @include media-breakpoint-up(xl){
       width: 80%;
     }  
@@ -2157,6 +2144,11 @@ small{
   }
 }
 
+.watermark-content{
+  text-align: center;
+  opacity: 0.35;
+}
+
 .seemore-county-container{
   box-shadow: 0px 0px 8px rgba($gray-01, .15);
   padding: 1rem;
@@ -2164,7 +2156,7 @@ small{
   background-color: $gray-07;
   position: absolute;
   display: none;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
   @include media-breakpoint-up(md){
     width: 30rem
@@ -2176,11 +2168,33 @@ small{
     top: 100%;
     width: 0;
     height: 0;
-    // margin-left: -50px;
-    // border-left: 10px solid transparent;
-    // border-right: 10px solid transparent;
-    // border-top: 10px solid $gray-07;
+    margin-left: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $gray-07;
+    @include media-breakpoint-up(md){
+      margin-left: -3.25rem;
+    }
+    @include media-breakpoint-up(lg){
+      margin-left: -3.35rem;
+    }
+    @include media-breakpoint-up(xl){
+      margin-left: 1.5rem;
+    }
   }
+  &.-hidden{
+    display: none !important;
+  }
+  // .title{
+  //   display: flex;
+  //   align-items: center;
+  //   .text-link{
+  //     z-index: 10;
+  //     &.-title-county{
+  //       color: $primary-02;
+  //     }
+  //   }
+  // }
   .contestant-detail-container{
     display: flex;
     justify-content: space-between;
@@ -2262,7 +2276,7 @@ small{
         }
       }
     }
-  } 
+  }
 }
 
 .tags-container{
@@ -2285,7 +2299,6 @@ small{
 
   }
 }
-
 
 a{
   p{
