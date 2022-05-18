@@ -1363,7 +1363,13 @@ small.invisible {
   height: 124px;
   transform: rotate(10.55deg);
   overflow: hidden;
-  background-color: #71C0C1;
+  background-color: #F49184;
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-leader .ranking::before {
+    left: -3%;
+  }
 }
 
 .cards.-place-2nd .ranking {
@@ -1402,7 +1408,13 @@ small.invisible {
   height: 124px;
   transform: rotate(10.55deg);
   overflow: hidden;
-  background-color: #6DAFE8;
+  background-color: #5189F8;
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-2nd .ranking::before {
+    left: -3%;
+  }
 }
 
 .cards.-place-3rd .ranking {
@@ -1441,7 +1453,193 @@ small.invisible {
   height: 124px;
   transform: rotate(10.55deg);
   overflow: hidden;
-  background-color: #F49184;
+  background-color: #77B4EA;
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-3rd .ranking::before {
+    left: -3%;
+  }
+}
+
+.cards.-place-4th .ranking {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards.-place-4th .ranking .width {
+  max-width: 110px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-place-4th .ranking .width {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-place-4th .ranking .width {
+    max-width: 110px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-4th .ranking .width {
+    max-width: 165px;
+  }
+}
+
+.cards.-place-4th .ranking::before {
+  content: " ";
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 72px;
+  height: 124px;
+  transform: rotate(10.55deg);
+  overflow: hidden;
+  background-color: #F2E997;
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-4th .ranking::before {
+    left: -3%;
+  }
+}
+
+.cards.-place-5th .ranking {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards.-place-5th .ranking .width {
+  max-width: 110px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-place-5th .ranking .width {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-place-5th .ranking .width {
+    max-width: 110px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-5th .ranking .width {
+    max-width: 165px;
+  }
+}
+
+.cards.-place-5th .ranking::before {
+  content: " ";
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 72px;
+  height: 124px;
+  transform: rotate(10.55deg);
+  overflow: hidden;
+  background-color: #89CBCC;
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-5th .ranking::before {
+    left: -3%;
+  }
+}
+
+.cards.-place-6th .ranking {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards.-place-6th .ranking .width {
+  max-width: 110px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-place-6th .ranking .width {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-place-6th .ranking .width {
+    max-width: 110px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-6th .ranking .width {
+    max-width: 165px;
+  }
+}
+
+.cards.-place-6th .ranking::before {
+  content: " ";
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 72px;
+  height: 124px;
+  transform: rotate(10.55deg);
+  overflow: hidden;
+  background-color: #A68AF8;
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-6th .ranking::before {
+    left: -3%;
+  }
+}
+
+.cards.-place-other .ranking {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards.-place-other .ranking .width {
+  max-width: 110px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards.-place-other .ranking .width {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards.-place-other .ranking .width {
+    max-width: 110px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-other .ranking .width {
+    max-width: 165px;
+  }
+}
+
+.cards.-place-other .ranking::before {
+  content: " ";
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 72px;
+  height: 124px;
+  transform: rotate(10.55deg);
+  overflow: hidden;
+  background-color: #777777;
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-place-other .ranking::before {
+    left: -3%;
+  }
 }
 
 .cards .contestant .title {

@@ -1363,7 +1363,10 @@ small{
           height: 124px;
           transform: rotate(10.55deg);
           overflow: hidden;
-          background-color: $leader;
+          background-color: $ranking-01;
+          @include media-breakpoint-up(xl){
+            left: -3%;
+          }
       }
     }
   }
@@ -1392,7 +1395,10 @@ small{
           height: 124px;
           transform: rotate(10.55deg);
           overflow: hidden;
-          background-color: $place-2nd;
+          background-color: $ranking-03;
+          @include media-breakpoint-up(xl){
+            left: -3%;
+          }
       }
     }
   }
@@ -1421,7 +1427,138 @@ small{
           height: 124px;
           transform: rotate(10.55deg);
           overflow: hidden;
-          background-color: $place-3rd;
+          background-color: $ranking-04;
+          @include media-breakpoint-up(xl){
+            left: -3%;
+          }
+      }
+    }
+  }
+  &.-place-4th{
+    .ranking{
+      position: relative;
+      overflow: hidden;
+      .width{
+        max-width: 110px;
+        @include media-breakpoint-up(md){
+          max-width: 100%;
+        }
+        @include media-breakpoint-up(lg){
+          max-width: 110px;
+        }
+        @include media-breakpoint-up(xl){
+          max-width: 165px;
+        }
+      }
+      &::before{
+          content: " ";
+          position: absolute;
+          top: -10%;
+          left: -5%;
+          width: 72px;
+          height: 124px;
+          transform: rotate(10.55deg);
+          overflow: hidden;
+          background-color: $ranking-06;
+          @include media-breakpoint-up(xl){
+            left: -3%;
+          }
+      }
+    }
+  }
+  &.-place-5th{
+    .ranking{
+      position: relative;
+      overflow: hidden;
+      .width{
+        max-width: 110px;
+        @include media-breakpoint-up(md){
+          max-width: 100%;
+        }
+        @include media-breakpoint-up(lg){
+          max-width: 110px;
+        }
+        @include media-breakpoint-up(xl){
+          max-width: 165px;
+        }
+      }
+      &::before{
+          content: " ";
+          position: absolute;
+          top: -10%;
+          left: -5%;
+          width: 72px;
+          height: 124px;
+          transform: rotate(10.55deg);
+          overflow: hidden;
+          background-color: $ranking-08;
+          @include media-breakpoint-up(xl){
+            left: -3%;
+          }
+      }
+    }
+  }
+  &.-place-6th{
+    .ranking{
+      position: relative;
+      overflow: hidden;
+      .width{
+        max-width: 110px;
+        @include media-breakpoint-up(md){
+          max-width: 100%;
+        }
+        @include media-breakpoint-up(lg){
+          max-width: 110px;
+        }
+        @include media-breakpoint-up(xl){
+          max-width: 165px;
+        }
+      }
+      &::before{
+          content: " ";
+          position: absolute;
+          top: -10%;
+          left: -5%;
+          width: 72px;
+          height: 124px;
+          transform: rotate(10.55deg);
+          overflow: hidden;
+          background-color: $ranking-11;
+          @include media-breakpoint-up(xl){
+            left: -3%;
+          }
+      }
+    }
+  }
+  &.-place-other{
+    .ranking{
+      position: relative;
+      overflow: hidden;
+      .width{
+        max-width: 110px;
+        @include media-breakpoint-up(md){
+          max-width: 100%;
+        }
+        @include media-breakpoint-up(lg){
+          max-width: 110px;
+        }
+        @include media-breakpoint-up(xl){
+          max-width: 165px;
+        }
+      }
+      &::before{
+          content: " ";
+          position: absolute;
+          top: -10%;
+          left: -5%;
+          width: 72px;
+          height: 124px;
+          transform: rotate(10.55deg);
+          overflow: hidden;
+          background-color: $ranking-etc;
+          @include media-breakpoint-up(xl){
+            left: -3%;
+          }
       }
     }
   }
