@@ -17,10 +17,6 @@
     <link rel="stylesheet" type="text/css" href="https://static.bugaboo.tv/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="https://static.bugaboo.tv/css/owl.theme.default.min.css">
 
-    <!-- Dropdown County-->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/></style>
- 
-
     <title>เลือกตั้งผู้ว่า</title>
   </head>
   <body>
@@ -133,27 +129,29 @@
         <div class="title-map-container">
           <div class="title-map-content">
             <h2 class="me-3 text-center text-lg-start">ผลการนับคะแนนเลือกตั้งผู้ว่าฯ กรุงเทพมหานคร <span class="d-none d-lg-inline">/</span> </h2>
-            <div class="form-input-county input-group">
-              <div class="ui-widget -form-control">
-                <select id="js__apply_now" class="form-filter-county">
-                  <option value="">ทุกเขต</option>
-                  <option value="1">เขตคลองเตย</option>
-                  <option value="2">เขตคลองสาน</option>
-                  <option value="3">เขตคลองสามวา</option>
-                  <option value="4">เขตคันนายาว</option>
-                  <option value="5">เขตจตุจักร</option>
-                  <option value="6">เขตจอมทอง</option>
-                  <option value="7">เขตดอนเมือง</option>
-                  <option value="8">เขตดินแดง</option>
-                  <option value="9">เขตดุสิต</option>
-                  <option value="10">เขตตลิ่งชัน</option>
-                  <option value="11">เขตทวีวัฒนา</option>
-                  <option value="12">เขตทุ่งครุ</option>
-                  <option value="13">เขตธนบุรี</option>
-                  <option value="เขตบางเขน">เขตบางเขน</option>
-                  <option value="เขตบางเขน">เขตป้อมปราบศัตรูพ่าย</option>
-                </select>
+            <div class="form-input-county input-group -multi-widget">
+              <div class="ui-widget -form-control py-2 p-md-1">
+                <select id="js__apply_now01" class="form-filter-county"><option value="all">ทุกแขวง</option><option value="1">เขตพระนคร</option><option value="2">เขตดุสิต</option><option value="3">เขตหนองจอก</option><option value="4">เขตบางรัก</option><option value="5">เขตบางเขน</option><option value="6">เขตบางกะปิ</option><option value="7">เขตปทุมวัน</option><option value="8">เขตป้อมปราบศัตรูพ่าย</option><option value="9">เขตพระโขนง</option><option value="10">เขตมีนบุรี</option><option value="11">เขตลาดกระบัง</option><option value="12">เขตยานนาวา</option><option value="13">เขตสัมพันธวงศ์</option><option value="14">เขตพญาไท</option><option value="15">เขตธนบุรี</option><option value="16">เขตบางกอกใหญ่</option><option value="17">เขตห้วยขวาง</option><option value="18">เขตคลองสาน</option><option value="19">เขตตลิ่งชัน</option><option value="20">เขตบางกอกน้อย</option><option value="21">เขตบางขุนเทียน</option><option value="22">เขตภาษีเจริญ</option><option value="23">เขตหนองแขม</option><option value="24">เขตราษฎร์บูรณะ</option><option value="25">เขตบางพลัด</option><option value="26">เขตดินแดง</option><option value="27">เขตบึงกุ่ม</option><option value="28">เขตสาทร</option><option value="29">เขตบางซื่อ</option><option value="30">เขตจตุจักร</option><option value="31">เขตบางคอแหลม</option><option value="32">เขตประเวศ</option><option value="33">เขตคลองเตย</option><option value="34">เขตสวนหลวง</option><option value="35">เขตจอมทอง</option><option value="36">เขตดอนเมือง</option><option value="37">เขตราชเทวี</option><option value="38">เขตลาดพร้าว</option><option value="39">เขตวัฒนา</option><option value="40">เขตบางแค</option><option value="41">เขตหลักสี่</option><option value="42">เขตสายไหม</option><option value="43">เขตคันนายาว</option><option value="44">เขตสะพานสูง</option><option value="45">เขตวังทองหลาง</option><option value="46">เขตคลองสามวา</option><option value="47">เขตบางนา</option><option value="48">เขตทวีวัฒนา</option><option value="49">เขตทุ่งครุ</option><option value="50">เขตบางบอน</option></select>
               </div>
+              <!-- <div class="ui-widget -form-control py-2 p-md-1">
+                <select id="js__apply_now02" class="form-filter-county">
+                  <option value="">ทุกแขวง</option>
+                  <option value="1">แขวงคลองเตย</option>
+                  <option value="2">แขวงคลองสาน</option>
+                  <option value="3">แขวงคลองสามวา</option>
+                  <option value="4">แขวงคันนายาว</option>
+                  <option value="5">แขวงจตุจักร</option>
+                  <option value="6">แขวงจอมทอง</option>
+                  <option value="7">แขวงดอนเมือง</option>
+                  <option value="8">แขวงดินแดง</option>
+                  <option value="9">แขวงดุสิต</option>
+                  <option value="10">แขวงตลิ่งชัน</option>
+                  <option value="11">แขวงทวีวัฒนา</option>
+                  <option value="12">แขวงทุ่งครุ</option>
+                  <option value="13">แขวงธนบุรี</option>
+                  <option value="เขตบางเขน">แขวงบางเขน</option>
+                </select>
+              </div> -->
             </div>
           </div>
           
@@ -1013,11 +1011,6 @@
   <!--  Bootstrap JS -->
   <script src="https://static.ch7.com/js/jquery-3.6.0-newstart.min.js"></script>
 
-   <!-- for dropdown -->
-   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-   <script src=" https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
- 
-
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -1060,145 +1053,7 @@
     });
 
     // for dropdown
-    $(function () {
-      $.widget("custom.combobox", {
-        _create: function () {
-          this.wrapper = $("<span>")
-            .addClass("custom-combobox")
-            .insertAfter(this.element);
-          this.element.hide();
-          this._createAutocomplete();
-          this._createShowAllButton();
-        },
-
-        _createAutocomplete: function () {
-          var selected = this.element.children(":selected"),
-            value = selected.val() ? selected.text() : "";
-
-          this.input = $("<input>")
-            .appendTo(this.wrapper)
-            .val(value)
-            .attr("title", "")
-            .attr("placeholder", "เลือกเขต")
-            .addClass(
-              "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left"
-            )
-            .autocomplete({
-              delay: 0,
-              minLength: 0,
-              source: $.proxy(this, "_source"),
-            })
-            .tooltip({
-              classes: {
-                "ui-tooltip": "ui-state-highlight",
-              },
-            });
-
-          this._on(this.input, {
-            autocompleteselect: function (event, ui) {
-              ui.item.option.selected = true;
-              this._trigger("select", event, {
-                item: ui.item.option,
-              });
-            },
-
-            autocompletechange: "_removeIfInvalid",
-          });
-        },
-
-        _createShowAllButton: function () {
-          var input = this.input,
-            wasOpen = false;
-
-          $("<a>")
-            .attr("tabIndex", -1)
-            // .attr("title", "Show All Items")
-            .tooltip()
-            .appendTo(this.wrapper)
-            .button({
-              icons: {
-                primary: "ui-icon-triangle-1-s",
-              },
-              text: false,
-            })
-            .removeClass("ui-corner-all")
-            .addClass("custom-combobox-toggle ui-corner-right")
-            .on("mousedown", function () {
-              wasOpen = input.autocomplete("widget").is(":visible");
-            })
-            .on("click", function () {
-              input.trigger("focus");
-
-              // Close if already visible
-              if (wasOpen) {
-                return;
-              }
-
-              // Pass empty string as value to search for, displaying all results
-              input.autocomplete("search", "");
-            });
-        },
-
-        _source: function (request, response) {
-          var matcher = new RegExp(
-            $.ui.autocomplete.escapeRegex(request.term),
-            "i"
-          );
-          response(
-            this.element.children("option").map(function () {
-              var text = $(this).text();
-              if (this.value && (!request.term || matcher.test(text)))
-                return {
-                  label: text,
-                  value: text,
-                  option: this,
-                };
-            })
-          );
-        },
-
-        _removeIfInvalid: function (event, ui) {
-          // Selected an item, nothing to do
-          if (ui.item) {
-            return;
-          }
-
-          // Search for a match (case-insensitive)
-          var value = this.input.val(),
-            valueLowerCase = value.toLowerCase(),
-            valid = false;
-          this.element.children("option").each(function () {
-            if ($(this).text().toLowerCase() === valueLowerCase) {
-              this.selected = valid = true;
-              return false;
-            }
-          });
-
-          // Found a match, nothing to do
-          if (valid) {
-            return;
-          }
-
-          // Remove invalid value
-          this.input
-            .val("")
-            // .attr("title", value + "ไม่พบข้อมูล")
-            .tooltip("open");
-          this.element.val("");
-          this._delay(function () {
-            this.input.tooltip("close").attr("title", "");
-          }, 2500);
-          this.input.autocomplete("instance").term = "";
-        },
-
-        _destroy: function () {
-          this.wrapper.remove();
-          this.element.show();
-        },
-      });
-
-      $("#js__apply_now").combobox();
-    });
+    
   </script>
   </body>
 </html>

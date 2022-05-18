@@ -1690,45 +1690,21 @@ small{
             margin-right: initial;
           }
           .ui-widget{
-            border-radius: 2rem;
             &.-form-control{
               width: 100%;
-              .custom-combobox{
-                 display: flex;
-                .custom-combobox-input{
-                  width: 100%;
-                  height: 3.25rem;
-                  padding: 0.5rem 1.5rem;
-                  -webkit-appearance: none;
-                  @include font-size(20);
-                  border: 1px solid $tertiary-07;
-                  color: $primary-01;
-                  font-family: "Sukhumvit Set" !important;
-                  font-weight: bold;
-                  background-color: $gray-07;
-                  @include media-breakpoint-up(md){
-                    @include font-size(24);
-                  }
-                }
-                .ui-button{
-                  border: none;
-                  margin-left: -35px;
-                  background-color: transparent;
-                  @include media-breakpoint-up(md){
-                    margin-left: -50px;
-                  }
-                  .ui-button-icon{
-                    content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
-                    background-image: none;
-                    left: 25%;
-                    margin-top: -8px;
-                    margin-left: -10px;
-                    @include media-breakpoint-up(md){
-                      left: 50%;
-                    }
-                  }
-                }
-              } 
+              .form-filter-county{
+                width: 100%;
+                border: 1px solid $tertiary-07;
+                padding: 0.5rem 1.5rem;
+                font-weight: bold;
+                @include font-size(22);
+                border-radius: 2rem;
+                font-family: "Sukhumvit Set" !important;
+                -webkit-appearance: none;
+                background-image: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
+                background-repeat: no-repeat;
+                background-position: right 0.75rem center;
+              }
             }
           }
         }
@@ -1804,39 +1780,18 @@ small{
             border-radius: 2rem;
             &.-form-control{
               width: 100%;
-              .custom-combobox{
-                display: flex;
-                .custom-combobox-input{
-                  width: 100%;
-                  padding: 0.5rem 1.5rem;
-                  height: 3.25rem;
-                  @include font-size(20);
-                  border: 1px solid $tertiary-07;
-                  color: $primary-01;
-                  font-family: "Sukhumvit Set" !important;
-                  font-weight: bold;
-                  background-color: $gray-07;
-                  @include media-breakpoint-up(md){
-                    @include font-size(24);
-                  }
-                }
-                .ui-button{
-                  border: none;
-                  margin-left: -35px;
-                  background-color: transparent;
-                  @include media-breakpoint-up(md){
-                    margin-left: -50px;
-                  }
-                  .ui-button-icon{
-                    content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
-                    background-image: none;
-                    left: 25%;
-                    margin-left: -10px;
-                    @include media-breakpoint-up(md){
-                      left: 50%;
-                    }
-                  }
-                }
+              .form-filter-county{
+                width: 100%;
+                border: 1px solid $tertiary-07;
+                padding: 0.5rem 1.5rem;
+                font-weight: bold;
+                @include font-size(22);
+                border-radius: 2rem;
+                font-family: "Sukhumvit Set" !important;
+                -webkit-appearance: none;
+                background-image: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
+                background-repeat: no-repeat;
+                background-position: right 0.75rem center;
               } 
             }
           }

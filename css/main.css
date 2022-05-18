@@ -1782,63 +1782,23 @@ small.invisible {
   }
 }
 
-.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget {
-  border-radius: 2rem;
-}
-
 .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control {
   width: 100%;
 }
 
-.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox {
-  display: flex;
-}
-
-.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
+.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .form-filter-county {
   width: 100%;
-  height: 3.25rem;
-  padding: 0.5rem 1.5rem;
-  -webkit-appearance: none;
-  font-size: 20px;
-  font-size: 1.25rem;
   border: 1px solid #13599C;
-  color: #03266E;
-  font-family: "Sukhumvit Set" !important;
+  padding: 0.5rem 1.5rem;
   font-weight: bold;
-  background-color: #ffffff;
-}
-
-@media only screen and (min-width: 768px) {
-  .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}
-
-.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
-  border: none;
-  margin-left: -35px;
-  background-color: transparent;
-}
-
-@media only screen and (min-width: 768px) {
-  .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
-    margin-left: -50px;
-  }
-}
-
-.map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
-  content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
-  background-image: none;
-  left: 25%;
-  margin-top: -8px;
-  margin-left: -10px;
-}
-
-@media only screen and (min-width: 768px) {
-  .map-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
-    left: 50%;
-  }
+  font-size: 22px;
+  font-size: 1.375rem;
+  border-radius: 2rem;
+  font-family: "Sukhumvit Set" !important;
+  -webkit-appearance: none;
+  background-image: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
 }
 
 .map-area .title-map-container .sub-details-map {
@@ -1949,53 +1909,19 @@ small.invisible {
   width: 100%;
 }
 
-.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox {
-  display: flex;
-}
-
-.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
+.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .form-filter-county {
   width: 100%;
-  padding: 0.5rem 1.5rem;
-  height: 3.25rem;
-  font-size: 20px;
-  font-size: 1.25rem;
   border: 1px solid #13599C;
-  color: #03266E;
-  font-family: "Sukhumvit Set" !important;
+  padding: 0.5rem 1.5rem;
   font-weight: bold;
-  background-color: #ffffff;
-}
-
-@media only screen and (min-width: 768px) {
-  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .custom-combobox-input {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}
-
-.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
-  border: none;
-  margin-left: -35px;
-  background-color: transparent;
-}
-
-@media only screen and (min-width: 768px) {
-  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button {
-    margin-left: -50px;
-  }
-}
-
-.all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
-  content: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
-  background-image: none;
-  left: 25%;
-  margin-left: -10px;
-}
-
-@media only screen and (min-width: 768px) {
-  .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group .ui-widget.-form-control .custom-combobox .ui-button .ui-button-icon {
-    left: 50%;
-  }
+  font-size: 22px;
+  font-size: 1.375rem;
+  border-radius: 2rem;
+  font-family: "Sukhumvit Set" !important;
+  -webkit-appearance: none;
+  background-image: url(https://static.ch7.com/images/elected_governor/icon-dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
 }
 
 .all-contestant-area .title-map-container .time-update {
