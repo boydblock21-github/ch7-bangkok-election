@@ -1350,34 +1350,34 @@ small.invisible {
   }
 }
 
-.cards.-leader .ranking {
+.cards.-contestant-ranking .ranking {
   position: relative;
   overflow: hidden;
 }
 
-.cards.-leader .ranking .width {
+.cards.-contestant-ranking .ranking .width {
   max-width: 110px;
 }
 
 @media only screen and (min-width: 768px) {
-  .cards.-leader .ranking .width {
+  .cards.-contestant-ranking .ranking .width {
     max-width: 100%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .cards.-leader .ranking .width {
+  .cards.-contestant-ranking .ranking .width {
     max-width: 110px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .cards.-leader .ranking .width {
+  .cards.-contestant-ranking .ranking .width {
     max-width: 165px;
   }
 }
 
-.cards.-leader .ranking::before {
+.cards.-contestant-ranking .ranking::before {
   content: " ";
   position: absolute;
   top: -10%;
@@ -1386,283 +1386,44 @@ small.invisible {
   height: 124px;
   transform: rotate(10.55deg);
   overflow: hidden;
+}
+
+@media only screen and (min-width: 1280px) {
+  .cards.-contestant-ranking .ranking::before {
+    left: -3%;
+  }
+}
+
+.cards.-contestant-ranking .ranking.-number-01::before {
   background-color: #F49184;
 }
 
-@media only screen and (min-width: 1280px) {
-  .cards.-leader .ranking::before {
-    left: -3%;
-  }
-}
-
-.cards.-place-2nd .ranking {
-  position: relative;
-  overflow: hidden;
-}
-
-.cards.-place-2nd .ranking .width {
-  max-width: 110px;
-}
-
-@media only screen and (min-width: 768px) {
-  .cards.-place-2nd .ranking .width {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .cards.-place-2nd .ranking .width {
-    max-width: 110px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .cards.-place-2nd .ranking .width {
-    max-width: 165px;
-  }
-}
-
-.cards.-place-2nd .ranking::before {
-  content: " ";
-  position: absolute;
-  top: -10%;
-  left: -5%;
-  width: 72px;
-  height: 124px;
-  transform: rotate(10.55deg);
-  overflow: hidden;
+.cards.-contestant-ranking .ranking.-number-03::before {
   background-color: #5189F8;
 }
 
-@media only screen and (min-width: 1280px) {
-  .cards.-place-2nd .ranking::before {
-    left: -3%;
-  }
-}
-
-.cards.-place-3rd .ranking {
-  position: relative;
-  overflow: hidden;
-}
-
-.cards.-place-3rd .ranking .width {
-  max-width: 110px;
-}
-
-@media only screen and (min-width: 768px) {
-  .cards.-place-3rd .ranking .width {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .cards.-place-3rd .ranking .width {
-    max-width: 110px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .cards.-place-3rd .ranking .width {
-    max-width: 165px;
-  }
-}
-
-.cards.-place-3rd .ranking::before {
-  content: " ";
-  position: absolute;
-  top: -10%;
-  left: -5%;
-  width: 72px;
-  height: 124px;
-  transform: rotate(10.55deg);
-  overflow: hidden;
+.cards.-contestant-ranking .ranking.-number-04::before {
   background-color: #77B4EA;
 }
 
-@media only screen and (min-width: 1280px) {
-  .cards.-place-3rd .ranking::before {
-    left: -3%;
-  }
-}
-
-.cards.-place-4th .ranking {
-  position: relative;
-  overflow: hidden;
-}
-
-.cards.-place-4th .ranking .width {
-  max-width: 110px;
-}
-
-@media only screen and (min-width: 768px) {
-  .cards.-place-4th .ranking .width {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .cards.-place-4th .ranking .width {
-    max-width: 110px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .cards.-place-4th .ranking .width {
-    max-width: 165px;
-  }
-}
-
-.cards.-place-4th .ranking::before {
-  content: " ";
-  position: absolute;
-  top: -10%;
-  left: -5%;
-  width: 72px;
-  height: 124px;
-  transform: rotate(10.55deg);
-  overflow: hidden;
+.cards.-contestant-ranking .ranking.-number-06::before {
   background-color: #F2E997;
 }
 
-@media only screen and (min-width: 1280px) {
-  .cards.-place-4th .ranking::before {
-    left: -3%;
-  }
+.cards.-contestant-ranking .ranking.-number-07::before {
+  background-color: #DCBF74;
 }
 
-.cards.-place-5th .ranking {
-  position: relative;
-  overflow: hidden;
+.cards.-contestant-ranking .ranking.-number-08::before {
+  background-color: #71C0C1;
 }
 
-.cards.-place-5th .ranking .width {
-  max-width: 110px;
-}
-
-@media only screen and (min-width: 768px) {
-  .cards.-place-5th .ranking .width {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .cards.-place-5th .ranking .width {
-    max-width: 110px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .cards.-place-5th .ranking .width {
-    max-width: 165px;
-  }
-}
-
-.cards.-place-5th .ranking::before {
-  content: " ";
-  position: absolute;
-  top: -10%;
-  left: -5%;
-  width: 72px;
-  height: 124px;
-  transform: rotate(10.55deg);
-  overflow: hidden;
-  background-color: #89CBCC;
-}
-
-@media only screen and (min-width: 1280px) {
-  .cards.-place-5th .ranking::before {
-    left: -3%;
-  }
-}
-
-.cards.-place-6th .ranking {
-  position: relative;
-  overflow: hidden;
-}
-
-.cards.-place-6th .ranking .width {
-  max-width: 110px;
-}
-
-@media only screen and (min-width: 768px) {
-  .cards.-place-6th .ranking .width {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .cards.-place-6th .ranking .width {
-    max-width: 110px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .cards.-place-6th .ranking .width {
-    max-width: 165px;
-  }
-}
-
-.cards.-place-6th .ranking::before {
-  content: " ";
-  position: absolute;
-  top: -10%;
-  left: -5%;
-  width: 72px;
-  height: 124px;
-  transform: rotate(10.55deg);
-  overflow: hidden;
+.cards.-contestant-ranking .ranking.-number-11::before {
   background-color: #A68AF8;
 }
 
-@media only screen and (min-width: 1280px) {
-  .cards.-place-6th .ranking::before {
-    left: -3%;
-  }
-}
-
-.cards.-place-other .ranking {
-  position: relative;
-  overflow: hidden;
-}
-
-.cards.-place-other .ranking .width {
-  max-width: 110px;
-}
-
-@media only screen and (min-width: 768px) {
-  .cards.-place-other .ranking .width {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .cards.-place-other .ranking .width {
-    max-width: 110px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .cards.-place-other .ranking .width {
-    max-width: 165px;
-  }
-}
-
-.cards.-place-other .ranking::before {
-  content: " ";
-  position: absolute;
-  top: -10%;
-  left: -5%;
-  width: 72px;
-  height: 124px;
-  transform: rotate(10.55deg);
-  overflow: hidden;
+.cards.-contestant-ranking .ranking.-number-etc::before {
   background-color: #777777;
-}
-
-@media only screen and (min-width: 1280px) {
-  .cards.-place-other .ranking::before {
-    left: -3%;
-  }
 }
 
 .cards .contestant .title {
@@ -2070,7 +1831,7 @@ small.invisible {
   display: block;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .all-contestant-area .title-map-container .title-map-content.-select-area {
     display: flex;
     align-items: center;
@@ -2116,10 +1877,10 @@ small.invisible {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .all-contestant-area .title-map-container .title-map-content .form-input-county.input-group.-multi-widget {
-    width: 40%;
-    padding: 0;
+    width: 19rem;
+    padding: 1rem 0;
   }
 }
 
@@ -2368,8 +2129,12 @@ small.invisible {
   fill: #F2E997;
 }
 
+.container-map-area .map-item.-number-07 {
+  fill: #DCBF74;
+}
+
 .container-map-area .map-item.-number-08 {
-  fill: #89CBCC;
+  fill: #71C0C1;
 }
 
 .container-map-area .map-item.-number-11 {
@@ -2491,7 +2256,7 @@ small.invisible {
 }
 
 .seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-08 {
-  background-color: #89CBCC;
+  background-color: #71C0C1;
 }
 
 .seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-11 {

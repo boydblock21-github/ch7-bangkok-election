@@ -26,17 +26,15 @@ $gray-06 : #E8E8E8;
 $gray-07 : #ffffff;
 
 
-$ranking-etc : #777777;
-$ranking-01 : #F49184;
-$ranking-03 : #5189F8;
-$ranking-04 : #77B4EA;
-$ranking-06 : #F2E997;
-$ranking-08 : #89CBCC;
-$ranking-11 : #A68AF8;
-$ranking-hover : #FF5858;
-$leader : #71C0C1;
-$place-2nd : #6DAFE8;
-$place-3rd : #F49184;
+$number-etc : #777777;
+$number-01 : #F49184;
+$number-03 : #5189F8;
+$number-04 : #77B4EA;
+$number-06 : #F2E997;
+$number-07 : #DCBF74;
+$number-08 : #71C0C1;
+$number-11 : #A68AF8;
+$number-hover : #FF5858;
 
 $map-01 : #FF1E1E;
 $map-02 : #FF5C5C;
@@ -1359,7 +1357,7 @@ small{
       }
     }
   }
-  &.-leader{
+  &.-contestant-ranking{
     .ranking{
       position: relative;
       overflow: hidden;
@@ -1384,205 +1382,244 @@ small{
           height: 124px;
           transform: rotate(10.55deg);
           overflow: hidden;
-          background-color: $ranking-01;
           @include media-breakpoint-up(xl){
             left: -3%;
           }
       }
-    }
-  }
-  &.-place-2nd{
-    .ranking{
-      position: relative;
-      overflow: hidden;
-      .width{
-        max-width: 110px;
-        @include media-breakpoint-up(md){
-          max-width: 100%;
-        }
-        @include media-breakpoint-up(lg){
-          max-width: 110px;
-        }
-        @include media-breakpoint-up(xl){
-          max-width: 165px;
+      &.-number-01{
+        &::before{
+          background-color: $number-01;
         }
       }
-      &::before{
-          content: " ";
-          position: absolute;
-          top: -10%;
-          left: -5%;
-          width: 72px;
-          height: 124px;
-          transform: rotate(10.55deg);
-          overflow: hidden;
-          background-color: $ranking-03;
-          @include media-breakpoint-up(xl){
-            left: -3%;
-          }
-      }
-    }
-  }
-  &.-place-3rd{
-    .ranking{
-      position: relative;
-      overflow: hidden;
-      .width{
-        max-width: 110px;
-        @include media-breakpoint-up(md){
-          max-width: 100%;
-        }
-        @include media-breakpoint-up(lg){
-          max-width: 110px;
-        }
-        @include media-breakpoint-up(xl){
-          max-width: 165px;
+      &.-number-03{
+        &::before{
+          background-color: $number-03;
         }
       }
-      &::before{
-          content: " ";
-          position: absolute;
-          top: -10%;
-          left: -5%;
-          width: 72px;
-          height: 124px;
-          transform: rotate(10.55deg);
-          overflow: hidden;
-          background-color: $ranking-04;
-          @include media-breakpoint-up(xl){
-            left: -3%;
-          }
+      &.-number-04{
+        &::before{
+          background-color: $number-04;
+        }
+      }
+      &.-number-06{
+        &::before{
+          background-color: $number-06;
+        }
+      }
+      &.-number-07{
+        &::before{
+          background-color: $number-07;
+        }
+      }
+      &.-number-08{
+        &::before{
+          background-color: $number-08;
+        }
+      }
+      &.-number-11{
+        &::before{
+          background-color: $number-11;
+        }
+      }
+      &.-number-etc{
+        &::before{
+          background-color: $number-etc;
+        }
       }
     }
   }
-  &.-place-4th{
-    .ranking{
-      position: relative;
-      overflow: hidden;
-      .width{
-        max-width: 110px;
-        @include media-breakpoint-up(md){
-          max-width: 100%;
-        }
-        @include media-breakpoint-up(lg){
-          max-width: 110px;
-        }
-        @include media-breakpoint-up(xl){
-          max-width: 165px;
-        }
-      }
-      &::before{
-          content: " ";
-          position: absolute;
-          top: -10%;
-          left: -5%;
-          width: 72px;
-          height: 124px;
-          transform: rotate(10.55deg);
-          overflow: hidden;
-          background-color: $ranking-06;
-          @include media-breakpoint-up(xl){
-            left: -3%;
-          }
-      }
-    }
-  }
-  &.-place-5th{
-    .ranking{
-      position: relative;
-      overflow: hidden;
-      .width{
-        max-width: 110px;
-        @include media-breakpoint-up(md){
-          max-width: 100%;
-        }
-        @include media-breakpoint-up(lg){
-          max-width: 110px;
-        }
-        @include media-breakpoint-up(xl){
-          max-width: 165px;
-        }
-      }
-      &::before{
-          content: " ";
-          position: absolute;
-          top: -10%;
-          left: -5%;
-          width: 72px;
-          height: 124px;
-          transform: rotate(10.55deg);
-          overflow: hidden;
-          background-color: $ranking-08;
-          @include media-breakpoint-up(xl){
-            left: -3%;
-          }
-      }
-    }
-  }
-  &.-place-6th{
-    .ranking{
-      position: relative;
-      overflow: hidden;
-      .width{
-        max-width: 110px;
-        @include media-breakpoint-up(md){
-          max-width: 100%;
-        }
-        @include media-breakpoint-up(lg){
-          max-width: 110px;
-        }
-        @include media-breakpoint-up(xl){
-          max-width: 165px;
-        }
-      }
-      &::before{
-          content: " ";
-          position: absolute;
-          top: -10%;
-          left: -5%;
-          width: 72px;
-          height: 124px;
-          transform: rotate(10.55deg);
-          overflow: hidden;
-          background-color: $ranking-11;
-          @include media-breakpoint-up(xl){
-            left: -3%;
-          }
-      }
-    }
-  }
-  &.-place-other{
-    .ranking{
-      position: relative;
-      overflow: hidden;
-      .width{
-        max-width: 110px;
-        @include media-breakpoint-up(md){
-          max-width: 100%;
-        }
-        @include media-breakpoint-up(lg){
-          max-width: 110px;
-        }
-        @include media-breakpoint-up(xl){
-          max-width: 165px;
-        }
-      }
-      &::before{
-          content: " ";
-          position: absolute;
-          top: -10%;
-          left: -5%;
-          width: 72px;
-          height: 124px;
-          transform: rotate(10.55deg);
-          overflow: hidden;
-          background-color: $ranking-etc;
-          @include media-breakpoint-up(xl){
-            left: -3%;
-          }
-      }
-    }
-  }
+  // &.-place-2nd{
+  //   .ranking{
+  //     position: relative;
+  //     overflow: hidden;
+  //     .width{
+  //       max-width: 110px;
+  //       @include media-breakpoint-up(md){
+  //         max-width: 100%;
+  //       }
+  //       @include media-breakpoint-up(lg){
+  //         max-width: 110px;
+  //       }
+  //       @include media-breakpoint-up(xl){
+  //         max-width: 165px;
+  //       }
+  //     }
+  //     &::before{
+  //         content: " ";
+  //         position: absolute;
+  //         top: -10%;
+  //         left: -5%;
+  //         width: 72px;
+  //         height: 124px;
+  //         transform: rotate(10.55deg);
+  //         overflow: hidden;
+  //         background-color: $number-03;
+  //         @include media-breakpoint-up(xl){
+  //           left: -3%;
+  //         }
+  //     }
+  //   }
+  // }
+  // &.-place-3rd{
+  //   .ranking{
+  //     position: relative;
+  //     overflow: hidden;
+  //     .width{
+  //       max-width: 110px;
+  //       @include media-breakpoint-up(md){
+  //         max-width: 100%;
+  //       }
+  //       @include media-breakpoint-up(lg){
+  //         max-width: 110px;
+  //       }
+  //       @include media-breakpoint-up(xl){
+  //         max-width: 165px;
+  //       }
+  //     }
+  //     &::before{
+  //         content: " ";
+  //         position: absolute;
+  //         top: -10%;
+  //         left: -5%;
+  //         width: 72px;
+  //         height: 124px;
+  //         transform: rotate(10.55deg);
+  //         overflow: hidden;
+  //         background-color: $number-04;
+  //         @include media-breakpoint-up(xl){
+  //           left: -3%;
+  //         }
+  //     }
+  //   }
+  // }
+  // &.-place-4th{
+  //   .ranking{
+  //     position: relative;
+  //     overflow: hidden;
+  //     .width{
+  //       max-width: 110px;
+  //       @include media-breakpoint-up(md){
+  //         max-width: 100%;
+  //       }
+  //       @include media-breakpoint-up(lg){
+  //         max-width: 110px;
+  //       }
+  //       @include media-breakpoint-up(xl){
+  //         max-width: 165px;
+  //       }
+  //     }
+  //     &::before{
+  //         content: " ";
+  //         position: absolute;
+  //         top: -10%;
+  //         left: -5%;
+  //         width: 72px;
+  //         height: 124px;
+  //         transform: rotate(10.55deg);
+  //         overflow: hidden;
+  //         background-color: $number-06;
+  //         @include media-breakpoint-up(xl){
+  //           left: -3%;
+  //         }
+  //     }
+  //   }
+  // }
+  // &.-place-5th{
+  //   .ranking{
+  //     position: relative;
+  //     overflow: hidden;
+  //     .width{
+  //       max-width: 110px;
+  //       @include media-breakpoint-up(md){
+  //         max-width: 100%;
+  //       }
+  //       @include media-breakpoint-up(lg){
+  //         max-width: 110px;
+  //       }
+  //       @include media-breakpoint-up(xl){
+  //         max-width: 165px;
+  //       }
+  //     }
+  //     &::before{
+  //         content: " ";
+  //         position: absolute;
+  //         top: -10%;
+  //         left: -5%;
+  //         width: 72px;
+  //         height: 124px;
+  //         transform: rotate(10.55deg);
+  //         overflow: hidden;
+  //         background-color: $number-08;
+  //         @include media-breakpoint-up(xl){
+  //           left: -3%;
+  //         }
+  //     }
+  //   }
+  // }
+  // &.-place-6th{
+  //   .ranking{
+  //     position: relative;
+  //     overflow: hidden;
+  //     .width{
+  //       max-width: 110px;
+  //       @include media-breakpoint-up(md){
+  //         max-width: 100%;
+  //       }
+  //       @include media-breakpoint-up(lg){
+  //         max-width: 110px;
+  //       }
+  //       @include media-breakpoint-up(xl){
+  //         max-width: 165px;
+  //       }
+  //     }
+  //     &::before{
+  //         content: " ";
+  //         position: absolute;
+  //         top: -10%;
+  //         left: -5%;
+  //         width: 72px;
+  //         height: 124px;
+  //         transform: rotate(10.55deg);
+  //         overflow: hidden;
+  //         background-color: $number-11;
+  //         @include media-breakpoint-up(xl){
+  //           left: -3%;
+  //         }
+  //     }
+  //   }
+  // }
+  // &.-place-other{
+  //   .ranking{
+  //     position: relative;
+  //     overflow: hidden;
+  //     .width{
+  //       max-width: 110px;
+  //       @include media-breakpoint-up(md){
+  //         max-width: 100%;
+  //       }
+  //       @include media-breakpoint-up(lg){
+  //         max-width: 110px;
+  //       }
+  //       @include media-breakpoint-up(xl){
+  //         max-width: 165px;
+  //       }
+  //     }
+  //     &::before{
+  //         content: " ";
+  //         position: absolute;
+  //         top: -10%;
+  //         left: -5%;
+  //         width: 72px;
+  //         height: 124px;
+  //         transform: rotate(10.55deg);
+  //         overflow: hidden;
+  //         background-color: $number-etc;
+  //         @include media-breakpoint-up(xl){
+  //           left: -3%;
+  //         }
+  //     }
+  //   }
+  // }
   .contestant{
     .title{
       @include font-size(18);
@@ -1901,7 +1938,7 @@ small{
       }
       &.-select-area{
         display: block;
-        @include media-breakpoint-up(xl){
+        @include media-breakpoint-up(lg){
           display: flex;
           align-items: center;
         }
@@ -1930,9 +1967,9 @@ small{
               flex-direction: row;
               padding: 1rem;
             }
-            @include media-breakpoint-up(xl){
-              width: 40%;
-              padding: 0;
+            @include media-breakpoint-up(lg){
+              width: 19rem;
+              padding: 1rem 0;
             }
           }
           .ui-widget{
@@ -2117,25 +2154,28 @@ small{
       stroke-linejoin: round;
     }
     &.-number-01{
-      fill: $ranking-01;
+      fill: $number-01;
     }
     &.-number-03{
-      fill: $ranking-03;
+      fill: $number-03;
     }
     &.-number-04{
-      fill: $ranking-04;
+      fill: $number-04;
     }
     &.-number-06{
-      fill: $ranking-06;
+      fill: $number-06;
+    }
+    &.-number-07{
+      fill: $number-07;
     }
     &.-number-08{
-      fill: $ranking-08;
+      fill: $number-08;
     }
     &.-number-11{
-      fill: $ranking-11;
+      fill: $number-11;
     }
     &.-number-etc{
-      fill: $ranking-etc;
+      fill: $number-etc;
     }
     &.-default{
       fill: $gray-05;
@@ -2216,25 +2256,25 @@ small{
           display: flex;
           align-items: center;
           .bg-number-01{
-            background-color: $ranking-01;
+            background-color: $number-01;
           }
           .bg-number-02{
             background-color: $tertiary-04;
           }
           .bg-number-03{
-            background-color: $ranking-03;
+            background-color: $number-03;
           }
           .bg-number-04{
-            background-color: $ranking-04;
+            background-color: $number-04;
           }
           .bg-number-06{
-            background-color: $ranking-06;
+            background-color: $number-06;
           }
           .bg-number-08{
-            background-color: $ranking-08;
+            background-color: $number-08;
           }
           .bg-number-11{
-            background-color: $ranking-11;
+            background-color: $number-11;
           }
         }
       }
@@ -2265,14 +2305,14 @@ small{
           stroke: none;
           stroke-width: initial;
           stroke-linejoin: initial;
-          fill: $ranking-hover;
+          fill: $number-hover;
         }
         &.active{
           transform: initial;
           stroke: none;
           stroke-width: initial;
           stroke-linejoin: initial;
-          fill: $ranking-hover;
+          fill: $number-hover;
         }
       }
     }
