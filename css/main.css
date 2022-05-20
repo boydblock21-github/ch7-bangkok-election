@@ -26,7 +26,7 @@ body {
   font-size: 16px;
   font-size: 1rem;
   font-family: "Sukhumvit Set", "Sukhumvit Set Text", Sukhumvit, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #F6F8F7;
+  background-color: #F4F5FA;
   position: relative;
 }
 
@@ -2113,7 +2113,7 @@ small.invisible {
   stroke-linejoin: round;
 }
 
-.container-map-area .map-item.-number-01 {
+.container-map-area .map-item:nt .container-map-area .map-item.-number-01 {
   fill: #F49184;
 }
 
@@ -2278,6 +2278,27 @@ small.invisible {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.sponsor-container .sponsor-content {
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+.sponsor-container .sponsor-content img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .sponsor-container .sponsor-content img {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sponsor-container .sponsor-content img {
+    width: 60%;
+  }
 }
 
 @media not all and (min-resolution: 0.001dpcm) {

@@ -300,7 +300,7 @@ $body-font: -apple-system, Thonburi, BlinkMacSystemFont, "Segoe UI", Roboto, "He
 body{
     @include font-size(16);
     font-family: $brand-font;
-    background-color: $light;
+    background-color: $tertiary-06;
     position: relative;
 }
 
@@ -2153,6 +2153,7 @@ small{
       stroke-width: 2px;
       stroke-linejoin: round;
     }
+    &:nt
     &.-number-01{
       fill: $number-01;
     }
@@ -2288,6 +2289,22 @@ small{
         color: $primary-01;
         @include font-size(24);
         font-weight: bold;
+      }
+    }
+  }
+}
+
+.sponsor-container{
+  .sponsor-content{
+    text-align: center;
+    padding: 2rem 0 1rem;
+    img{
+      width: 100%;
+      @include media-breakpoint-up(md){
+        width: 80%;
+      }
+      @include media-breakpoint-up(lg){
+        width: 60%;
       }
     }
   }
