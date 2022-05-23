@@ -467,6 +467,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0A0A0A;
 }
 
+.ratio.ratio-16x9.-bg-color::before {
+  display: initial;
+}
+
 .ratio.ratio-16x9 .width {
   width: calc(1vw + 88px);
   position: absolute;
@@ -2239,10 +2243,6 @@ small.invisible {
   background-color: #F49184;
 }
 
-.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-02 {
-  background-color: #00568F;
-}
-
 .seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-03 {
   background-color: #5189F8;
 }
@@ -2255,12 +2255,20 @@ small.invisible {
   background-color: #F2E997;
 }
 
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-07 {
+  background-color: #DCBF74;
+}
+
 .seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-08 {
   background-color: #71C0C1;
 }
 
 .seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-11 {
   background-color: #A68AF8;
+}
+
+.seemore-county-container .contestant-detail-container .contestant-detail-content .contestant-info .number-content .bg-number-etc {
+  background-color: #777777;
 }
 
 .seemore-county-container .contestant-detail-container .contestant-vote-detail {
@@ -2311,14 +2319,17 @@ small.invisible {
       stroke: none;
       stroke-width: initial;
       stroke-linejoin: initial;
-      fill: #FF5858;
+    }
+    @media only screen and (min-width: 1280px) {
+      .container-map-area .map-item:hover {
+        fill: #FF5858;
+      }
     }
     .container-map-area .map-item.active {
       transform: initial;
       stroke: none;
       stroke-width: initial;
       stroke-linejoin: initial;
-      fill: #FF5858;
     }
   }
 }
@@ -2342,7 +2353,19 @@ small.invisible {
 }
 
 .ads-container img {
-  width: 375px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .ads-container img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ads-container img {
+    width: 40%;
+  }
 }
 
 a p.-text-link {

@@ -677,6 +677,9 @@ h1,h2,h3,h4,h5,h6{
     }
     &.-bg-color{
       background-color: $gray-01;
+      &::before{
+        display: initial;
+      }
     }
     .width{
       width: calc(1vw + 88px);
@@ -2258,9 +2261,6 @@ small{
           .bg-number-01{
             background-color: $number-01;
           }
-          .bg-number-02{
-            background-color: $tertiary-04;
-          }
           .bg-number-03{
             background-color: $number-03;
           }
@@ -2270,11 +2270,17 @@ small{
           .bg-number-06{
             background-color: $number-06;
           }
+          .bg-number-07{
+            background-color: $number-07;
+          }
           .bg-number-08{
             background-color: $number-08;
           }
           .bg-number-11{
             background-color: $number-11;
+          }
+          .bg-number-etc{
+            background-color: $number-etc;
           }
         }
       }
@@ -2321,14 +2327,16 @@ small{
           stroke: none;
           stroke-width: initial;
           stroke-linejoin: initial;
-          fill: $number-hover;
+          @include media-breakpoint-up(xl){
+            fill: $number-hover;
+          }
         }
         &.active{
           transform: initial;
           stroke: none;
           stroke-width: initial;
           stroke-linejoin: initial;
-          fill: $number-hover;
+          // fill: $number-hover;
         }
       }
     }
@@ -2351,8 +2359,13 @@ small{
     @include font-size(14);
   }
   img {
-    width: 375px;
-
+    width: 90%;
+    @include media-breakpoint-up(md){
+      width: 50%;
+    }
+    @include media-breakpoint-up(lg){
+      width: 40%;
+    }
   }
 }
 
